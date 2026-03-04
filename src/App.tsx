@@ -40,6 +40,7 @@ export default function App() {
       duration: 1000,
       once: true,
       easing: 'ease-out-cubic',
+      disableMutationObserver: true,
     });
   }, []);
 
@@ -47,7 +48,7 @@ export default function App() {
     <CartProvider>
       <Router>
         <ScrollToTop />
-        <div className="min-h-screen bg-[#fcfaf7]">
+        <div className="overflow-hidden min-h-screen bg-[#fcfaf7]">
           <Navbar />
           <CartDrawer />
           <main>

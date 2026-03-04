@@ -11,6 +11,17 @@ export const Navbar = () => {
     const { cartCount, setIsCartOpen } = useCart();
 
     React.useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isMenuOpen]);
+
+    React.useEffect(() => {
         const handleScroll = () => setIsScrolled(window.scrollY > 50);
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -80,19 +91,52 @@ export const Navbar = () => {
                             </span>
                         )}
                     </button>
-                    <button className="text-[#1a1a1a]" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                        <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} className="text-2xl" />
+                    <button
+                        className="w-10 h-10 flex items-center justify-center bg-[#1a1a1a] text-white rounded-xl active:scale-90 transition-transform"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    >
+                        <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} className="text-lg" />
                     </button>
                 </div>
             </div>
 
             {/* Mobile Menu */}
-            <div className={`absolute top-full left-0 w-full bg-white border-b border-gray-100 transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'}`}>
-                <div className="flex flex-col p-8 gap-6 text-center font-bold uppercase tracking-widest text-sm">
-                    {navItems.map((item) => (
-                        <Link key={item.name} to={item.path} onClick={() => setIsMenuOpen(false)}>{item.name}</Link>
-                    ))}
-                    <Link to="/catalogo" onClick={() => setIsMenuOpen(false)} className="bg-[#D4AF37] text-white py-4 rounded-xl">Ir a la Tienda</Link>
+            <div className={`fixed inset-0 bg-white z-[100] transition-all duration-500 md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <div className="flex flex-col h-full">
+                    <div className="flex justify-between items-center p-6 border-b border-gray-50">
+                        <Link to="/" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-2">
+                            <div className="bg-[#D4AF37] p-1.5 rounded-lg">
+                                <FontAwesomeIcon icon={faPaw} className="text-white text-lg" />
+                            </div>
+                            <span className="text-xl font-serif font-bold tracking-tight text-[#1a1a1a]">
+                                JASPER<span className="text-[#D4AF37]">PETSHOP</span>
+                            </span>
+                        </Link>
+                        <button onClick={() => setIsMenuOpen(false)} className="p-2 text-[#1a1a1a]">
+                            <FontAwesomeIcon icon={faXmark} className="text-2xl" />
+                        </button>
+                    </div>
+
+                    <div className="flex flex-col p-8 gap-8 text-left font-bold uppercase tracking-[0.2em] text-sm">
+                        {navItems.map((item, i) => (
+                            <Link
+                                key={item.name}
+                                to={item.path}
+                                onClick={() => setIsMenuOpen(false)}
+                                className="hover:text-[#D4AF37] transition-colors"
+                                style={{ transitionDelay: `${i * 50}ms` }}
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
+                        <Link
+                            to="/catalogo"
+                            onClick={() => setIsMenuOpen(false)}
+                            className="bg-[#1a1a1a] text-white py-5 rounded-2xl text-center mt-4 shadow-xl shadow-black/10"
+                        >
+                            Ir a la Tienda
+                        </Link>
+                    </div>
                 </div>
             </div>
         </nav>

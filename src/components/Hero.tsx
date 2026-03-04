@@ -51,7 +51,7 @@ export const Hero = () => {
                 <div className="lg:col-span-5 relative" data-aos="fade-left" data-aos-delay="200">
                     <div className="relative z-10 rounded-[40px] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] border-[8px] border-white">
                         <img
-                            src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=1000"
+                            src="./logo_jasperpetshop.jpeg"
                             alt="Luxury Pet Bed"
                             className="w-full aspect-[4/5] object-cover"
                             referrerPolicy="no-referrer"

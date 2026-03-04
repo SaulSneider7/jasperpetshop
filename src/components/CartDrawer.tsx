@@ -1,3 +1,4 @@
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faMinus, faPlus, faBagShopping, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -6,6 +7,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export const CartDrawer = () => {
     const { cartItems, isCartOpen, setIsCartOpen, updateQuantity, removeFromCart, cartTotal, cartCount, clearCart } = useCart();
+
+    React.useEffect(() => {
+        if (isCartOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isCartOpen]);
 
     return (
         <AnimatePresence>
@@ -28,16 +40,19 @@ export const CartDrawer = () => {
                         transition={{ type: 'spring', damping: 25, stiffness: 200 }}
                         className="fixed top-0 right-0 h-full w-full max-w-md bg-white z-[70] shadow-2xl flex flex-col"
                     >
-                        <div className="p-6 border-b border-gray-100 flex justify-between items-center">
+                        <div className="p-4 md:p-6 border-b border-gray-100 flex justify-between items-center bg-white sticky top-0 z-10">
                             <div className="flex items-center gap-3">
-                                <FontAwesomeIcon icon={faBagShopping} className="text-[#D4AF37] text-xl" />
-                                <h2 className="text-xl font-serif font-bold">Tu Carrito ({cartCount})</h2>
+                                <div className="bg-[#fcfaf7] p-2 rounded-xl">
+                                    <FontAwesomeIcon icon={faBagShopping} className="text-[#D4AF37] text-lg" />
+                                </div>
+                                <h2 className="text-lg md:text-xl font-serif font-bold">Tu Carrito ({cartCount})</h2>
                             </div>
                             <button
                                 onClick={() => setIsCartOpen(false)}
-                                className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                                className="w-10 h-10 flex items-center justify-center hover:bg-gray-100 rounded-full transition-colors text-gray-400 hover:text-[#1a1a1a]"
+                                aria-label="Cerrar carrito"
                             >
-                                <FontAwesomeIcon icon={faXmark} className="text-xl" />
+                                <FontAwesomeIcon icon={faXmark} className="text-2xl" />
                             </button>
                         </div>
 
