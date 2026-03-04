@@ -1,16 +1,16 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faSliders } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from 'react';
 import { products } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
+import { motion } from 'framer-motion';
+
+const categories = ['Todos', 'Camas', 'Sofás', 'Accesorios'];
 
 export const Catalog = () => {
-    const [activeCategory, setActiveCategory] = React.useState('Todos');
-    const categories = ['Todos', 'Camas', 'Sofás', 'Accesorios'];
+    const [selectedCategory, setSelectedCategory] = useState('Todos');
 
-    const filteredProducts = activeCategory === 'Todos'
+    const filteredProducts = selectedCategory === 'Todos'
         ? products
-        : products.filter(p => p.category === activeCategory);
+        : products.filter(p => p.category === selectedCategory);
 
     return (
         <div className="pt-32 pb-20 bg-[#fcfaf7] min-h-screen">
@@ -25,48 +25,35 @@ export const Catalog = () => {
                     </p>
                 </div>
 
-                {/* Filters & Search */}
-                <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-16" data-aos="fade-up">
-                    <div className="flex flex-wrap gap-3">
-                        {categories.map((cat) => (
-                            <button
-                                key={cat}
-                                onClick={() => setActiveCategory(cat)}
-                                className={`px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest transition-all ${activeCategory === cat
-                                        ? 'bg-[#D4AF37] text-white shadow-lg shadow-[#D4AF37]/30'
-                                        : 'bg-white text-gray-400 hover:text-black border border-gray-100'
-                                    }`}
-                            >
-                                {cat}
-                            </button>
-                        ))}
-                    </div>
-
-                    <div className="flex gap-4 w-full md:w-auto">
-                        <div className="relative flex-1 md:w-64">
-                            <input
-                                type="text"
-                                placeholder="Buscar producto..."
-                                className="w-full bg-white border border-gray-100 rounded-2xl py-3 px-6 pl-12 text-sm focus:ring-2 focus:ring-[#D4AF37] outline-none transition-all"
-                            />
-                            <FontAwesomeIcon icon={faSearch} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-300" />
-                        </div>
-                        <button className="bg-white border border-gray-100 p-3 rounded-2xl text-gray-400 hover:text-black transition-all">
-                            <FontAwesomeIcon icon={faSliders} className="text-lg" />
+                {/* Categories Filter */}
+                <div className="flex flex-wrap gap-4 mb-12" data-aos="fade-up">
+                    {categories.map((category) => (
+                        <button
+                            key={category}
+                            onClick={() => setSelectedCategory(category)}
+                            className={`px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === category
+                                    ? 'bg-[#1a1a1a] text-white shadow-xl scale-105'
+                                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-100'
+                                }`}
+                        >
+                            {category}
                         </button>
-                    </div>
-                </div>
-
-                {/* Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
-                    {filteredProducts.map((product, i) => (
-                        <ProductCard key={product.id} product={product} delay={i * 50} />
                     ))}
                 </div>
 
+                {/* Grid */}
+                <motion.div
+                    layout
+                    className="grid md:grid-cols-2 lg:grid-cols-4 gap-10"
+                >
+                    {filteredProducts.map((product, i) => (
+                        <ProductCard key={product.id} product={product} delay={i * 50} />
+                    ))}
+                </motion.div>
+
                 {filteredProducts.length === 0 && (
-                    <div className="py-20 text-center">
-                        <p className="text-gray-400">No se encontraron productos en esta categoría.</p>
+                    <div className="text-center py-20">
+                        <p className="text-gray-400 text-lg">No se encontraron productos en esta categoría.</p>
                     </div>
                 )}
             </div>
