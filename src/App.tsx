@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React from 'react';
 import AOS from 'aos';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
@@ -40,7 +35,6 @@ export default function App() {
       duration: 1000,
       once: true,
       easing: 'ease-out-cubic',
-      disableMutationObserver: true,
     });
   }, []);
 
