@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import { products } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const categories = ['Todos', 'Camas', 'Sofás', 'Accesorios'];
 
