@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { products } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
 
-const categories = ['Todos', 'Camas', 'Sofás', 'Accesorios'];
+const categories = ['Todos'];
 
 export const Catalog = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');

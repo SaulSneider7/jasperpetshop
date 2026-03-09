@@ -15,13 +15,13 @@ export const Hero = () => {
                     </div>
 
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6 tracking-tighter">
-                        Confort <br />
-                        <span className="text-[#D4AF37] italic">Real</span> para <br />
-                        tu Mascota.
+                        Comodidad y estilo <br />
+                        para quienes más amas. <br />
+                        <span className="text-[#D4AF37] italic">Porque son familia</span>
                     </h1>
 
                     <p className="text-lg text-gray-500 mb-8 max-w-lg leading-relaxed font-light">
-                        Elevamos el bienestar de tus compañeros con mobiliario de lujo diseñado para integrarse perfectamente en tu hogar moderno.
+                        Creamos espacios de descanso y comodidad para quienes forman parte de tu familia. Descubre nuestras camas, sofás, escaleras y accesorios diseñados para el bienestar y estilo de engreído. Porque ellos también merecen lo mejor.
                     </p>
 
                     <div className="flex flex-wrap gap-4">
