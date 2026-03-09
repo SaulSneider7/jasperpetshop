@@ -14,7 +14,7 @@ export const Products = () => {
             <h2 className="text-5xl md:text-6xl font-serif font-bold mb-4">Colección <br /> <span className="text-[#D4AF37]">Exclusiva</span></h2>
             <p className="text-gray-400 max-w-md">Piezas limitadas diseñadas para los gustos más exigentes.</p>
           </div>
-          <div className="flex gap-4" data-aos="fade-left">
+          <div className="flex gap-4" data-aos="fade-left"> 
             <Link to="/catalogo" className="px-8 py-3 rounded-full border border-white/10 hover:bg-white hover:text-black transition-all text-xs font-bold uppercase tracking-widest">Ver Todo el Catálogo</Link>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faStar } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export const Hero = () => {
     return (
@@ -25,10 +26,10 @@ export const Hero = () => {
                     </p>
 
                     <div className="flex flex-wrap gap-4">
-                        <button className="bg-[#1a1a1a] text-white px-8 py-4 rounded-xl flex items-center gap-3 hover:bg-[#D4AF37] transition-all group shadow-xl shadow-black/10">
+                        <Link to="/catalogo" className="bg-[#1a1a1a] text-white px-8 py-4 rounded-xl flex items-center gap-3 hover:bg-[#D4AF37] transition-all group shadow-xl shadow-black/10">
                             <span className="font-bold uppercase tracking-widest text-xs">Explorar Catálogo</span>
                             <FontAwesomeIcon icon={faChevronRight} className="group-hover:translate-x-1 transition-transform text-xs" />
-                        </button>
+                        </Link>
                         <div className="flex -space-x-2 items-center">
                             {[1, 2, 3].map((i) => (
                                 <img
