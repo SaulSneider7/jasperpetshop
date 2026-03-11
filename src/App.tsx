@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Catalog } from './pages/Catalog';
+import { ProductDetail } from './pages/ProductDetail';
 import { CartProvider } from './context/CartContext';
 import { CartDrawer } from './components/CartDrawer';
 
@@ -42,13 +43,14 @@ export default function App() {
     <CartProvider>
       <Router>
         <ScrollToTop />
-        <div className="overflow-hidden min-h-screen bg-[#fcfaf7]">
+        <div className="overflow-hidden min-h-screen">
           <Navbar />
           <CartDrawer />
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/catalogo" element={<Catalog />} />
+              <Route path="/producto/:id" element={<ProductDetail />} />
             </Routes>
           </main>
           <Footer />

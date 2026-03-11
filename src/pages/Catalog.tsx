@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { products } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
 
-const categories = ['Todos'];
+const categories = ['Todos', 'Camas', 'Sofás', 'Accesorios'];
 
 export const Catalog = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
@@ -12,17 +12,17 @@ export const Catalog = () => {
     : products.filter(p => p.category === selectedCategory);
 
   return (
-    <div className="pt-32 pb-20 bg-[#fcfaf7] min-h-screen">
+    <div className="pt-32 pb-20 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="mb-16">
           <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 tracking-tighter text-[#1a1a1a]">
-            Nuestro <span className="text-[#D4AF37] italic">Catálogo</span>
+            Nuestro <span className="text-[#B59410] italic">Catálogo</span>
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl font-light">
             Explora nuestra colección completa de mobiliario premium diseñado exclusivamente para el bienestar de tu mascota.
           </p>
-          <p className="mt-4 text-sm font-bold text-[#D4AF37] uppercase tracking-widest">
+          <p className="mt-4 text-sm font-bold text-[#B59410] uppercase tracking-widest">
             Mostrando {filteredProducts.length} productos
           </p>
         </div>
