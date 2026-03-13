@@ -4,12 +4,12 @@ import { products } from '../data/products';
 import type { ProductVariant } from '../data/products';
 import { useCart } from '../context/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faChevronLeft, 
-  faClock, 
-  faCircleCheck, 
-  faCircleInfo, 
-  faWeightHanging, 
+import {
+  faChevronLeft,
+  faClock,
+  faCircleCheck,
+  faCircleInfo,
+  faWeightHanging,
   faRulerCombined,
   faCartShopping
 } from '@fortawesome/free-solid-svg-icons';
@@ -73,15 +73,17 @@ export const ProductDetail = () => {
                 transition={{ duration: 0.4, ease: "easeOut" }}
                 className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl border-[12px] border-white"
               >
-                <img 
-                  src={currentImage} 
-                  alt={product.name} 
-                  className="w-full h-full object-fill"
-                  referrerPolicy="no-referrer"
-                />
+                <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl border-[12px] border-white bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+                  <img
+                    src={currentImage}
+                    alt={product.name}
+                    className="max-w-full max-h-full object-contain"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
               </motion.div>
             </AnimatePresence>
-            
+
             {discount && (
               <div className="absolute top-8 left-8 bg-[#B59410] text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest shadow-lg">
                 -{discount}% OFF
@@ -104,9 +106,11 @@ export const ProductDetail = () => {
                   </p>
                 )}
               </div>
-              <p className="text-lg text-gray-500 leading-relaxed font-light">
-                {currentDescription}
-              </p>
+              <div className="space-y-4 text-lg text-gray-500 leading-relaxed font-light">
+                {currentDescription.map((paragraph: string, i: number) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
             </div>
 
             {/* Variants / Sizes */}
@@ -118,11 +122,10 @@ export const ProductDetail = () => {
                     <button
                       key={v.size}
                       onClick={() => setSelectedVariant(v)}
-                      className={`px-6 py-3 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all border-2 ${
-                        selectedVariant?.size === v.size
-                          ? 'bg-[#1a1a1a] text-white border-[#1a1a1a] shadow-xl scale-105'
-                          : 'bg-white text-[#1a1a1a] border-gray-100 hover:border-[#B59410]'
-                      }`}
+                      className={`px-6 py-3 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all border-2 ${selectedVariant?.size === v.size
+                        ? 'bg-[#1a1a1a] text-white border-[#1a1a1a] shadow-xl scale-105'
+                        : 'bg-white text-[#1a1a1a] border-gray-100 hover:border-[#B59410]'
+                        }`}
                     >
                       {v.size}
                     </button>
@@ -160,7 +163,7 @@ export const ProductDetail = () => {
             )}
 
             {/* Add to Cart */}
-            <button 
+            <button
               onClick={handleAddToCart}
               className="w-full bg-[#1a1a1a] text-white py-6 rounded-2xl font-bold uppercase tracking-[0.2em] text-xs flex items-center justify-center gap-4 hover:bg-[#B59410] transition-all shadow-2xl shadow-black/10 active:scale-[0.98] mb-12"
             >

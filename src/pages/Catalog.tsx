@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { products } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
 
-const categories = ['Todos', 'Camas', 'Sofás', 'Accesorios'];
+const categories = ['Todos', 'Sofás', 'Escaleras', 'Camas',  'Accesorios' ];
 
 export const Catalog = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
@@ -14,6 +14,7 @@ export const Catalog = () => {
   return (
     <div className="pt-32 pb-20 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
+        {/* <div className="max-w-7xl xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto px-6"></div> */}
         {/* Header */}
         <div className="mb-16">
           <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 tracking-tighter text-[#1a1a1a]">

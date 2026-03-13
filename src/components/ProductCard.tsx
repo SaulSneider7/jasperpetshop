@@ -32,7 +32,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <img 
             src={product.image} 
             alt={product.name} 
-            className="absolute inset-0 w-full h-full object-fill transition-transform duration-700"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700"
             referrerPolicy="no-referrer"
           />
         </Link>

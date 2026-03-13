@@ -5,7 +5,7 @@ const features = [
     { icon: faTruck, title: "Envío Express", desc: "Delivery seguro a todo el país." },
     { icon: faShieldHalved, title: "Premium", desc: "Materiales de alta durabilidad." },
     { icon: faHeart, title: "Ergonómico", desc: "Cuidado de sus articulaciones." },
-    { icon: faComment, title: "Soporte 24/7", desc: "Atención personalizada." }
+    { icon: faComment, title: "Atención 24/7", desc: "Atención personalizada." }
 ];
 
 export const Features = () => {
