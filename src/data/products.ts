@@ -70,7 +70,7 @@ export const products: Product[] = [
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
         description: [
-          "Ideal para Buldog Ingles, Bull Terrier, American Bully, Border Colli y similares."
+          "Ideal para Bulldog Ingles, Bull Terrier, American Bully, Border Collie y similares."
         ]
       },
       { 
@@ -129,7 +129,7 @@ export const products: Product[] = [
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
         description: [
-          "Ideal para Buldog Ingles, Bull Terrier, American Bully, Border Colli y similares."
+          "Ideal para Bulldog Ingles, Bull Terrier, American Bully, Border Collie y similares."
         ]
       },
       { 
@@ -187,7 +187,7 @@ export const products: Product[] = [
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Soporta 70kg",
         description: [
-          "Ideal para Buldog Ingles, Bull Terrier, American Bully, Border Colli y similares."
+          "Ideal para Bulldog Ingles, Bull Terrier, American Bully, Border Collie y similares."
         ]
       },
       { 
@@ -245,7 +245,7 @@ export const products: Product[] = [
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
         description: [
-          "Ideal para Buldog Ingles, Bull Terrier, American Bully, Border Colli y similares."
+          "Ideal para Bulldog Ingles, Bull Terrier, American Bully, Border Collie y similares."
         ]
       },
       {
@@ -262,6 +262,474 @@ export const products: Product[] = [
   },
   {
     id: 5,
+    name: "Sofa Brandon",
+    price: "S/ 340",
+    category: "Sofás",
+    image: "/brandon_L.jpeg",
+    description: [
+      "Detalles en dorado y telas de lujo para el descanso más exigente."
+    ],
+    important: [
+      "Elegir material (Iker , Lisboa  o Vittoria) y el color de tela.",
+      "Escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Tapizado con tela hipoalergénica (varios colores disponibles)",
+      "Funda desmontable del asiento, incluye cierre para poder lavar el forro a mano o lavadora.",
+      "Respaldar firme y cómodo, con una entrada que facilita el ingreso de la mascota.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Cojines decorativos (incluye dos unidades)",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+    ],
+    productionTime: "Son 3 días hábiles aproximadamente.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
+    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 340", 
+        image: "/brandon_L.jpeg",
+        dimensions: "75cm Diametro / 8cm patas cromadas",
+        weight: "Hasta 40kg",
+        description: [
+          "Ideal para Shitzu, Snaucer, Poodle, Cocker, Pomerian, Maltes y similares."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 390", 
+        image: "/brandon_XL.jpeg",
+        dimensions: "95cm Diametro / 8cm patas cromadas",
+        weight: "Hasta 70kg",
+        description: [
+          "Ideal para Bulldog Ingles, Bull Terrier, American Bully, Border Collie y similares."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 460",
+        image: "/valentina_XXL.jpeg",
+        dimensions: "1.10cm Diametro / 8cm patas cromadas",
+        weight: "Hasta 100kg",
+        description: [
+          "Ideal para Labrador, Golden Retriever, Dalmata, Weimaraner, Seter, Husky y similares."
+        ]
+      }
+    ],
+  },
+  {
+    id: 6,
+    name: "Sofa Mike",
+    price: "S/ 340",
+    category: "Sofás",
+    image: "/mike_L.jpeg",
+    description: [
+      "Detalles en dorado y telas de lujo para el descanso más exigente."
+    ],
+    important: [
+      "Elegir material (Iker , Lisboa  o Vittoria) y el color de tela.",
+      "Escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Tapizado con tela hipoalergénica (varios colores disponibles)",
+      "Asiento relleno de fibra hipoalergénica (Napa), funda lavable (mano o lavadora,) sin descoser. El color es de su elección.",
+      "Respaldar firme y cómodo, con una entrada que facilita el ingreso de la mascota.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Cojines decorativos (incluye dos unidades)",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+    ],
+    productionTime: "Son 3 días hábiles aproximadamente.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
+    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 340", 
+        image: "/mike_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 40kg",
+        description: [
+          "Ideal para Shitzu, Snaucer, Poodle, Cocker, Pomerian, Maltes y similares."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 390", 
+        image: "/mike_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 70kg",
+        description: [
+          "Ideal para Bulldog Ingles, Bull Terrier, American Bully, Border Collie y similares."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 460",
+        image: "/mike_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 100kg",
+        description: [
+          "Ideal para Labrador, Golden Retriever, Dalmata, Weimaraner, Seter, Husky y similares."
+        ]
+      }
+    ],
+  },
+  {
+    id: 7,
+    name: "Sofa Mildan Premiun",
+    price: "S/ 380",
+    category: "Sofás",
+    image: "/mildan_premium_L.jpeg",
+    description: [
+      "Detalles en dorado y telas de lujo para el descanso más exigente."
+    ],
+    important: [
+      "Elegir color de tela terciopelo.",
+      "Escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Tapizado con tela hipoalergénica (varios colores disponibles)",
+      "Funda del asiento con cierre para poder lavar el forro a mano o lavadora.",
+      "Respaldar firme y cómodo, con detalle capitoneado en los laterales internos.",
+      "Detalle en el borde del sofá en forma de U con estoperoles.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Cojines decorativos (incluye dos unidades)",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+    ],
+    productionTime: "Son 2-4 días hábiles aproximadamente.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
+    shippingInfo: "Se envía a provincias del Perú por agencia. (Solo se cubre costo de Embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 380", 
+        image: "/mildan_premium_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 40kg",
+        description: [
+          "Ideal para Snaucer, Poodle, Beagle, Jack Rusell."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 390", 
+        image: "/mildan_premium_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 60kg",
+        description: [
+          "Ideal para Pitbull, Boxer, Husky, Bulldog Ingles."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 460",
+        image: "/mildan_premium_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 80kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 8,
+    name: "Cama Buffyto",
+    price: "S/ 380",
+    category: "Camas",
+    image: "/cama_buffyto_L.jpeg",
+    description: [
+      "Detalles en dorado y telas de lujo para el descanso más exigente."
+    ],
+    important: [
+      "Elegir el color de tela terciopelo, modelo de cabecera y escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Box tarima y Cabecera tapizado con tela hipoalergénica (Modelo a elegir)",
+      "Colchón relleno de espuma de alta densidad y resistencia de 5cm de grosor.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Una almohada hipoalergénica.",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+      "Se puede añadir los accesorios como sábana, protector o manta.",
+      "(Revisar en el ítem de Accesorios)",
+    ],
+    productionTime: "Son 2-4 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 250", 
+        image: "/cama_buffyto_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 30kg",
+        description: [
+          "Ideal para Snaucer, Poodle, Beagle, Jack Rusell."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 290", 
+        image: "/cama_buffyto_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 50kg",
+        description: [
+          "Ideal para Pitbull, Boxer, Husky, Bulldog Ingles."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 370",
+        image: "/cama_buffyto_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 70kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 9,
+    name: "Cama Capitone",
+    price: "S/ 380",
+    category: "Camas",
+    image: "/cama_capitone_L.jpeg",
+    description: [
+      "Detalles en dorado y telas de lujo para el descanso más exigente."
+    ],
+    important: [
+      "Elegir el color de tela terciopelo y escribirlo en el detalle de la compra.",
+      "ADELANTO DEL 20% DEL TOTAL DEL VALOR DEL PRODUCTO."
+    ],
+    characteristics: [
+      "Box tarima y Cabecera tapizado con tela hipoalergénica (Modelo a elegir)",
+      "Colchón relleno de espuma de alta densidad y resistencia de 5cm de grosor.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Una almohada hipoalergénica.",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+      "Se puede añadir los accesorios como sábana, protector o manta.",
+      "(Revisar en el ítem de Accesorios)",
+    ],
+    productionTime: "Son 2-4 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 250", 
+        image: "/cama_capitone_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 40kg",
+        description: [
+          "Ideal para Snaucer, Poodle, Beagle, Jack Rusell."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 430", 
+        image: "/cama_capitone_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 60kg",
+        description: [
+          "Ideal para Pitbull, Boxer, Husky, Bulldog Ingles."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 490",
+        image: "/cama_capitone_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 80kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 10,
+    name: "Cama Nalhaguau",
+    price: "S/ 200",
+    category: "Camas",
+    image: "/cama_nalhaguau_L.jpeg",
+    description: [
+      "Detalles en dorado y telas de lujo para el descanso más exigente."
+    ],
+    important: [
+      "Elegir el color de tela terciopelo y escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Box tarima de madera tapizado con tela hipoalergénica.",
+      "Colchón relleno de fibra hipoalergenica. (Color a elegir)",
+      "Detalle en la entrada del Box tarima (Opcional).",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Una almohada hipoalergénica",
+      "Al estar elevados del piso, aíslan del frío y del calor",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+      "Se puede adicionar los accesorios como sábana, protector o manta.",
+      "(Revisar en el ítem de Accesorios)",
+    ],
+    productionTime: "Son 1-2 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 200", 
+        image: "/cama_nalhaguau_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 30kg",
+        description: [
+          "Ideal para Gatos, Poodle, Beagle, Jack Rusell."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 260", 
+        image: "/cama_nalhaguau_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 50kg",
+        description: [
+          "Ideal para Pitbull, Boxer, Husky, Bulldog Ingles."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 320",
+        image: "/cama_nalhaguau_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 70kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 11,
+    name: "Cama Zaragoza",
+    price: "S/ 300",
+    category: "Camas",
+    image: "/cama_zaragoza_L.jpeg",
+    description: [
+      "Detalles en dorado y telas de lujo para el descanso más exigente."
+    ],
+    important: [
+      "Elegir el color de tela terciopelo, modelo de cabecera y escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Box tarima y Cabecera tapizado con tela hipoalergénica (Modelo a elegir)",
+      "Colchón relleno de espuma de alta densidad y resistencia de 10cm de grosor.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Una almohada hipoalergénica",
+      "Al estar elevados del piso, aíslan del frío y del calor",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+      "Se puede adicionar los accesorios como sábana, protector o manta.",
+      "(Revisar en el ítem de Accesorios)",
+    ],
+    productionTime: "Son 2-4 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 300", 
+        image: "/cama_zaragoza_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 40kg",
+        description: [
+          "Ideal para Bulldog Frances, Beagle, Jack Rusell."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 360", 
+        image: "/cama_zaragoza_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 60kg",
+        description: [
+          "Ideal para Pitbull, Boxer, Husky, Bulldog Ingles."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 460",
+        image: "/cama_zaragoza_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 80kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 12,
+    name: "Cama Jasperguau",
+    price: "S/ 160",
+    category: "Camas",
+    image: "/cama_jasperguau_L.jpeg",
+    description: [
+      "Detalles en dorado y telas de lujo para el descanso más exigente."
+    ],
+    important: [
+      "Elegir el color de tela terciopelo y escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Box tarima de madera tapizado con tela hipoalergénica",
+      "Colchón relleno de espuma de alta densidad y resistencia de 5cm de grosor.",
+      "Detalle en la entrada del Box tarima (Opcional)",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Una almohada hipoalergénica",
+      "Al estar elevados del piso, aíslan del frío y del calor",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+      "Se puede adicionar los accesorios como sábana, protector o manta.",
+      "(Revisar en el ítem de Accesorios)",
+    ],
+    productionTime: "Son 1-2 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 160", 
+        image: "/cama_jasperguau_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 30kg",
+        description: [
+          "Ideal para Snaucer, Poodle, Beagle, Jack Rusell."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 210", 
+        image: "/cama_jasperguau_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 50kg",
+        description: [
+          "Ideal para Pitbull, Boxer, Husky, Bulldog Ingles."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 270",
+        image: "/cama_jasperguau_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 70kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 13,
     name: "Escalera 3 pasos",
     price: "S/ 170",
     category: "Escaleras",
@@ -300,7 +768,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 6,
+    id: 14,
     name: "Escalera 4 pasos",
     price: "S/ 230",
     category: "Escaleras",
@@ -339,7 +807,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 7,
+    id: 15,
     name: "Set de Mantas Silk",
     price: "S/ 160",
     category: "Accesorios",
@@ -362,27 +830,4 @@ export const products: Product[] = [
     shippingInfo: "Solo se cubre costo de Embalaje por Temporada",
     discountPercentage: 25
   },
-  {
-    id: 8,
-    name: "Cama Redonda Zen",
-    price: "S/ 460",
-    category: "Camas",
-    image: "https://images.unsplash.com/photo-1591584539339-84e17e894611?auto=format&fit=crop&q=80&w=800",
-    description: [
-      "Forma circular que brinda sensación de seguridad y calma."
-    ],
-    important: [
-      "Ideal para mascotas que duermen acurrucadas",
-      "Bordes ultra acolchados"
-    ],
-    characteristics: [
-      "Efecto calmante",
-      "Pelo sintético de alta calidad",
-      "Lavable por completo",
-      "Base térmica"
-    ],
-    productionTime: "4 días hábiles",
-    deliveryInfo: "Delivery Gratis en Lima y Callao",
-    shippingInfo: "Solo se cubre costo de Embalaje por Temporada"
-  }
 ];
