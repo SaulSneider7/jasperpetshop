@@ -309,7 +309,7 @@ export const products: Product[] = [
       {
         size: "XXL",
         price: "S/ 460",
-        image: "/valentina_XXL.jpeg",
+        image: "/brandon_XXL.jpeg",
         dimensions: "1.10cm Diametro / 8cm patas cromadas",
         weight: "Hasta 100kg",
         description: [
@@ -437,6 +437,66 @@ export const products: Product[] = [
   },
   {
     id: 8,
+    name: "Sofa Ruffo",
+    price: "S/ 340",
+    category: "Sofás",
+    image: "/ruffo_L.jpeg",
+    description: [
+      "Detalles en dorado y telas de lujo para el descanso más exigente."
+    ],
+    important: [
+      "Elegir el material (Iker terciopelo o ultra cuero marroquin) y el color de tela.",
+      "Escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Tapizado con tela hipoalergénica (varios colores disponibles)",
+      "Asiento incorporado.",
+      "Limpieza del sofá facil y rapida, con paño húmedo de preferencia microfibra y gotas de shampoo.",
+      "Respaldar firme y cómodo.",
+      "Brazos (laterales) del sofá son anchos, diseñados para brindar comodidad al apoyar la cabeza o colita, reflejando elegancia.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Cojines decorativos (incluye dos unidades)",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+    ],
+    productionTime: "Son 2-3 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
+    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 340", 
+        image: "/ruffo_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 30kg",
+        description: [
+          "Ideal para Bulldog Frances, Poodle, Beagle, Jack Rusell."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 390", 
+        image: "/ruffo_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 50kg",
+        description: [
+          "Ideal para Pitbull, Boxer, Husky, Bulldog Ingles."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 460",
+        image: "/ruffo_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 70kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 9,
     name: "Cama Buffyto",
     price: "S/ 380",
     category: "Camas",
@@ -494,7 +554,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     name: "Cama Capitone",
     price: "S/ 380",
     category: "Camas",
@@ -553,7 +613,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     name: "Cama Nalhaguau",
     price: "S/ 200",
     category: "Camas",
@@ -612,7 +672,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     name: "Cama Zaragoza",
     price: "S/ 300",
     category: "Camas",
@@ -670,7 +730,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     name: "Cama Jasperguau",
     price: "S/ 160",
     category: "Camas",
@@ -729,7 +789,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     name: "Escalera 3 pasos",
     price: "S/ 170",
     category: "Escaleras",
@@ -768,7 +828,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 14,
+    id: 15,
     name: "Escalera 4 pasos",
     price: "S/ 230",
     category: "Escaleras",
@@ -807,7 +867,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 15,
+    id: 16,
     name: "Set de Mantas Silk",
     price: "S/ 160",
     category: "Accesorios",

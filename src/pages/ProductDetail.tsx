@@ -33,7 +33,7 @@ export const ProductDetail = () => {
     return (
       <div className="pt-48 pb-20 text-center">
         <h2 className="text-2xl font-serif font-bold mb-4">Producto no encontrado</h2>
-        <Link to="/catalogo" className="text-[#B59410] font-bold uppercase tracking-widest text-xs border-b border-[#B59410]">
+        <Link to="/catalogo" className="text-[#B59410] font-bold uppercase tracking-widest  border-b border-[#B59410]">
           Volver al catálogo
         </Link>
       </div>
@@ -57,8 +57,8 @@ export const ProductDetail = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Breadcrumbs */}
         <Link to="/catalogo" className="inline-flex items-center gap-2 text-gray-400 hover:text-[#B59410] transition-colors mb-12 group">
-          <FontAwesomeIcon icon={faChevronLeft} className="text-xs group-hover:-translate-x-1 transition-transform" />
-          <span className="text-[10px] uppercase tracking-[0.2em] font-bold">Volver al Catálogo</span>
+          <FontAwesomeIcon icon={faChevronLeft} className=" group-hover:-translate-x-1 transition-transform" />
+          <span className=" uppercase tracking-[0.2em] font-bold">Volver al Catálogo</span>
         </Link>
 
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
@@ -85,7 +85,7 @@ export const ProductDetail = () => {
             </AnimatePresence>
 
             {discount && (
-              <div className="absolute top-8 left-8 bg-[#B59410] text-white px-4 py-2 rounded-full font-bold text-xs uppercase tracking-widest shadow-lg">
+              <div className="absolute top-8 left-8 bg-[#B59410] text-white px-4 py-2 rounded-full font-bold  uppercase tracking-widest shadow-lg">
                 -{discount}% OFF
               </div>
             )}
@@ -94,7 +94,7 @@ export const ProductDetail = () => {
           {/* Product Info */}
           <div className="flex flex-col" data-aos="fade-left">
             <div className="mb-8">
-              <span className="text-[#B59410] font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">{product.category}</span>
+              <span className="text-[#B59410] font-bold uppercase tracking-[0.3em]  mb-4 block">{product.category}</span>
               <h1 className="text-5xl md:text-6xl font-serif font-bold text-[#1a1a1a] leading-tight mb-4">
                 {product.name}
               </h1>
@@ -116,13 +116,13 @@ export const ProductDetail = () => {
             {/* Variants / Sizes */}
             {product.variants && (
               <div className="mb-10">
-                <h3 className="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-400 mb-4">Seleccionar Talla</h3>
+                <h3 className=" uppercase tracking-[0.2em] font-bold text-gray-400 mb-4">Seleccionar Talla</h3>
                 <div className="flex flex-wrap gap-3">
                   {product.variants.map((v) => (
                     <button
                       key={v.size}
                       onClick={() => setSelectedVariant(v)}
-                      className={`px-6 py-3 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all border-2 ${selectedVariant?.size === v.size
+                      className={`px-6 py-3 rounded-2xl  font-bold uppercase tracking-widest transition-all border-2 ${selectedVariant?.size === v.size
                         ? 'bg-[#1a1a1a] text-white border-[#1a1a1a] shadow-xl scale-105'
                         : 'bg-white text-[#1a1a1a] border-gray-100 hover:border-[#B59410]'
                         }`}
@@ -143,8 +143,8 @@ export const ProductDetail = () => {
                       <FontAwesomeIcon icon={faRulerCombined} />
                     </div>
                     <div>
-                      <p className="text-[8px] uppercase tracking-widest text-gray-400 font-bold">Medidas</p>
-                      <p className="text-xs font-bold text-[#1a1a1a]">{currentDimensions}</p>
+                      <p className=" uppercase tracking-widest text-gray-400 font-bold">Medidas</p>
+                      <p className="font-bold text-[#1a1a1a]">{currentDimensions}</p>
                     </div>
                   </div>
                 )}
@@ -154,8 +154,8 @@ export const ProductDetail = () => {
                       <FontAwesomeIcon icon={faWeightHanging} />
                     </div>
                     <div>
-                      <p className="text-[8px] uppercase tracking-widest text-gray-400 font-bold">Peso Recomendado</p>
-                      <p className="text-xs font-bold text-[#1a1a1a]">{currentWeight}</p>
+                      <p className=" uppercase tracking-widest text-gray-400 font-bold">Peso Recomendado</p>
+                      <p className=" font-bold text-[#1a1a1a]">{currentWeight}</p>
                     </div>
                   </div>
                 )}
@@ -165,7 +165,7 @@ export const ProductDetail = () => {
             {/* Add to Cart */}
             <button
               onClick={handleAddToCart}
-              className="w-full bg-[#1a1a1a] text-white py-6 rounded-2xl font-bold uppercase tracking-[0.2em] text-xs flex items-center justify-center gap-4 hover:bg-[#B59410] transition-all shadow-2xl shadow-black/10 active:scale-[0.98] mb-12"
+              className="w-full bg-[#1a1a1a] text-white py-6 rounded-2xl font-bold uppercase tracking-[0.2em]  flex items-center justify-center gap-4 hover:bg-[#B59410] transition-all shadow-2xl shadow-black/10 active:scale-[0.98] mb-12"
             >
               <FontAwesomeIcon icon={faCartShopping} />
               Añadir al Carrito
@@ -178,57 +178,57 @@ export const ProductDetail = () => {
                   <FontAwesomeIcon icon={faClock} />
                 </div>
                 <div className="space-y-2">
-                  <p className="text-[10px] uppercase tracking-widest font-bold text-[#B59410] mb-1">Tiempo de Producción</p>
-                  <p className="text-sm font-medium text-[#1a1a1a]">{product.productionTime} </p>
+                  <p className=" uppercase tracking-widest font-bold text-[#B59410] mb-1">Tiempo de Producción</p>
+                  <p className=" font-medium text-[#1a1a1a]">{product.productionTime} </p>
                   {product.deliveryInfo && (
-                    <p className="text-sm font-medium text-[#1a1a1a]">{product.deliveryInfo}</p>
+                    <p className=" font-medium text-[#1a1a1a]">{product.deliveryInfo}</p>
                   )}
                   {product.shippingInfo && (
-                    <p className="text-sm font-medium text-[#1a1a1a]"> {product.shippingInfo}</p>
+                    <p className=" font-medium text-[#1a1a1a]"> {product.shippingInfo}</p>
                   )}
                 </div>
               </div>
             )}
-
-            {/* Details Tabs/Sections */}
-            <div className="space-y-10">
-              {/* Characteristics */}
-              {product.characteristics && (
-                <div>
-                  <h3 className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#1a1a1a] mb-6 flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCircleCheck} className="text-[#B59410]" />
-                    Características
-                  </h3>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {product.characteristics.map((char, i) => (
-                      <li key={i} className="flex items-center gap-3 text-sm text-gray-500">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#B59410]" />
-                        {char}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {/* Important */}
-              {product.important && (
-                <div>
-                  <h3 className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#1a1a1a] mb-6 flex items-center gap-2">
-                    <FontAwesomeIcon icon={faCircleInfo} className="text-[#B59410]" />
-                    Importante
-                  </h3>
-                  <div className="space-y-3">
-                    {product.important.map((imp, i) => (
-                      <p key={i} className="text-sm text-gray-500 leading-relaxed pl-6 relative">
-                        <span className="absolute left-0 top-2.5 w-4 h-[1px] bg-gray-200" />
-                        {imp}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
           </div>
+        </div>
+
+        {/* Details Tabs/Sections */}
+        <div className="space-y-10">
+          {/* Characteristics */}
+          {product.characteristics && (
+            <div>
+              <h3 className=" uppercase tracking-[0.2em] font-bold text-[#1a1a1a] mb-6 flex items-center gap-2">
+                <FontAwesomeIcon icon={faCircleCheck} className="text-[#B59410]" />
+                Características
+              </h3>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {product.characteristics.map((char, i) => (
+                  <li key={i} className="flex items-center gap-3  text-gray-500">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#B59410]" />
+                    {char}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Important */}
+          {product.important && (
+            <div>
+              <h3 className=" uppercase tracking-[0.2em] font-bold text-[#1a1a1a] mb-6 flex items-center gap-2">
+                <FontAwesomeIcon icon={faCircleInfo} className="text-[#B59410]" />
+                Importante
+              </h3>
+              <div className="space-y-3">
+                {product.important.map((imp, i) => (
+                  <p key={i} className=" text-gray-500 leading-relaxed pl-6 relative">
+                    <span className="absolute left-0 top-2.5 w-4 h-[1px] bg-gray-200" />
+                    {imp}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
