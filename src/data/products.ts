@@ -567,8 +567,8 @@ export const products: Product[] = [
       "ADELANTO DEL 20% DEL TOTAL DEL VALOR DEL PRODUCTO."
     ],
     characteristics: [
-      "Box tarima y Cabecera tapizado con tela hipoalergénica (Modelo a elegir)",
-      "Colchón relleno de espuma de alta densidad y resistencia de 5cm de grosor.",
+      "Box tarima y Cabecera capitoneado  tapizado con tela hipoalergénica y perlas decorativas.",
+      "Colchón relleno de espuma de alta densidad y resistencia de 10cm de grosor.",
       "Patas de acero cromado brillante con antideslizante.",
       "Una almohada hipoalergénica.",
       "Al estar elevados del piso, aíslan del frío y del calor.",
@@ -582,7 +582,7 @@ export const products: Product[] = [
     variants: [
       { 
         size: "L", 
-        price: "S/ 250", 
+        price: "S/ 380", 
         image: "/cama_capitone_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
