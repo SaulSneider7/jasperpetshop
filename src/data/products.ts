@@ -514,8 +514,7 @@ export const products: Product[] = [
       "Una almohada hipoalergénica.",
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
-      "Se puede añadir los accesorios como sábana, protector o manta.",
-      "(Revisar en el ítem de Accesorios)",
+      "Se puede añadir los accesorios como sábana, protector o manta. (Revisar en el ítem de Accesorios)"
     ],
     productionTime: "Son 2-4 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
