@@ -163,7 +163,7 @@ export const products: Product[] = [
       "Funda desmontable del asiento, incluye cierre para poder lavar el forro a mano o lavadora.",
       "Respaldar firme y cómodo.",
       "Patas de acero cromado brillante con antideslizante.",
-      "Cojines decorativos (incluyen dos unidades)",
+      "Cojines decorativos (incluye dos unidades)",
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
     ],
