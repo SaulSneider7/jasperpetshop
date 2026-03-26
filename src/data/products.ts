@@ -38,7 +38,7 @@ export const products: Product[] = [
       "Terciopelo italiano de alta resistencia con base de madera sólida.",
     ],
     important: [
-      "Elegir material (Iker , Lisboa  o Vittoria) y el color de tela.",
+      "Elegir el color de la tela Iker hipoalergénica",
       "Escribirlo en el detalle de la compra."
     ],
     characteristics: [
@@ -96,7 +96,7 @@ export const products: Product[] = [
       "Espuma viscoelástica que se adapta a la forma de tu mascota."
     ],
     important: [
-      "Elegir material (Iker , Lisboa  o Vittoria) y el color de tela.",
+      "Elegir el color de la tela Iker hipoalergénica",
       "Escribirlo en el detalle de la compra."
     ],
     characteristics: [
@@ -155,7 +155,7 @@ export const products: Product[] = [
       "Diseño ergonómico para proteger las articulaciones de razas pequeñas."
     ],
     important: [
-      "Elegir material (Iker , Lisboa  o Vittoria) y el color de tela.",
+      "Elegir el color de la tela Iker hipoalergénica",
       "Escribirlo en el detalle de la compra."
     ],
     characteristics: [
@@ -213,7 +213,7 @@ export const products: Product[] = [
       "Detalles en dorado y telas de lujo para el descanso más exigente."
     ],
     important: [
-      "Elegir material (Iker , Lisboa  o Vittoria) y el color de tela.",
+      "Elegir el color de la tela Iker hipoalergénica",
       "Escribirlo en el detalle de la compra."
     ],
     characteristics: [
@@ -271,7 +271,7 @@ export const products: Product[] = [
       "Detalles en dorado y telas de lujo para el descanso más exigente."
     ],
     important: [
-      "Elegir material (Iker , Lisboa  o Vittoria) y el color de tela.",
+      "Elegir el color de la tela Iker hipoalergénica",
       "Escribirlo en el detalle de la compra."
     ],
     characteristics: [
@@ -329,7 +329,7 @@ export const products: Product[] = [
       "Detalles en dorado y telas de lujo para el descanso más exigente."
     ],
     important: [
-      "Elegir material (Iker , Lisboa  o Vittoria) y el color de tela.",
+      "Elegir el color de la tela Iker hipoalergénica",
       "Escribirlo en el detalle de la compra."
     ],
     characteristics: [
@@ -387,7 +387,7 @@ export const products: Product[] = [
       "Detalles en dorado y telas de lujo para el descanso más exigente."
     ],
     important: [
-      "Elegir color de tela terciopelo.",
+      "Elegir el color de la tela Iker hipoalergénica",
       "Escribirlo en el detalle de la compra."
     ],
     characteristics: [
