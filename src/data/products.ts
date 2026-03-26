@@ -810,7 +810,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     name: "Cama Nalhaguau",
     price: "S/ 200",
     category: "Camas",
@@ -868,7 +868,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 15,
+    id: 16,
     name: "Cama Zaragoza",
     price: "S/ 300",
     category: "Camas",
@@ -925,7 +925,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 16,
+    id: 17,
     name: "Cama Jasperguau",
     price: "S/ 160",
     category: "Camas",
@@ -983,7 +983,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 17,
+    id: 18,
     name: "Colchones para mascotas",
     price: "S/ 100",
     category: "Colchones",
@@ -1098,7 +1098,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 18,
+    id: 19,
     name: "Colchones Pocket",
     price: "S/ 200",
     category: "Colchones",
@@ -1141,7 +1141,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 19,
+    id: 20,
     name: "Colchoneta para mascotas",
     price: "S/ 150",
     category: "Colchonetas",
@@ -1185,7 +1185,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 20,
+    id: 21,
     name: "Escalera 3 pasos",
     price: "S/ 170",
     category: "Escaleras",
@@ -1224,7 +1224,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 21,
+    id: 22,
     name: "Escalera 4 pasos",
     price: "S/ 230",
     category: "Escaleras",
@@ -1263,7 +1263,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 22,
+    id: 23,
     name: "Bebedero Portatil",
     price: "S/ 20",
     category: "Accesorios",
@@ -1284,7 +1284,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 23,
+    id: 24,
     name: "Cepillo Vaporizador",
     price: "S/ 16",
     category: "Accesorios",
@@ -1313,7 +1313,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 24,
+    id: 25,
     name: "Cortauñas LED para gatos y perros",
     price: "S/ 28",
     category: "Accesorios",
@@ -1333,7 +1333,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 25,
+    id: 26,
     name: "Protectores",
     price: "S/ 60",
     category: "Accesorios",
@@ -1420,7 +1420,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 26,
+    id: 27,
     name: "Sábanas",
     price: "S/ 40",
     category: "Accesorios",
@@ -1506,7 +1506,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 27,
+    id: 28,
     name: "Bolsa Biodegradables para Perros",
     price: "S/ 18",
     category: "Juguetes",
@@ -1531,7 +1531,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 28,
+    id: 29,
     name: "Kit Dental para Mascotas",
     price: "S/ 20",
     category: "Juguetes",
@@ -1555,7 +1555,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 29,
+    id: 30,
     name: "Soga con pelota para perros",
     price: "S/ 16",
     category: "Juguetes",
