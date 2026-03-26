@@ -86,7 +86,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <img 
             src={currentImage} 
             alt={product.name} 
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            className="absolute inset-0 w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
             referrerPolicy="no-referrer"
           />
         </Link>
