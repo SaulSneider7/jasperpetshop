@@ -696,7 +696,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     name: "Cama Buffyto",
     price: "S/ 380",
     category: "Camas",
@@ -753,7 +753,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     name: "Cama Capitone",
     price: "S/ 380",
     category: "Camas",
