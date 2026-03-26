@@ -498,6 +498,64 @@ export const products: Product[] = [
   },
   {
     id: 9,
+    name: "Sofa Canela",
+    price: "S/ 340",
+    category: "Sofás",
+    image: "/canela_L.jpeg",
+    description: [
+      "FABRICAMOS MEDIDAS ESPECIALES"
+    ],
+    important: [
+      "Elegir el color de la tela Iker hipoalergénica",
+      "Escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Tapizado en tela hipoalergénica.",
+      "Funda desmontable del asiento, incluye cierre para poder lavar el forro a mano o lavadora.",
+      "Respaldar firme y cómodo.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Cojines decorativos (incluye dos unidades)",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+    ],
+    productionTime: "Son 2-3 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
+    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: "L", 
+        price: "S/ 340", 
+        image: "/canela_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 30kg",
+        description: [
+          "Ideal para Poodle, Beagle, Jack Rusell, Pug."
+        ]
+      },
+      { 
+        size: "XL", 
+        price: "S/ 390", 
+        image: "/canela_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 50kg",
+        description: [
+          "Ideal para Pitbull, Boxer, American Bully Bulldog Ingles."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 460",
+        image: "/canela_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 70kg",
+        description: [
+          "Ideal para Pastor Aleman, Rottweiler, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 10,
     name: "Cama Buffyto",
     price: "S/ 380",
     category: "Camas",
@@ -554,7 +612,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     name: "Cama Capitone",
     price: "S/ 380",
     category: "Camas",
@@ -613,7 +671,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     name: "Cama Nalhaguau",
     price: "S/ 200",
     category: "Camas",
@@ -672,7 +730,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     name: "Cama Zaragoza",
     price: "S/ 300",
     category: "Camas",
@@ -730,7 +788,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     name: "Cama Jasperguau",
     price: "S/ 160",
     category: "Camas",
@@ -789,7 +847,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     name: "Colchones para mascotas",
     price: "S/ 100",
     category: "Colchones",
@@ -904,7 +962,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 15,
+    id: 16,
     name: "Colchones Pocket",
     price: "S/ 200",
     category: "Colchones",
@@ -947,7 +1005,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 16,
+    id: 17,
     name: "Colchoneta para mascotas",
     price: "S/ 150",
     category: "Colchonetas",
@@ -991,7 +1049,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 17,
+    id: 18,
     name: "Escalera 3 pasos",
     price: "S/ 170",
     category: "Escaleras",
@@ -1030,7 +1088,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 18,
+    id: 19,
     name: "Escalera 4 pasos",
     price: "S/ 230",
     category: "Escaleras",
@@ -1069,7 +1127,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 19,
+    id: 20,
     name: "Bebedero Portatil",
     price: "S/ 20",
     category: "Accesorios",
@@ -1094,7 +1152,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 20,
+    id: 21,
     name: "Cepillo Vaporizador",
     price: "S/ 16",
     category: "Accesorios",
@@ -1123,7 +1181,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 21,
+    id: 22,
     name: "Cortauñas LED para gatos y perros",
     price: "S/ 28",
     category: "Accesorios",
@@ -1143,7 +1201,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 22,
+    id: 23,
     name: "Protectores",
     price: "S/ 60",
     category: "Accesorios",
@@ -1230,7 +1288,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 23,
+    id: 24,
     name: "Sábanas",
     price: "S/ 40",
     category: "Accesorios",
@@ -1316,7 +1374,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 24,
+    id: 25,
     name: "Bolsa Biodegradables para Perros",
     price: "S/ 18",
     category: "Juguetes",
@@ -1341,7 +1399,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 25,
+    id: 26,
     name: "Kit Dental para Mascotas",
     price: "S/ 20",
     category: "Juguetes",
@@ -1365,7 +1423,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 26,
+    id: 27,
     name: "Soga con pelota para perros",
     price: "S/ 16",
     category: "Juguetes",
