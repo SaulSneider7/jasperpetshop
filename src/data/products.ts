@@ -984,7 +984,7 @@ export const products: Product[] = [
   },
   {
     id: 18,
-    name: "Colchones para mascotas",
+    name: "Colchones Clásicos",
     price: "S/ 100",
     category: "Colchones",
     image: "/colchon_10CM.jpeg",
@@ -997,7 +997,7 @@ export const products: Product[] = [
     characteristics: [
       "Colchón relleno de espuma de alta densidad y resistencia del grosor de su elección.",
       "Tapizado con tela tricot y cerrado con ribete.",
-      "Una almohada hipoalergénica",
+      "Incluye una almohada hipoalergénica",
       "Se puede añadir los accesorios como sábana, protector o manta. (Revisar en el ítem de Accesorios)",
     ],
     productionTime: "Son 1-2 días hábiles.",
