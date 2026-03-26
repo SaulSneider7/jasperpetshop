@@ -539,7 +539,7 @@ export const products: Product[] = [
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
         description: [
-          "Ideal para Pitbull, Boxer, American Bully Bulldog Ingles."
+          "Ideal para Pitbull, Boxer, American Bully, Bulldog Ingles."
         ]
       },
       {
@@ -1142,7 +1142,7 @@ export const products: Product[] = [
   },
   {
     id: 20,
-    name: "Colchoneta para mascotas",
+    name: "Colchoneta para mascota",
     price: "S/ 150",
     category: "Colchonetas",
     image: "/colchoneta_L.jpeg",
@@ -1155,8 +1155,10 @@ export const products: Product[] = [
     characteristics: [
       "Colchoneta con relleno de fibra hipoalergénica (Napa).",
       "Doble forro, el primero con tafeta cerrada y la segunda con tela iker terciopelo con cierre.",
-      "Una almohada hipoalergénica",
+      "Incluye una almohada hipoalergénica",
       "Se puede añadir los accesorios como sábana, protector o manta. (Revisar en el ítem de Accesorios)",
+      "Lavable a mano o lavadora.",
+      "Suave al tacto."
     ],
     productionTime: "Son 1-2 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
