@@ -762,8 +762,7 @@ export const products: Product[] = [
       "Detalles en dorado y telas de lujo para el descanso más exigente."
     ],
     important: [
-      "Elegir el color de tela terciopelo y escribirlo en el detalle de la compra.",
-      "ADELANTO DEL 20% DEL TOTAL DEL VALOR DEL PRODUCTO."
+      "Elegir el color de tela terciopelo y escribirlo en el detalle de la compra."
     ],
     characteristics: [
       "Box tarima y Cabecera capitoneado  tapizado con tela hipoalergénica y perlas decorativas.",
@@ -772,8 +771,7 @@ export const products: Product[] = [
       "Una almohada hipoalergénica.",
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
-      "Se puede añadir los accesorios como sábana, protector o manta.",
-      "(Revisar en el ítem de Accesorios)",
+      "Se puede añadir los accesorios como sábana, protector o manta.(Revisar en el ítem de Accesorios)",
     ],
     productionTime: "Son 2-4 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
@@ -831,8 +829,7 @@ export const products: Product[] = [
       "Una almohada hipoalergénica",
       "Al estar elevados del piso, aíslan del frío y del calor",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
-      "Se puede adicionar los accesorios como sábana, protector o manta.",
-      "(Revisar en el ítem de Accesorios)",
+      "Se puede adicionar los accesorios como sábana, protector o manta.(Revisar en el ítem de Accesorios)",
     ],
     productionTime: "Son 1-2 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
@@ -889,8 +886,7 @@ export const products: Product[] = [
       "Una almohada hipoalergénica",
       "Al estar elevados del piso, aíslan del frío y del calor",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
-      "Se puede adicionar los accesorios como sábana, protector o manta.",
-      "(Revisar en el ítem de Accesorios)",
+      "Se puede adicionar los accesorios como sábana, protector o manta.(Revisar en el ítem de Accesorios)"
     ],
     productionTime: "Son 2-4 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
@@ -948,8 +944,7 @@ export const products: Product[] = [
       "Una almohada hipoalergénica",
       "Al estar elevados del piso, aíslan del frío y del calor",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
-      "Se puede adicionar los accesorios como sábana, protector o manta.",
-      "(Revisar en el ítem de Accesorios)",
+      "Se puede adicionar los accesorios como sábana, protector o manta.(Revisar en el ítem de Accesorios)",
     ],
     productionTime: "Son 1-2 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
