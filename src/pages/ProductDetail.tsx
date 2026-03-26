@@ -5,6 +5,8 @@ import type { ProductVariant } from '../data/products';
 import { useCart } from '../context/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  faStar,
+  faList,
   faLayerGroup,
   faChevronLeft,
   faClock,
@@ -244,6 +246,41 @@ export const ProductDetail = () => {
                   <p key={i} className=" text-gray-500 leading-relaxed pl-6 relative">
                     <span className="absolute left-0 top-2.5 w-4 h-[1px] bg-gray-200" />
                     {imp}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+          {/* Beneficios */}
+          {product.benefits && (
+            <div>
+              <h3 className="uppercase tracking-[0.2em] font-bold text-[#1a1a1a] mb-6 flex items-center gap-2">
+                <FontAwesomeIcon icon={faStar} className="text-[#B59410]" />
+                Beneficios
+              </h3>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {product.benefits.map((benefit, i) => (
+                  <li key={i} className="flex items-center gap-3 text-gray-500">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#B59410]" />
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Modo de uso */}
+          {product.usage && (
+            <div>
+              <h3 className="uppercase tracking-[0.2em] font-bold text-[#1a1a1a] mb-6 flex items-center gap-2">
+                <FontAwesomeIcon icon={faList} className="text-[#B59410]" />
+                Modo de uso
+              </h3>
+              <div className="space-y-3">
+                {product.usage.map((step, i) => (
+                  <p key={i} className="text-gray-500 leading-relaxed pl-6 relative">
+                    <span className="absolute left-0 top-2.5 w-4 h-[1px] bg-gray-200" />
+                    {step}
                   </p>
                 ))}
               </div>

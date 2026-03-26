@@ -25,6 +25,8 @@ export interface Product {
   productionTime?: string;
   deliveryInfo?: string;
   shippingInfo?: string;
+  benefits?: string[];
+  usage?: string[];
 }
 
 export const products: Product[] = [
@@ -54,9 +56,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 340", 
+      {
+        size: "L",
+        price: "S/ 340",
         image: "/jasper_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -64,9 +66,9 @@ export const products: Product[] = [
           "Ideal para Shit Tzu, Snaucer, Poodle, Cocker, Pomerian, Maltes y similares."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 390", 
+      {
+        size: "XL",
+        price: "S/ 390",
         image: "/jasper_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -74,9 +76,9 @@ export const products: Product[] = [
           "Ideal para Bulldog Ingles, Bull Terrier, American Bully, Border Collie y similares."
         ]
       },
-      { 
-        size: "XXL", 
-        price: "S/ 460", 
+      {
+        size: "XXL",
+        price: "S/ 460",
         image: "/jasper_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
         weight: "Hasta 100kg",
@@ -113,8 +115,8 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
+      {
+        size: "L",
         price: "S/ 340",
         image: "/cala_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
@@ -123,8 +125,8 @@ export const products: Product[] = [
           "Ideal para Shitzu, Snaucer, Poodle, Cocker, Pomerian, Maltes y similares."
         ]
       },
-      { 
-        size: "XL", 
+      {
+        size: "XL",
         price: "S/ 390",
         image: "/cala_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
@@ -133,8 +135,8 @@ export const products: Product[] = [
           "Ideal para Bulldog Ingles, Bull Terrier, American Bully, Border Collie y similares."
         ]
       },
-      { 
-        size: "XXL", 
+      {
+        size: "XXL",
         price: "S/ 460",
         image: "/cala_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
@@ -171,9 +173,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 340", 
+      {
+        size: "L",
+        price: "S/ 340",
         image: "/nalha_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Soporta 40kg",
@@ -181,8 +183,8 @@ export const products: Product[] = [
           "Ideal para Shitzu, Snaucer, Poodle, Cocker, Pomerian, Maltes y similares."
         ]
       },
-      { 
-        size: "XL", 
+      {
+        size: "XL",
         price: "S/ 390",
         image: "/nalha_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
@@ -191,9 +193,9 @@ export const products: Product[] = [
           "Ideal para Bulldog Ingles, Bull Terrier, American Bully, Border Collie y similares."
         ]
       },
-      { 
-        size: "XXL", 
-        price: "S/ 460", 
+      {
+        size: "XXL",
+        price: "S/ 460",
         image: "/nalha_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
         weight: "Soporta 100kg",
@@ -229,9 +231,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 340", 
+      {
+        size: "L",
+        price: "S/ 340",
         image: "/valentina_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -239,9 +241,9 @@ export const products: Product[] = [
           "Ideal para Shitzu, Snaucer, Poodle, Cocker, Pomerian, Maltes y similares."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 390", 
+      {
+        size: "XL",
+        price: "S/ 390",
         image: "/valentina_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -287,9 +289,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 340", 
+      {
+        size: "L",
+        price: "S/ 340",
         image: "/brandon_L.jpeg",
         dimensions: "75cm Diametro / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -297,9 +299,9 @@ export const products: Product[] = [
           "Ideal para Shitzu, Snaucer, Poodle, Cocker, Pomerian, Maltes y similares."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 390", 
+      {
+        size: "XL",
+        price: "S/ 390",
         image: "/brandon_XL.jpeg",
         dimensions: "95cm Diametro / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -345,9 +347,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 340", 
+      {
+        size: "L",
+        price: "S/ 340",
         image: "/mike_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -355,9 +357,9 @@ export const products: Product[] = [
           "Ideal para Shitzu, Snaucer, Poodle, Cocker, Pomerian, Maltes y similares."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 390", 
+      {
+        size: "XL",
+        price: "S/ 390",
         image: "/mike_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -404,9 +406,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía a provincias del Perú por agencia. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 380", 
+      {
+        size: "L",
+        price: "S/ 380",
         image: "/mildan_premium_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -414,9 +416,9 @@ export const products: Product[] = [
           "Ideal para Snaucer, Poodle, Beagle, Jack Rusell."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 390", 
+      {
+        size: "XL",
+        price: "S/ 390",
         image: "/mildan_premium_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 60kg",
@@ -464,9 +466,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 340", 
+      {
+        size: "L",
+        price: "S/ 340",
         image: "/ruffo_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -474,9 +476,9 @@ export const products: Product[] = [
           "Ideal para Bulldog Frances, Poodle, Beagle, Jack Rusell."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 390", 
+      {
+        size: "XL",
+        price: "S/ 390",
         image: "/ruffo_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -522,9 +524,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 340", 
+      {
+        size: "L",
+        price: "S/ 340",
         image: "/canela_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -532,9 +534,9 @@ export const products: Product[] = [
           "Ideal para Poodle, Beagle, Jack Rusell, Pug."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 390", 
+      {
+        size: "XL",
+        price: "S/ 390",
         image: "/canela_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -578,16 +580,16 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "S", 
-        price: "S/ 280", 
+      {
+        size: "S",
+        price: "S/ 280",
         image: "/sofa_bonnie.jpeg",
         dimensions: "55cm ancho x 40cm largo / 8cm patas cromadas",
         weight: "Hasta 15kg"
       },
-      { 
-        size: "M", 
-        price: "S/ 320", 
+      {
+        size: "M",
+        price: "S/ 320",
         image: "/sofa_bonnie.jpeg",
         dimensions: "65cm ancho x 50cm largo / 8cm patas cromadas",
         weight: "Hasta 25kg",
@@ -625,16 +627,16 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "S", 
-        price: "S/ 280", 
+      {
+        size: "S",
+        price: "S/ 280",
         image: "/sofa_duquesa.png",
         dimensions: "55cm ancho x 40cm largo / 8cm patas cromadas",
         weight: "Hasta 15kg"
       },
-      { 
-        size: "M", 
-        price: "S/ 320", 
+      {
+        size: "M",
+        price: "S/ 320",
         image: "/sofa_duquesa.png",
         dimensions: "65cm ancho x 50cm largo / 8cm patas cromadas",
         weight: "Hasta 25kg",
@@ -672,16 +674,16 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
-      { 
-        size: "S", 
-        price: "S/ 280", 
+      {
+        size: "S",
+        price: "S/ 280",
         image: "/sofa_michito.jpeg",
         dimensions: "55cm ancho x 40cm largo / 8cm patas cromadas",
         weight: "Hasta 15kg"
       },
-      { 
-        size: "M", 
-        price: "S/ 320", 
+      {
+        size: "M",
+        price: "S/ 320",
         image: "/sofa_michito.jpeg",
         dimensions: "65cm ancho x 50cm largo / 8cm patas cromadas",
         weight: "Hasta 25kg",
@@ -720,9 +722,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
     shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 250", 
+      {
+        size: "L",
+        price: "S/ 250",
         image: "/cama_buffyto_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -730,9 +732,9 @@ export const products: Product[] = [
           "Ideal para Snaucer, Poodle, Beagle, Jack Rusell."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 290", 
+      {
+        size: "XL",
+        price: "S/ 290",
         image: "/cama_buffyto_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -777,9 +779,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
     shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 380", 
+      {
+        size: "L",
+        price: "S/ 380",
         image: "/cama_capitone_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -787,9 +789,9 @@ export const products: Product[] = [
           "Ideal para Snaucer, Poodle, Beagle, Jack Rusell."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 430", 
+      {
+        size: "XL",
+        price: "S/ 430",
         image: "/cama_capitone_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 60kg",
@@ -835,9 +837,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
     shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 200", 
+      {
+        size: "L",
+        price: "S/ 200",
         image: "/cama_nalhaguau_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -845,9 +847,9 @@ export const products: Product[] = [
           "Ideal para Gatos, Poodle, Beagle, Jack Rusell."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 260", 
+      {
+        size: "XL",
+        price: "S/ 260",
         image: "/cama_nalhaguau_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -892,9 +894,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
     shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 300", 
+      {
+        size: "L",
+        price: "S/ 300",
         image: "/cama_zaragoza_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -902,9 +904,9 @@ export const products: Product[] = [
           "Ideal para Bulldog Frances, Beagle, Jack Rusell."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 360", 
+      {
+        size: "XL",
+        price: "S/ 360",
         image: "/cama_zaragoza_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 60kg",
@@ -950,9 +952,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
     shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: "L", 
-        price: "S/ 160", 
+      {
+        size: "L",
+        price: "S/ 160",
         image: "/cama_jasperguau_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -960,9 +962,9 @@ export const products: Product[] = [
           "Ideal para Snaucer, Poodle, Beagle, Jack Rusell."
         ]
       },
-      { 
-        size: "XL", 
-        price: "S/ 210", 
+      {
+        size: "XL",
+        price: "S/ 210",
         image: "/cama_jasperguau_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -1004,9 +1006,9 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
     shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: `L - Grosor 4"`, 
-        price: "S/ 100", 
+      {
+        size: `L - Grosor 4"`,
+        price: "S/ 100",
         image: "/colchon_10CM.jpeg",
         dimensions: `75cm ancho x 60cm largo`,
         weight: ``,
@@ -1015,8 +1017,8 @@ export const products: Product[] = [
           ""
         ]
       },
-      { 
-        size: `L - Grosor 6"`, 
+      {
+        size: `L - Grosor 6"`,
         price: "S/ 130",
         image: "/colchon_15CM.jpeg",
         dimensions: "75cm ancho x 60cm largo",
@@ -1106,7 +1108,7 @@ export const products: Product[] = [
     description: [
       "FABRICAMOS MEDIDAS ESPECIALES"
     ],
-    
+
     characteristics: [
       "Colchón relleno de resortes pocket (encapsulados) y espuma de alta densidad y resistencia del grosor de su elección.",
       "Ortopédico, recomendable para mascotas adultas, con problemas articulares y/o musculares.",
@@ -1118,16 +1120,16 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
     shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: `CHICO`, 
-        price: "S/ 200", 
+      {
+        size: `CHICO`,
+        price: "S/ 200",
         image: "/colchones_pocket_chico.jpeg",
         dimensions: `75cm ancho x 70cm largo`,
         weight: ``,
         thickness: ``,
       },
-      { 
-        size: `MEDIANO`, 
+      {
+        size: `MEDIANO`,
         price: "S/ 280",
         image: "/colchones_pocket_mediano.jpeg",
         dimensions: "1.20cm ancho x 70cm largo",
@@ -1164,16 +1166,16 @@ export const products: Product[] = [
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
     shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
-      { 
-        size: `CHICO`, 
-        price: "S/ 150", 
+      {
+        size: `CHICO`,
+        price: "S/ 150",
         image: "/colchoneta_L.jpeg",
         dimensions: `75cm ancho x 70cm largo`,
         weight: ``,
         thickness: ``,
       },
-      { 
-        size: `MEDIANO`, 
+      {
+        size: `MEDIANO`,
         price: "S/ 220",
         image: "/colchoneta_XL.jpeg",
         dimensions: "1.20cm ancho x 70cm largo",
@@ -1293,14 +1295,6 @@ export const products: Product[] = [
     image: "/cepillo_vaporizador.jpeg",
     description: [
       "El Cepillo Vaporizador esta diseñado para facilitar el cuidado e higiene de los perros y gatos, mediante la eliminación de suciedad, polvo, y posibles parásitos externos del pelaje de forma rápida y eficiente. Este dispositivo combina las funciones de un cepillo y un vaporizador para ofrecer una solución completa de cuidado para las mascotas.",
-      "<span class='font-bold'>Beneficios: </span>",
-      "- El vapor ayuda a aflojar y eliminar la suciedad, polvo y residuos del pelaje de la mascota de manera rápida y eficiente.",
-      "- El vapor también puede ayudar a eliminar posibles parásitos externos, como pulgas y garrapatas, proporcionando una solución de higiene adicional para las mascotas.",
-      "- Al ser portátil, el cepillo vaporizador se puede utilizar en casa o mientras se viaja, lo que permite un cuidado conveniente en cualquier momento y lugar.",
-      "<span class='font-bold'>Modo de uso: </span>",
-      "- Carga el cepillo con su respectivo cable USB, una vez cargado, desenchufar y usar. ",
-      "- Retirar el tapón que se encuentra en la parte trasera del producto, para poder rellenarlo con agua. (Idealmente rellenarlo sin rebasar)",
-      "- Para que rocíe el vapor se debe presionar el botón que se encuentra en la parte trasera del cepillo y listo.",
       "<span class='font-bold'>Colores: </span>",
       "- Rosado",
       "- Blanco",
@@ -1312,6 +1306,17 @@ export const products: Product[] = [
       "Suave para la piel de las mascotas, porque posee cerdas suaves con extremos redondeados, lo que garantiza que la piel de su mascota no se dañe durante el proceso de aseo. ",
       "Elaborado de material ABS resistente, este cepillo vaporizador para mascotas es resistente y no se daña fácilmente. Se puede utilizar durante mucho tiempo para mantener el pelaje de su mascota suave y brillante.",
       "Fácil de transportar y de limpiar."
+    ],
+    benefits: [
+      "El vapor ayuda a aflojar y eliminar la suciedad, polvo y residuos del pelaje de la mascota de manera rápida y eficiente.",
+      "El vapor también puede ayudar a eliminar posibles parásitos externos, como pulgas y garrapatas, proporcionando una solución de higiene adicional para las mascotas.",
+      "Al ser portátil, el cepillo vaporizador se puede utilizar en casa o mientras se viaja, lo que permite un cuidado conveniente en cualquier momento y lugar."
+    ],
+    usage: [
+      "Carga el cepillo con su respectivo cable USB, una vez cargado, desenchufar y usar.",
+      "Retirar el tapón que se encuentra en la parte trasera del producto, para poder rellenarlo con agua. (Idealmente rellenarlo sin rebasar)",
+      "Para que rocíe el vapor se debe presionar el botón que se encuentra en la parte trasera del cepillo y listo.",
+      ""
     ]
   },
   {
