@@ -35,11 +35,11 @@ html, body {
 
 /* Ocultar Scroll para las tallas  */
 
-.no-scrollbar::-webkit-scrollbar {
+/* .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
+} */
