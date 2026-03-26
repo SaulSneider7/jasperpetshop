@@ -908,7 +908,7 @@ export const products: Product[] = [
     name: "Colchones Pocket",
     price: "S/ 200",
     category: "Colchones",
-    image: "/colchones_pocket.jpeg",
+    image: "/colchones_pocket_chico.jpeg",
     description: [
       "FABRICAMOS MEDIDAS ESPECIALES"
     ],
@@ -927,7 +927,7 @@ export const products: Product[] = [
       { 
         size: `CHICO`, 
         price: "S/ 200", 
-        image: "/colchones_pocket.jpeg",
+        image: "/colchones_pocket_chico.jpeg",
         dimensions: `75cm ancho x 70cm largo`,
         weight: ``,
         thickness: ``,
@@ -935,13 +935,13 @@ export const products: Product[] = [
       { 
         size: `MEDIANO`, 
         price: "S/ 280",
-        image: "/colchon_15CM.jpeg",
+        image: "/colchones_pocket_mediano.jpeg",
         dimensions: "1.20cm ancho x 70cm largo",
       },
       {
         size: `GRANDE`,
         price: "S/ 360",
-        image: "/colchon_20CM.jpeg",
+        image: "/colchones_pocket_grande.jpeg",
         dimensions: "1.20cm ancho x 1.30cm largo",
       }
     ],
@@ -1075,7 +1075,12 @@ export const products: Product[] = [
     category: "Accesorios",
     image: "/bebedero_portatil.jpeg",
     description: [
-      "El Bebedero Portátil para perros es ideal para  tu perro o gato.  Al caminar al aire libre, hacer senderismo y viajar, proporciona agua fresca rápidamente a tus mascotas sedientas. La botella de agua de viaje perfecta para mascotas con solo un botón para abrir/bloquear agua, funciona con una mano. Incluye una mini correa que se puede colocar en la cartera, mochila o correa."
+      "El Bebedero Portátil para perros es ideal para  tu perro o gato.  Al caminar al aire libre, hacer senderismo y viajar, proporciona agua fresca rápidamente a tus mascotas sedientas. La botella de agua de viaje perfecta para mascotas con solo un botón para abrir/bloquear agua, funciona con una mano. Incluye una mini correa que se puede colocar en la cartera, mochila o correa.",
+      "<span class='font-bold'>Colores: </span>",
+      "- Celeste",
+      "- Rosado",
+      "- Blanco",
+      "(Consultar disponibilidad del color)."
     ],
     important: [
       "Colores: celeste, rosado, blanco ",
@@ -1104,10 +1109,11 @@ export const products: Product[] = [
       "- Carga el cepillo con su respectivo cable USB, una vez cargado, desenchufar y usar. ",
       "- Retirar el tapón que se encuentra en la parte trasera del producto, para poder rellenarlo con agua. (Idealmente rellenarlo sin rebasar)",
       "- Para que rocíe el vapor se debe presionar el botón que se encuentra en la parte trasera del cepillo y listo.",
-    ],
-    important: [
-      "Colores: rosado, blanco, naranja ",
-      "(Consultar disponibilidad del color)"
+      "<span class='font-bold'>Colores: </span>",
+      "- Rosado",
+      "- Blanco",
+      "- Naranja",
+      "(Consultar disponibilidad del color)."
     ],
     characteristics: [
       "Este Cepillo vaporizador para mascotas resuelve eficazmente problemas como enredos y nudos del pelaje, limpia la pelusa flotante y relaja a tu mascota.",
@@ -1125,15 +1131,15 @@ export const products: Product[] = [
     description: [
       "Este cortauñas para mascotas es indispensable en tu hogar, esta equipado con luz LED en la parte superior, generando un corte de uña iluminada o linea de sangre visible, lo que permite recortar fácilmente evitando daños en los vasos sanguíneos, sin preocuparse de que su mascota se lastime si se mueve con facilidad.",
     ],
-    important: [
-      "Colores: rosado, blanco ",
-      "(Consultar disponibilidad del color)"
-    ],
     characteristics: [
       "Diseñado con un exclusivo protector anti-salpicaduras que recoge los recortes de uñas en un recipiente desmontable para proteger sus ojos y evitar que los residuos se dispersen.",
       "Cuenta con un bloqueo de seguridad que evita cortes accidentales, brindando mayor protección para usted y su mascota. Se puede bloquear cuando no esté en uso, su tamaño compacto y peso ligero lo hacen fácil de transportar.",
       "Mango ergonómico, El mango proporciona un agarre seguro y cómodo, brindándole un mejor control para un corte preciso durante las sesiones de aseo.",
-      "El cortaúñas para perros/gatos está fabricado con ABS de alta calidad y cuchillas afiladas de acero inoxidable, lo que proporciona una experiencia de aseo precisa y rápida. Este cortador de uñas de aseo incorpora 3 baterías."
+      "El cortaúñas para perros/gatos está fabricado con ABS de alta calidad y cuchillas afiladas de acero inoxidable, lo que proporciona una experiencia de aseo precisa y rápida. Este cortador de uñas de aseo incorpora 3 baterías.",
+      "<span class='font-bold'>Colores: </span>",
+      "- Rosado",
+      "- Blanco",
+      "(Consultar disponibilidad del color)."
     ]
   },
   {
@@ -1149,10 +1155,12 @@ export const products: Product[] = [
       "Indicar el grosor del colchón, el color del protector y especificar en el detalle de la compra."
     ],
     characteristics: [
-      "Son 1-2 días hábiles.",
-      "Tapizado con tela iker terciopelo."
+      "Protector de colchón con cierre.",
+      "Material:  tela iker terciopelo.",
+      "Lavable a mano o lavadora.",
+      "Suave al tacto."
     ],
-    productionTime: "2 a 3 semanas",
+    productionTime: "Son de 1-2 dias hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
     shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
     variants: [
@@ -1236,8 +1244,7 @@ export const products: Product[] = [
       "Elegir el grosor, el color y especificar en el detalle de la compra."
     ],
     characteristics: [
-      " La Tela Popelina es fina, ligera y con algo de brillo.",
-      "Tapizado con tela iker terciopelo."
+      "La Tela Popelina es fina, ligera y con algo de brillo.",
     ],
     productionTime: "Son 1-2 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
@@ -1323,9 +1330,6 @@ export const products: Product[] = [
       "- Verde",
       "(Consultar disponibilidad del color)"
     ],
-    important: [
-      "Elegir el grosor, el color y especificar en el detalle de la compra."
-    ],
     characteristics: [
       "Bolsas 100% biodegradables, resistentes e higiénicas.",
       "Incluye 5 rollos (15 bolsas c/u)",
@@ -1351,9 +1355,6 @@ export const products: Product[] = [
       "- Verde",
       "(Consultar disponibilidad del color)"
     ],
-    important: [
-      "Elegir el grosor, el color y especificar en el detalle de la compra."
-    ],
     characteristics: [
       "Proporciona todo lo necesario para mejorar y mantener la salud bucal de su mascota, simplemente deslícelo sobre el dedo y lave los dientes de su engreído.",
       "La higiene bucal se puede realizar 1 vez por semana o de manera inter-diaria. (Esto dependerá de la necesidad de la mascotas.)",
@@ -1375,9 +1376,6 @@ export const products: Product[] = [
       "- Celeste con verde",
       "- Verde con amarillo",
       "(Consultar disponibilidad del color)"
-    ],
-    important: [
-      "Elegir el grosor, el color y especificar en el detalle de la compra."
     ],
     characteristics: [
       "Fabricado en hilo de algodón con anudado tipo soga y pelota en su extremo.",
