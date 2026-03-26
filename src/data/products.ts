@@ -50,7 +50,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
     ],
-    productionTime: "Son 3 días hábiles aproximadamente.",
+    productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
@@ -109,7 +109,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
     ],
-    productionTime: "Son 3 días hábiles aproximadamente.",
+    productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
@@ -167,7 +167,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
     ],
-    productionTime: "Son 3 días hábiles aproximadamente.",
+    productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
@@ -225,7 +225,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir unácil acceso.",
     ],
-    productionTime: "Son 3 días hábiles aproximadamente.",
+    productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
@@ -283,7 +283,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
     ],
-    productionTime: "Son 3 días hábiles aproximadamente.",
+    productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
@@ -341,7 +341,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
     ],
-    productionTime: "Son 3 días hábiles aproximadamente.",
+    productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
@@ -400,7 +400,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
     ],
-    productionTime: "Son 2-4 días hábiles aproximadamente.",
+    productionTime: "Son 2-4 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía a provincias del Perú por agencia. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
@@ -574,7 +574,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna, cuidar sus huesos y permitir un fácil acceso.",
     ],
-    productionTime: "Son 2-3 días hábiles aproximadamente.",
+    productionTime: "Son 2-3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
@@ -621,7 +621,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna, cuidar sus huesos y permitir un fácil acceso.",
     ],
-    productionTime: "Son 2-3 días hábiles aproximadamente.",
+    productionTime: "Son 2-3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
@@ -668,7 +668,7 @@ export const products: Product[] = [
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna, cuidar sus huesos y permitir un fácil acceso.",
     ],
-    productionTime: "Son 2-3 días hábiles aproximadamente.",
+    productionTime: "Son 2-3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
     shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
     variants: [
