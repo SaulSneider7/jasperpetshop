@@ -1140,10 +1140,6 @@ export const products: Product[] = [
       "- Blanco",
       "(Consultar disponibilidad del color)."
     ],
-    important: [
-      "Colores: celeste, rosado, blanco ",
-      "(Consultar disponibilidad del color)"
-    ],
     characteristics: [
       "Práctico y vistoso dispensador para perros, elaborado con material resistente de excelente calidad.",
       "Contiene un dispensador con traba, para regular la salida y evitar filtraciones del líquido.",
@@ -1188,16 +1184,16 @@ export const products: Product[] = [
     image: "/cortauñas_led.jpeg",
     description: [
       "Este cortauñas para mascotas es indispensable en tu hogar, esta equipado con luz LED en la parte superior, generando un corte de uña iluminada o linea de sangre visible, lo que permite recortar fácilmente evitando daños en los vasos sanguíneos, sin preocuparse de que su mascota se lastime si se mueve con facilidad.",
-    ],
-    characteristics: [
-      "Diseñado con un exclusivo protector anti-salpicaduras que recoge los recortes de uñas en un recipiente desmontable para proteger sus ojos y evitar que los residuos se dispersen.",
-      "Cuenta con un bloqueo de seguridad que evita cortes accidentales, brindando mayor protección para usted y su mascota. Se puede bloquear cuando no esté en uso, su tamaño compacto y peso ligero lo hacen fácil de transportar.",
-      "Mango ergonómico, El mango proporciona un agarre seguro y cómodo, brindándole un mejor control para un corte preciso durante las sesiones de aseo.",
       "El cortaúñas para perros/gatos está fabricado con ABS de alta calidad y cuchillas afiladas de acero inoxidable, lo que proporciona una experiencia de aseo precisa y rápida. Este cortador de uñas de aseo incorpora 3 baterías.",
       "<span class='font-bold'>Colores: </span>",
       "- Rosado",
       "- Blanco",
       "(Consultar disponibilidad del color)."
+    ],
+    characteristics: [
+      "Diseñado con un exclusivo protector anti-salpicaduras que recoge los recortes de uñas en un recipiente desmontable para proteger sus ojos y evitar que los residuos se dispersen.",
+      "Cuenta con un bloqueo de seguridad que evita cortes accidentales, brindando mayor protección para usted y su mascota. Se puede bloquear cuando no esté en uso, su tamaño compacto y peso ligero lo hacen fácil de transportar.",
+      "Mango ergonómico, El mango proporciona un agarre seguro y cómodo, brindándole un mejor control para un corte preciso durante las sesiones de aseo.",
     ]
   },
   {
