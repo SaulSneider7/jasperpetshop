@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faEye } from '@fortawesome/free-solid-svg-icons';
-import type { Product } from '../data/products';
+import { faPlus, faEye, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import type { Product, ProductVariant } from '../data/products';
 import { useCart } from '../context/CartContext';
 import { calculateDiscountedPrice } from '../utils/priceUtils';
 import { Link } from 'react-router-dom';
@@ -12,27 +12,81 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { addToCart } = useCart();
-  const [selectedSize, setSelectedSize] = React.useState(product.variants?.[0]?.size || '');
-  const [basePrice, setBasePrice] = React.useState(product.variants?.[0]?.price || product.price);
-  const [discount, setDiscount] = React.useState(product.variants?.[0]?.discountPercentage || product.discountPercentage);
+  const [selectedSize, setSelectedSize] = useState(product.variants?.[0]?.size || '');
+  const [basePrice, setBasePrice] = useState(product.variants?.[0]?.price || product.price);
+  const [discount, setDiscount] = useState(product.variants?.[0]?.discountPercentage || product.discountPercentage);
+  const [currentImage, setCurrentImage] = useState(product.variants?.[0]?.image || product.image);
+  
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(false);
 
-  const handleSizeChange = (size: string, price: string, discountPercentage?: number) => {
-    setSelectedSize(size);
-    setBasePrice(price);
-    setDiscount(discountPercentage);
+  const checkScroll = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      setShowLeftArrow(scrollLeft > 5);
+      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 5);
+    }
+  };
+
+  useEffect(() => {
+    checkScroll();
+    window.addEventListener('resize', checkScroll);
+    return () => window.removeEventListener('resize', checkScroll);
+  }, [product.variants]);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const scrollAmount = 150;
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const handleSizeChange = (variant: ProductVariant) => {
+    setSelectedSize(variant.size);
+    setBasePrice(variant.price);
+    setDiscount(variant.discountPercentage);
+    if (variant.image) setCurrentImage(variant.image);
   };
 
   const discountedPrice = calculateDiscountedPrice(basePrice, discount);
   const hasDiscount = !!discount && discount > 0;
+  const hasMultiplePrices = product.variants && product.variants.length > 1;
+
+  // Mouse drag to scroll logic
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeftState, setScrollLeftState] = useState(0);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!scrollRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeftState(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseLeave = () => setIsDragging(false);
+  const handleMouseUp = () => setIsDragging(false);
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollRef.current.scrollLeft = scrollLeftState - walk;
+  };
 
   return (
     <div className="group bg-white p-3 md:p-5 rounded-[32px] md:rounded-[48px] shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100/50 hover:-translate-y-2 flex flex-col h-full">
       <div className="relative w-full pb-[125%] rounded-[24px] md:rounded-[40px] overflow-hidden mb-4 md:mb-8 bg-gray-50 flex-shrink-0">
         <Link to={`/producto/${product.id}`}>
           <img 
-            src={product.image} 
+            src={currentImage} 
             alt={product.name} 
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             referrerPolicy="no-referrer"
           />
         </Link>
@@ -75,25 +129,70 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             {hasDiscount && (
               <p className="text-[10px] md:text-xs text-gray-400 line-through font-medium">{basePrice}</p>
             )}
-            <p className="text-sm md:text-xl font-bold text-[#1a1a1a] whitespace-nowrap">{discountedPrice}</p>
+            <div className="flex flex-col items-end">
+              {hasMultiplePrices && !hasDiscount && (
+                <span className="text-[8px] md:text-[10px] uppercase tracking-widest text-[#B59410] font-bold">Desde</span>
+              )}
+              <p className="text-sm md:text-xl font-bold text-[#1a1a1a] whitespace-nowrap">{discountedPrice}</p>
+            </div>
           </div>
         </div>
         
         {product.variants && (
-          <div className="flex flex-wrap gap-1 md:gap-2.5 mt-auto">
-            {product.variants.map((v) => (
-              <button
-                key={v.size}
-                onClick={() => handleSizeChange(v.size, v.price, v.discountPercentage)}
-                className={`px-2 md:px-4 py-1 md:py-2 rounded-lg md:rounded-xl text-[7px] md:text-[9px] font-bold uppercase tracking-widest transition-all border ${
-                  selectedSize === v.size 
-                    ? 'bg-[#B59410] text-white border-[#B59410] shadow-md' 
-                    : 'bg-white text-[#1a1a1a] border-gray-200 hover:border-[#B59410] hover:bg-gray-50'
-                }`}
+          <div className="mt-auto relative">
+            <p className="text-[8px] md:text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-2">
+              {product.variants.length > 4 ? 'Tallas disponibles' : 'Seleccionar Talla'}
+            </p>
+            
+            <div className="relative group/scroll">
+              {/* Left Arrow */}
+              {showLeftArrow && (
+                <button 
+                  onClick={() => scroll('left')}
+                  className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-6 h-6 bg-white/90 rounded-full shadow-md flex items-center justify-center text-[#B59410] hover:bg-[#B59410] hover:text-white transition-all"
+                >
+                  <FontAwesomeIcon icon={faChevronLeft} className="text-[8px]" />
+                </button>
+              )}
+
+              {/* Right Arrow */}
+              {showRightArrow && (
+                <button 
+                  onClick={() => scroll('right')}
+                  className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-6 h-6 bg-white/90 rounded-full shadow-md flex items-center justify-center text-[#B59410] hover:bg-[#B59410] hover:text-white transition-all"
+                >
+                  <FontAwesomeIcon icon={faChevronRight} className="text-[8px]" />
+                </button>
+              )}
+
+              {/* Gradient Fades */}
+              {showLeftArrow && <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />}
+              {showRightArrow && <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />}
+
+              <div 
+                ref={scrollRef}
+                onScroll={checkScroll}
+                onMouseDown={handleMouseDown}
+                onMouseLeave={handleMouseLeave}
+                onMouseUp={handleMouseUp}
+                onMouseMove={handleMouseMove}
+                className={`flex gap-1.5 md:gap-2 overflow-x-auto pb-2 scrollbar-hide no-scrollbar cursor-grab active:cursor-grabbing select-none`}
               >
-                {v.size}
-              </button>
-            ))}
+                {product.variants.map((v) => (
+                  <button
+                    key={v.size}
+                    onClick={() => handleSizeChange(v)}
+                    className={`px-3 md:px-4 py-1.5 md:py-2 rounded-lg md:rounded-xl text-[7px] md:text-[9px] font-bold uppercase tracking-widest transition-all border whitespace-nowrap flex-shrink-0 ${
+                      selectedSize === v.size 
+                        ? 'bg-[#B59410] text-white border-[#B59410] shadow-md' 
+                        : 'bg-white text-[#1a1a1a] border-gray-100 hover:border-[#B59410] hover:bg-gray-50'
+                    }`}
+                  >
+                    {v.size}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         )}
       </div>

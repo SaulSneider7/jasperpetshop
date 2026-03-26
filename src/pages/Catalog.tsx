@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { products } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
 
-const categories = ['Todos', 'Sofás', 'Escaleras', 'Camas',  'Accesorios' ];
+const categories = ['Todos', 'Camas', 'Sofás', 'Colchones', 'Colchonetas', 'Escaleras', 'Accesorios', 'Juguetes'];
 
 export const Catalog = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
@@ -14,7 +14,6 @@ export const Catalog = () => {
   return (
     <div className="pt-32 pb-20 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
-        {/* <div className="max-w-7xl xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto px-6"></div> */}
         {/* Header */}
         <div className="mb-16">
           <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 tracking-tighter text-[#1a1a1a]">
@@ -34,11 +33,10 @@ export const Catalog = () => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
-                selectedCategory === category
-                  ? 'bg-[#1a1a1a] text-white shadow-xl scale-105'
-                  : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-100'
-              }`}
+              className={`px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === category
+                ? 'bg-[#1a1a1a] text-white shadow-xl scale-105'
+                : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-100'
+                }`}
             >
               {category}
             </button>

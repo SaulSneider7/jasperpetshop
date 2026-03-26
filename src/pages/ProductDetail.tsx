@@ -5,6 +5,7 @@ import type { ProductVariant } from '../data/products';
 import { useCart } from '../context/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  faLayerGroup,
   faChevronLeft,
   faClock,
   faCircleCheck,
@@ -46,6 +47,7 @@ export const ProductDetail = () => {
   const currentDimensions = selectedVariant?.dimensions;
   const currentWeight = selectedVariant?.weight;
   const discount = selectedVariant?.discountPercentage || product.discountPercentage;
+  const currentThickness = selectedVariant?.thickness;
 
   const handleAddToCart = () => {
     const basePrice = selectedVariant?.oldPrice || (discount ? product.price : undefined);
@@ -108,7 +110,10 @@ export const ProductDetail = () => {
               </div>
               <div className="space-y-4 text-lg text-gray-500 leading-relaxed font-light">
                 {currentDescription.map((paragraph: string, i: number) => (
-                  <p key={i}>{paragraph}</p>
+                  <p
+                    key={i}
+                    dangerouslySetInnerHTML={{ __html: paragraph }}
+                  />
                 ))}
               </div>
             </div>
@@ -135,30 +140,45 @@ export const ProductDetail = () => {
             )}
 
             {/* Specs (Dynamic based on variant) */}
-            {(currentDimensions || currentWeight) && (
+            {(currentDimensions || currentWeight || currentThickness) && (
               <div className="grid grid-cols-2 gap-6 mb-10 p-6 bg-white rounded-3xl border border-gray-50 shadow-sm">
+
                 {currentDimensions && (
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-xl bg-[#fcfaf7] flex items-center justify-center text-[#B59410]">
                       <FontAwesomeIcon icon={faRulerCombined} />
                     </div>
                     <div>
-                      <p className=" uppercase tracking-widest text-gray-400 font-bold">Medidas</p>
+                      <p className="uppercase tracking-widest text-gray-400 font-bold">Medidas</p>
                       <p className="font-bold text-[#1a1a1a]">{currentDimensions}</p>
                     </div>
                   </div>
                 )}
+
                 {currentWeight && (
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-xl bg-[#fcfaf7] flex items-center justify-center text-[#B59410]">
                       <FontAwesomeIcon icon={faWeightHanging} />
                     </div>
                     <div>
-                      <p className=" uppercase tracking-widest text-gray-400 font-bold">Peso Recomendado</p>
-                      <p className=" font-bold text-[#1a1a1a]">{currentWeight}</p>
+                      <p className="uppercase tracking-widest text-gray-400 font-bold">Peso Recomendado</p>
+                      <p className="font-bold text-[#1a1a1a]">{currentWeight}</p>
                     </div>
                   </div>
                 )}
+
+                {currentThickness && (
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-[#fcfaf7] flex items-center justify-center text-[#B59410]">
+                      <FontAwesomeIcon icon={faLayerGroup} /> {/* o el icono que prefieras */}
+                    </div>
+                    <div>
+                      <p className="uppercase tracking-widest text-gray-400 font-bold">Grosor</p>
+                      <p className="font-bold text-[#1a1a1a]">{currentThickness}</p>
+                    </div>
+                  </div>
+                )}
+
               </div>
             )}
 

@@ -6,6 +6,7 @@ export interface ProductVariant {
   image?: string;
   dimensions?: string;
   weight?: string;
+  thickness?: string;
   description?: string[];
 }
 
@@ -789,6 +790,208 @@ export const products: Product[] = [
   },
   {
     id: 14,
+    name: "Colchones para mascotas",
+    price: "S/ 100",
+    category: "Colchones",
+    image: "/colchon_10CM.jpeg",
+    description: [
+      "Colchon para mascotas."
+    ],
+    important: [
+      "Elegir el grosor del colchón y especificar en el detalle de la compra."
+    ],
+    characteristics: [
+      "Colchón relleno de espuma de alta densidad y resistencia del grosor de su elección.",
+      "Tapizado con tela tricot y cerrado con ribete.",
+      "Una almohada hipoalergénica",
+      "Se puede añadir los accesorios como sábana, protector o manta. (Revisar en el ítem de Accesorios)",
+    ],
+    productionTime: "Son 1-2 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: `L - Grosor 4"`, 
+        price: "S/ 100", 
+        image: "/colchon_10CM.jpeg",
+        dimensions: `75cm ancho x 60cm largo`,
+        weight: ``,
+        thickness: `4" (10cm)`,
+        description: [
+          ""
+        ]
+      },
+      { 
+        size: `L - Grosor 6"`, 
+        price: "S/ 130",
+        image: "/colchon_15CM.jpeg",
+        dimensions: "75cm ancho x 60cm largo",
+        thickness: `6" (15cm)`,
+        description: [
+          ""
+        ]
+      },
+      {
+        size: `L - Grosor 8"`,
+        price: "S/ 160",
+        image: "/colchon_20CM.jpeg",
+        dimensions: "75cm ancho x 60cm largo",
+        thickness: `8" (20cm)`,
+        description: [
+          ""
+        ]
+      },
+      {
+        size: `XL - Grosor 4"`,
+        price: "S/ 150",
+        image: "/colchon_10CM.jpeg",
+        dimensions: "95cm ancho x 80cm largo",
+        thickness: `4" (10cm)`,
+        description: [
+          ""
+        ]
+      },
+      {
+        size: `XL - Grosor 6"`,
+        price: "S/ 180",
+        image: "/colchon_15CM.jpeg",
+        dimensions: "95cm ancho x 80cm largo",
+        thickness: `6" (15cm)`,
+        description: [
+          ""
+        ]
+      },
+      {
+        size: `XL - Grosor 8"`,
+        price: "S/ 200",
+        image: "/colchon_20CM.jpeg",
+        dimensions: "95cm ancho x 80cm largo",
+        thickness: `8" (20cm)`,
+        description: [
+          ""
+        ]
+      },
+      {
+        size: `XXL - Grosor 4"`,
+        price: "S/ 170",
+        image: "/colchon_10CM.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo",
+        thickness: `4" (10cm)`,
+        description: [
+          ""
+        ]
+      },
+      {
+        size: `XXL - Grosor 6"`,
+        price: "S/ 200",
+        image: "/colchon_15CM.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo",
+        thickness: `6" (15cm)`,
+        description: [
+          ""
+        ]
+      },
+      {
+        size: `XXL - Grosor 8"`,
+        price: "S/ 220",
+        image: "/colchon_20CM.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo",
+        thickness: `8" (20cm)`,
+        description: [
+          ""
+        ]
+      }
+    ],
+  },
+  {
+    id: 15,
+    name: "Colchones Pocket",
+    price: "S/ 200",
+    category: "Colchones",
+    image: "/colchones_pocket.jpeg",
+    description: [
+      "FABRICAMOS MEDIDAS ESPECIALES"
+    ],
+    
+    characteristics: [
+      "Colchón relleno de resortes pocket (encapsulados) y espuma de alta densidad y resistencia del grosor de su elección.",
+      "Ortopédico, recomendable para mascotas adultas, con problemas articulares y/o musculares.",
+      "Tapizado con tela tejido punto hipoalergénico y cerrado con ribete.",
+      "Incluye una almohada hipoalergénica",
+      "Se puede añadir los accesorios como sábana, protector o manta. (Revisar en el ítem de Accesorios)",
+    ],
+    productionTime: "Son 2-3 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: `CHICO`, 
+        price: "S/ 200", 
+        image: "/colchones_pocket.jpeg",
+        dimensions: `75cm ancho x 70cm largo`,
+        weight: ``,
+        thickness: ``,
+      },
+      { 
+        size: `MEDIANO`, 
+        price: "S/ 280",
+        image: "/colchon_15CM.jpeg",
+        dimensions: "1.20cm ancho x 70cm largo",
+      },
+      {
+        size: `GRANDE`,
+        price: "S/ 360",
+        image: "/colchon_20CM.jpeg",
+        dimensions: "1.20cm ancho x 1.30cm largo",
+      }
+    ],
+  },
+  {
+    id: 16,
+    name: "Colchoneta para mascotas",
+    price: "S/ 150",
+    category: "Colchonetas",
+    image: "/colchoneta_L.jpeg",
+    description: [
+      "FABRICAMOS MEDIDAS ESPECIALES"
+    ],
+    important: [
+      "Elegir el color de tela y especificar en el detalle de la compra.",
+    ],
+    characteristics: [
+      "Colchoneta con relleno de fibra hipoalergénica (Napa).",
+      "Doble forro, el primero con tafeta cerrada y la segunda con tela iker terciopelo con cierre.",
+      "Una almohada hipoalergénica",
+      "Se puede añadir los accesorios como sábana, protector o manta. (Revisar en el ítem de Accesorios)",
+    ],
+    productionTime: "Son 1-2 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      { 
+        size: `CHICO`, 
+        price: "S/ 150", 
+        image: "/colchoneta_L.jpeg",
+        dimensions: `75cm ancho x 70cm largo`,
+        weight: ``,
+        thickness: ``,
+      },
+      { 
+        size: `MEDIANO`, 
+        price: "S/ 220",
+        image: "/colchoneta_XL.jpeg",
+        dimensions: "1.20cm ancho x 70cm largo",
+      },
+      {
+        size: `GRANDE`,
+        price: "S/ 290",
+        image: "/colchoneta_XXL.jpeg",
+        dimensions: "1.20cm ancho x 1.30cm largo",
+      }
+    ],
+  },
+  {
+    id: 17,
     name: "Escalera 3 pasos",
     price: "S/ 170",
     category: "Escaleras",
@@ -827,7 +1030,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 15,
+    id: 18,
     name: "Escalera 4 pasos",
     price: "S/ 230",
     category: "Escaleras",
@@ -866,27 +1069,323 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 16,
-    name: "Set de Mantas Silk",
-    price: "S/ 160",
+    id: 19,
+    name: "Bebedero Portatil",
+    price: "S/ 20",
     category: "Accesorios",
-    image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800",
+    image: "/bebedero_portatil.jpeg",
     description: [
-      "Mantas ultra suaves de seda sintética hipoalergénica."
+      "El Bebedero Portátil para perros es ideal para  tu perro o gato.  Al caminar al aire libre, hacer senderismo y viajar, proporciona agua fresca rápidamente a tus mascotas sedientas. La botella de agua de viaje perfecta para mascotas con solo un botón para abrir/bloquear agua, funciona con una mano. Incluye una mini correa que se puede colocar en la cartera, mochila o correa."
     ],
     important: [
-      "Lavar con agua fría",
-      "No usar secadora"
+      "Colores: celeste, rosado, blanco ",
+      "(Consultar disponibilidad del color)"
     ],
     characteristics: [
-      "Tacto seda",
-      "Hipoalergénico",
-      "Pack de 2 unidades",
-      "Colores neutros"
+      "Práctico y vistoso dispensador para perros, elaborado con material resistente de excelente calidad.",
+      "Contiene un dispensador con traba, para regular la salida y evitar filtraciones del líquido.",
+      "Posee una mini correa para llevarlo más cómodamente.",
+      "Fácil de transportar y de limpiar."
+    ]
+  },
+  {
+    id: 20,
+    name: "Cepillo Vaporizador",
+    price: "S/ 16",
+    category: "Accesorios",
+    image: "/cepillo_vaporizador.jpeg",
+    description: [
+      "El Cepillo Vaporizador esta diseñado para facilitar el cuidado e higiene de los perros y gatos, mediante la eliminación de suciedad, polvo, y posibles parásitos externos del pelaje de forma rápida y eficiente. Este dispositivo combina las funciones de un cepillo y un vaporizador para ofrecer una solución completa de cuidado para las mascotas.",
+      "<span class='font-bold'>Beneficios: </span>",
+      "- El vapor ayuda a aflojar y eliminar la suciedad, polvo y residuos del pelaje de la mascota de manera rápida y eficiente.",
+      "- El vapor también puede ayudar a eliminar posibles parásitos externos, como pulgas y garrapatas, proporcionando una solución de higiene adicional para las mascotas.",
+      "- Al ser portátil, el cepillo vaporizador se puede utilizar en casa o mientras se viaja, lo que permite un cuidado conveniente en cualquier momento y lugar.",
+      "<span class='font-bold'>Modo de uso: </span>",
+      "- Carga el cepillo con su respectivo cable USB, una vez cargado, desenchufar y usar. ",
+      "- Retirar el tapón que se encuentra en la parte trasera del producto, para poder rellenarlo con agua. (Idealmente rellenarlo sin rebasar)",
+      "- Para que rocíe el vapor se debe presionar el botón que se encuentra en la parte trasera del cepillo y listo.",
     ],
-    productionTime: "2 días hábiles",
-    deliveryInfo: "Delivery Gratis en Lima y Callao",
-    shippingInfo: "Solo se cubre costo de Embalaje por Temporada",
-    discountPercentage: 25
+    important: [
+      "Colores: rosado, blanco, naranja ",
+      "(Consultar disponibilidad del color)"
+    ],
+    characteristics: [
+      "Este Cepillo vaporizador para mascotas resuelve eficazmente problemas como enredos y nudos del pelaje, limpia la pelusa flotante y relaja a tu mascota.",
+      "Suave para la piel de las mascotas, porque posee cerdas suaves con extremos redondeados, lo que garantiza que la piel de su mascota no se dañe durante el proceso de aseo. ",
+      "Elaborado de material ABS resistente, este cepillo vaporizador para mascotas es resistente y no se daña fácilmente. Se puede utilizar durante mucho tiempo para mantener el pelaje de su mascota suave y brillante.",
+      "Fácil de transportar y de limpiar."
+    ]
+  },
+  {
+    id: 21,
+    name: "Cortauñas LED para gatos y perros",
+    price: "S/ 28",
+    category: "Accesorios",
+    image: "/cortauñas_led.jpeg",
+    description: [
+      "Este cortauñas para mascotas es indispensable en tu hogar, esta equipado con luz LED en la parte superior, generando un corte de uña iluminada o linea de sangre visible, lo que permite recortar fácilmente evitando daños en los vasos sanguíneos, sin preocuparse de que su mascota se lastime si se mueve con facilidad.",
+    ],
+    important: [
+      "Colores: rosado, blanco ",
+      "(Consultar disponibilidad del color)"
+    ],
+    characteristics: [
+      "Diseñado con un exclusivo protector anti-salpicaduras que recoge los recortes de uñas en un recipiente desmontable para proteger sus ojos y evitar que los residuos se dispersen.",
+      "Cuenta con un bloqueo de seguridad que evita cortes accidentales, brindando mayor protección para usted y su mascota. Se puede bloquear cuando no esté en uso, su tamaño compacto y peso ligero lo hacen fácil de transportar.",
+      "Mango ergonómico, El mango proporciona un agarre seguro y cómodo, brindándole un mejor control para un corte preciso durante las sesiones de aseo.",
+      "El cortaúñas para perros/gatos está fabricado con ABS de alta calidad y cuchillas afiladas de acero inoxidable, lo que proporciona una experiencia de aseo precisa y rápida. Este cortador de uñas de aseo incorpora 3 baterías."
+    ]
+  },
+  {
+    id: 22,
+    name: "Protectores",
+    price: "S/ 60",
+    category: "Accesorios",
+    image: "/protector_L.jpeg",
+    description: [
+      "FABRICAMOS MEDIDAS ESPECIALES",
+    ],
+    important: [
+      "Indicar el grosor del colchón, el color del protector y especificar en el detalle de la compra."
+    ],
+    characteristics: [
+      "Son 1-2 días hábiles.",
+      "Tapizado con tela iker terciopelo."
+    ],
+    productionTime: "2 a 3 semanas",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      {
+        size: `L - grosor 4"`,
+        price: "S/ 60",
+        image: "/protector_L.jpeg",
+        dimensions: `75cm ancho x 60cm largo`,
+        thickness: `4" (10cm)`,
+      },
+      {
+        size: `L - grosor 6"`,
+        price: "S/ 70",
+        image: "/protector_L.jpeg",
+        dimensions: `75cm ancho x 60cm largo`,
+        thickness: `6" (15cm)`,
+      },
+      {
+        size: `L - grosor 8"`,
+        price: "S/ 80",
+        image: "/protector_L.jpeg",
+        dimensions: `75cm ancho x 60cm largo`,
+        thickness: `8" (20cm)`,
+      },
+      {
+        size: `XL - grosor 4"`,
+        price: "S/ 80",
+        image: "/protector_XL.jpeg",
+        dimensions: `95cm ancho x 80cm largo`,
+        thickness: `4" (10cm)`,
+      },
+      {
+        size: `XL - grosor 6"`,
+        price: "S/ 90",
+        image: "/protector_XL.jpeg",
+        dimensions: `95cm ancho x 80cm largo`,
+        thickness: `6" (15cm)`,
+      },
+      {
+        size: `XL - grosor 8"`,
+        price: "S/ 95",
+        image: "/protector_XL.jpeg",
+        dimensions: `95cm ancho x 80cm largo`,
+        thickness: `8" (20cm)`,
+      },
+      {
+        size: `XXL - grosor 4"`,
+        price: "S/ 95",
+        image: "/protector_XXL.jpeg",
+        dimensions: `1.10cm ancho x 90cm largo`,
+        thickness: `4" (10cm)`,
+      },
+      {
+        size: `XXL - grosor 6"`,
+        price: "S/ 105",
+        image: "/protector_XXL.jpeg",
+        dimensions: `1.10cm ancho x 90cm largo`,
+        thickness: `6" (15cm)`,
+      },
+      {
+        size: `XXL - grosor 8"`,
+        price: "S/ 110",
+        image: "/protector_XXL.jpeg",
+        dimensions: `1.10cm ancho x 90cm largo`,
+        thickness: `8" (20cm)`,
+      },
+    ]
+  },
+  {
+    id: 23,
+    name: "Sábanas",
+    price: "S/ 40",
+    category: "Accesorios",
+    image: "/sabanas_1.jpeg",
+    description: [
+      "FABRICAMOS MEDIDAS ESPECIALES",
+      "<span class='font-bold'>Incluye:</span>",
+      "- Una sábana con elástico y una funda de almohada."
+    ],
+    important: [
+      "Elegir el grosor, el color y especificar en el detalle de la compra."
+    ],
+    characteristics: [
+      " La Tela Popelina es fina, ligera y con algo de brillo.",
+      "Tapizado con tela iker terciopelo."
+    ],
+    productionTime: "Son 1-2 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      {
+        size: `L - grosor 4"`,
+        price: "S/ 40",
+        image: "/sabanas_1.jpeg",
+        dimensions: `75cm ancho x 60cm largo`,
+        thickness: `4" (10cm)`,
+      },
+      {
+        size: `L - grosor 6"`,
+        price: "S/ 50",
+        image: "/sabanas_1.jpeg",
+        dimensions: `75cm ancho x 60cm largo`,
+        thickness: `6" (15cm)`,
+      },
+      {
+        size: `L - grosor 8"`,
+        price: "S/ 50",
+        image: "/sabanas_1.jpeg",
+        dimensions: `75cm ancho x 60cm largo`,
+        thickness: `8" (20cm)`,
+      },
+      {
+        size: `XL - grosor 4"`,
+        price: "S/ 50",
+        image: "/sabanas_2.jpeg",
+        dimensions: `95cm ancho x 80cm largo`,
+        thickness: `4" (10cm)`,
+      },
+      {
+        size: `XL - grosor 6"`,
+        price: "S/ 60",
+        image: "/sabanas_2.jpeg",
+        dimensions: `95cm ancho x 80cm largo`,
+        thickness: `6" (15cm)`,
+      },
+      {
+        size: `XL - grosor 8"`,
+        price: "S/ 60",
+        image: "/sabanas_2.jpeg",
+        dimensions: `95cm ancho x 80cm largo`,
+        thickness: `8" (20cm)`,
+      },
+      {
+        size: `XXL - grosor 4"`,
+        price: "S/ 60",
+        image: "/sabanas_1.jpeg",
+        dimensions: `1.10cm ancho x 90cm largo`,
+        thickness: `4" (10cm)`,
+      },
+      {
+        size: `XXL - grosor 6"`,
+        price: "S/ 70",
+        image: "/sabanas_1.jpeg",
+        dimensions: `1.10cm ancho x 90cm largo`,
+        thickness: `6" (15cm)`,
+      },
+      {
+        size: `XXL - grosor 8"`,
+        price: "S/ 70",
+        image: "/sabanas_1.jpeg",
+        dimensions: `1.10cm ancho x 90cm largo`,
+        thickness: `8" (20cm)`,
+      },
+    ]
+  },
+  {
+    id: 24,
+    name: "Bolsa Biodegradables para Perros",
+    price: "S/ 18",
+    category: "Juguetes",
+    image: "/bolsa_biodegradable.jpeg",
+    description: [
+      "Dispensador de bolsas para aseo de tu mascota, ideal para mantener el ambiente limpio y es fácil de transportar en mochila, bolso o correa.",
+      "<span class='font-bold'>Colores:</span>",
+      "- Rojo",
+      "- Celeste",
+      "- Plomo",
+      "- Verde",
+      "(Consultar disponibilidad del color)"
+    ],
+    important: [
+      "Elegir el grosor, el color y especificar en el detalle de la compra."
+    ],
+    characteristics: [
+      "Bolsas 100% biodegradables, resistentes e higiénicas.",
+      "Incluye 5 rollos (15 bolsas c/u)",
+      "Reduce tu huella ecológica mientras cuidas a tu mascota.",
+      "Ideal para paseos diarios, viajes o uso en parques.",
+      "Material resistente que evita fugas y malos olores.",
+      "Protege a tu mascota y al planeta.",
+      "Dispensador gratis."
+    ],
+  },
+  {
+    id: 25,
+    name: "Kit Dental para Mascotas",
+    price: "S/ 20",
+    category: "Juguetes",
+    image: "/kit_dental.jpeg",
+    description: [
+      "El cuidado dental de tu mascota es importante, la formula que contiene no hace espuma, no es necesario enjuagar. Ayudar a mantener limpio los diente y mal aliento.",
+      "<span class='font-bold'>Colores:</span>",
+      "- Rosado",
+      "- Celeste",
+      "- Plomo",
+      "- Verde",
+      "(Consultar disponibilidad del color)"
+    ],
+    important: [
+      "Elegir el grosor, el color y especificar en el detalle de la compra."
+    ],
+    characteristics: [
+      "Proporciona todo lo necesario para mejorar y mantener la salud bucal de su mascota, simplemente deslícelo sobre el dedo y lave los dientes de su engreído.",
+      "La higiene bucal se puede realizar 1 vez por semana o de manera inter-diaria. (Esto dependerá de la necesidad de la mascotas.)",
+      "Apto para todas las razas sin importar el tamaño.",
+      "Incluye 4 tipos de cepillos.",
+      "Ayuda a prevenir la acumulación de sarro.",
+      "Mantiene fresco el aliento de tu perro."
+    ],
+  },
+  {
+    id: 26,
+    name: "Soga con pelota para perros",
+    price: "S/ 16",
+    category: "Juguetes",
+    image: "/soga_con_pelota.jpeg",
+    description: [
+      "La soga con pelota ayuda a la mascota a tener mayor actividad física y facilita la interacción, sobre todo con cachorros o edad adolescente. Ayuda a tenerlos entretenidos, liberan estrés, se ejercitan y divierten al mismo tiempo.",
+      "<span class='font-bold'>Colores:</span>",
+      "- Celeste con verde",
+      "- Verde con amarillo",
+      "(Consultar disponibilidad del color)"
+    ],
+    important: [
+      "Elegir el grosor, el color y especificar en el detalle de la compra."
+    ],
+    characteristics: [
+      "Fabricado en hilo de algodón con anudado tipo soga y pelota en su extremo.",
+      "Este juguete es ideal para disfrutar con tu mascota de una sesión de juego.",
+      "Ejercita la mandíbula y fortalece las encías.",
+      "Mide 30 centímetros",
+      "Textura agradable para tu mascota.",
+      "Estimulas sus instintos naturales de cacería."
+    ],
   },
 ];
