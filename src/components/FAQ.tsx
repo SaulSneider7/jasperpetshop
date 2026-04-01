@@ -108,13 +108,13 @@ export const FAQ: React.FC = () => {
         {
             question: "¿Mis Compras tienen garantía?",
             answer: (
-                <p>Si, Todos nuestros productos cuentan con garantía  por un periodo de 6 meses a contar de la fecha de entrega. (Solo daños de fábrica)</p>
+                <p>En caso de presentar alguna falla de materiales comprobable, se puede solicitar el cambio del producto o reparación.</p>
             )
         },
         {
             question: "¿Hay devolución del dinero en caso de que no me guste el producto?",
             answer: (
-                <p><strong>Rotundamente NO</strong>. Nuestros productos son fabricados a pedido, única y exclusivamente con las características solicitadas por el cliente. En caso de presentar alguna falla de materiales comprobable, se puede solicitar el cambio del producto o reparación.</p>
+                <p><strong>Rotundamente NO</strong>. Nuestros productos son fabricados a pedido, única y exclusivamente con las características solicitadas por el cliente.</p>
             )
         },
         {
