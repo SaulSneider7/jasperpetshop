@@ -14,14 +14,14 @@ export const CTA = () => {
 
                     <div className="relative z-10">
                         <h2 className="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight">
-                            Dale a tu mejor amigo <br /> el trono que merece.
+                            Lo mejor para tu mascota, en un solo lugar. <br /> Diseñado para su bienestar diario, donde el descanso cobra valor.
                         </h2>
                         <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto font-light">
-                            Únete a nuestra comunidad de amantes de las mascotas y recibe un 15% de descuento en tu primera compra.
+                            Únete a nuestra comunidad de amantes de las mascotas y recibe un 5% de descuento en tu primera compra.
                         </p>
                         <div className="flex flex-wrap justify-center gap-6">
                             <a
-                                href="https://wa.me/51903433063"
+                                href="https://wa.me/51903433063?text=Hola%20JasperPetShop!,%20vengo%20a%20consentir%20a%20alguien%20especial...%20¿Me%20ayudas?"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-black text-white px-12 py-5 rounded-2xl font-bold uppercase tracking-widest text-sm flex items-center gap-3 hover:scale-105 transition-transform shadow-2xl"

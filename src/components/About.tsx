@@ -38,11 +38,11 @@ export const About = () => {
                     <div data-aos="fade-left">
                         <span className="text-[#D4AF37] font-bold uppercase tracking-[0.3em] text-[10px] mb-6 block">Nuestra Esencia</span>
                         <h2 className="text-5xl md:text-6xl font-serif font-bold mb-8 leading-tight">
-                            Diseño que entiende <br />
-                            <span className="text-[#D4AF37] italic">su lenguaje.</span>
+                            Pequeños detalles, <br />
+                            <span className="text-[#D4AF37] italic">grandes momentos.</span>
                         </h2>
                         <p className="text-lg text-gray-500 mb-10 leading-relaxed">
-                            En JASPERPETSHOP, no solo fabricamos muebles; creamos santuarios. Cada costura y cada material es seleccionado pensando en la anatomía y el confort de quienes son el corazón de tu hogar.
+                            En JASPERPETSHOP, nos mueve el amor por las mascotas y los pequeños detalles que hacen grande su felicidad. Creemos que debemos consentirlos, cuidarlos y darles lo mejor cada día, porque forman parte de nuestra historia, de nuestro hogar y de nuestro corazón.
                         </p>
 
                         <div className="grid sm:grid-cols-2 gap-6">

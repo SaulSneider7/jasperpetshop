@@ -5,23 +5,21 @@ export const SocialSection = () => {
   const socialPosts = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=400",
-      link: "https://www.instagram.com/jasperpetshop/"
+      image: "/foto_facebook.jpeg",
+      link: "https://www.facebook.com/profile.php?id=100076152527984",
+      icon: faFacebook
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=400",
-      link: "https://www.instagram.com/jasperpetshop/"
+      image: "/foto_instagram.jpeg",
+      link: "https://www.instagram.com/jasperpetshop/",
+      icon: faInstagram
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?auto=format&fit=crop&q=80&w=400",
-      link: "https://www.instagram.com/jasperpetshop/"
-    },
-    {
-      id: 4,
-      image: "https://images.unsplash.com/photo-1541599540903-216a46ca1df0?auto=format&fit=crop&q=80&w=400",
-      link: "https://www.instagram.com/jasperpetshop/"
+      image: "/foto_tiktok.jpeg",
+      link: "https://www.tiktok.com/@jasperpetshop",
+      icon: faTiktok
     }
   ];
 
@@ -36,7 +34,7 @@ export const SocialSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           {socialPosts.map((post, i) => (
             <a 
               key={post.id} 
@@ -54,7 +52,7 @@ export const SocialSection = () => {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <FontAwesomeIcon icon={faInstagram} className="text-white text-3xl" />
+                <FontAwesomeIcon icon={post.icon} className="text-white text-3xl" />
               </div>
             </a>
           ))}
