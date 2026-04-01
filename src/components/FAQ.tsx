@@ -54,7 +54,6 @@ export const FAQ: React.FC = () => {
                     <p>Somos una tienda 100% online, por eso tenemos a tu disposición todas las herramientas para que puedas hacer tu compra con seguridad.</p>
                     <p>Puedes comprar a través de nuestros siguientes canales:</p>
                     <ul className="list-disc pl-5 space-y-1">
-                        <li><strong>WEB:</strong> <a href="https://www.jasperpetshop.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.jasperpetshop.com</a></li>
                         <li><strong>INSTAGRAM:</strong> @jasperpetshop</li>
                         <li><strong>FACEBOOK:</strong> @jasperpetshop</li>
                         <li><strong>TIKTOK:</strong> @jasperpetshop</li>
