@@ -558,6 +558,125 @@ export const products: Product[] = [
   },
   {
     id: 10,
+    name: "Sofa Chesterfield",
+    price: "S/ 460",
+    category: "Sofás",
+    image: "/chesterfield_chico.jpeg",
+    description: [
+      "FABRICAMOS MEDIDAS ESPECIALES"
+    ],
+    important: [
+      "Elegir el color de tela hipoalergénica.",
+      "Escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Tapizado con tela iker hipoalergénica (varios colores disponibles).",
+      "Funda desmontable del asiento, incluye cierre para poder lavar el forro a mano o lavadora.",
+      "Respaldar firme y cómodo, con detalle capitoneado acolchado.",
+      "Brazos (laterales) del sofá son anchos con detalle capitoneado y ligeramente curvos.",
+      "Tener en cuenta que la medida indicada es de todo el sofá. (Considerar que los laterales reducen aprox. 10cm por lado y respaldar aprox. 15cm)",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Cojines decorativos (incluye dos unidades)",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso."
+    ],
+    productionTime: "Son 3-5 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando Cobertura)",
+    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      {
+        size: "Chico",
+        price: "S/ 460",
+        image: "/chesterfield_chico.jpeg",
+        dimensions: "85cm ancho x 70cm largo / 8cm patas cromadas",
+        weight: "Hasta 50kg",
+        description: [
+          "Ideal para American bully, Beagle, Basset Hound."
+        ]
+      },
+      {
+        size: "Mediano",
+        price: "S/ 550",
+        image: "/chesterfield_mediano.jpeg",
+        dimensions: "1.00cm ancho x 70cm largo / 8cm patas cromadas",
+        weight: "Hasta 70kg",
+        description: [
+          "Ideal para Pitbull, Dalmata, Doberman, Bulldog Ingles."
+        ]
+      },
+      {
+        size: "Grande",
+        price: "S/ 590",
+        image: "/chesterfield_grande.jpeg",
+        dimensions: "1.20cm ancho x 70cm largo / 8cm patas cromadas",
+        weight: "Hasta 90kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 11,
+    name: "Sofa Arcoiris",
+    price: "S/ 340",
+    category: "Sofás",
+    image: "/arcoiris_L.jpeg",
+    description: [
+      "FABRICAMOS MEDIDAS ESPECIALES"
+    ],
+    important: [
+      "Elegir el color de tela Iker hipoalergénica.",
+      "Escribirlo en el detalle de la compra."
+    ],
+    characteristics: [
+      "Tapizado con tela hipoalergénica (varios colores disponibles).",
+      "Funda desmontable del asiento, incluye cierre para poder lavar el forro a mano o lavadora.",
+      "Respaldar firme y cómodo.",
+      "Brazos (laterales) del sofá son anchos, con detalles de estoperoles diseñados para brindar comodidad al apoyar la cabeza o cola.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Cojines decorativos (incluye dos unidades)",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso."
+    ],
+    productionTime: "Son 2-3 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando Cobertura)",
+    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      {
+        size: "L",
+        price: "S/ 340",
+        image: "/arcoiris_L.jpeg",
+        dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
+        weight: "Hasta 40kg",
+        description: [
+          "Ideal para Bullgog Frances, Beagle, Jack Russell."
+        ]
+      },
+      {
+        size: "XL",
+        price: "S/ 390",
+        image: "/arcoiris_XL.jpeg",
+        dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
+        weight: "Hasta 60kg",
+        description: [
+          "Ideal para Pitbull, Boxer, Husky, Bulldog Ingles."
+        ]
+      },
+      {
+        size: "XXL",
+        price: "S/ 460",
+        image: "/arcoiris_XXL.jpeg",
+        dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
+        weight: "Hasta 80kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever."
+        ]
+      }
+    ],
+  },
+  {
+    id: 12,
     name: "Sofa Bonnie",
     price: "S/ 280",
     category: "Sofás",
@@ -604,7 +723,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 11,
+    id: 13,
     name: "Sofa Duquesa",
     price: "S/ 280",
     category: "Sofás",
@@ -651,7 +770,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 12,
+    id: 14,
     name: "Sofa Michito",
     price: "S/ 280",
     category: "Sofás",
@@ -698,7 +817,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 13,
+    id: 15,
     name: "Cama Buffyto",
     price: "S/ 380",
     category: "Camas",
@@ -755,7 +874,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 14,
+    id: 16,
     name: "Cama Capitone",
     price: "S/ 380",
     category: "Camas",
@@ -812,7 +931,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 15,
+    id: 17,
     name: "Cama Nalhaguau",
     price: "S/ 200",
     category: "Camas",
@@ -870,7 +989,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 16,
+    id: 18,
     name: "Cama Zaragoza",
     price: "S/ 300",
     category: "Camas",
@@ -927,7 +1046,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 17,
+    id: 19,
     name: "Cama Jasperguau",
     price: "S/ 160",
     category: "Camas",
@@ -985,7 +1104,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 18,
+    id: 20,
     name: "Colchones Clásicos",
     price: "S/ 100",
     category: "Colchones",
@@ -1100,7 +1219,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 19,
+    id: 21,
     name: "Colchones Pocket",
     price: "S/ 200",
     category: "Colchones",
@@ -1143,7 +1262,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 20,
+    id: 22,
     name: "Colchoneta para mascota",
     price: "S/ 150",
     category: "Colchonetas",
@@ -1189,7 +1308,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 21,
+    id: 23,
     name: "Escalera 3 pasos",
     price: "S/ 170",
     category: "Escaleras",
@@ -1228,7 +1347,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 22,
+    id: 24,
     name: "Escalera 4 pasos",
     price: "S/ 230",
     category: "Escaleras",
@@ -1267,7 +1386,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 23,
+    id: 25,
     name: "Bebedero Portatil",
     price: "S/ 20",
     category: "Accesorios",
@@ -1288,7 +1407,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 24,
+    id: 26,
     name: "Cepillo Vaporizador",
     price: "S/ 16",
     category: "Accesorios",
@@ -1320,7 +1439,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 25,
+    id: 27,
     name: "Cortauñas LED para gatos y perros",
     price: "S/ 28",
     category: "Accesorios",
@@ -1340,7 +1459,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 26,
+    id: 28,
     name: "Protectores",
     price: "S/ 60",
     category: "Accesorios",
@@ -1427,7 +1546,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 27,
+    id: 29,
     name: "Sábanas",
     price: "S/ 40",
     category: "Accesorios",
@@ -1513,7 +1632,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 28,
+    id: 30,
     name: "Bolsa Biodegradables para Perros",
     price: "S/ 18",
     category: "Juguetes",
@@ -1538,7 +1657,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 29,
+    id: 31,
     name: "Kit Dental para Mascotas",
     price: "S/ 20",
     category: "Juguetes",
@@ -1562,7 +1681,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 30,
+    id: 32,
     name: "Soga con pelota para perros",
     price: "S/ 16",
     category: "Juguetes",

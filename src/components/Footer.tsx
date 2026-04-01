@@ -90,10 +90,6 @@ export const Footer = () => {
 
         <div className="flex flex-col md:row justify-between items-center pt-12 border-t border-gray-100 gap-6">
           <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400">© 2024 JASPERPET. Todos los derechos reservados.</p>
-          <div className="flex gap-10 text-[10px] uppercase tracking-[0.2em] font-bold text-gray-400">
-            <a href="#" className="hover:text-black transition-colors">Privacidad</a>
-            <a href="#" className="hover:text-black transition-colors">Términos</a>
-          </div>
         </div>
       </div>
     </footer>
