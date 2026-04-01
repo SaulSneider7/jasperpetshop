@@ -32,7 +32,7 @@ export const Navbar = () => {
     { name: 'Catálogo', path: '/catalogo' },
     { name: 'Nosotros', path: '/#nosotros' },
     { name: 'Contacto', path: '/#redes' },
-    { name: 'FAQ', path: '/#faq' },
+    { name: 'Preguntas Frecuentes', path: '/#faq' },
   ];
 
   return (
