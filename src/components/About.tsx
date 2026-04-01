@@ -59,9 +59,12 @@ export const About = () => {
                             ))}
                         </div>
 
-                        <button className="mt-12 border-b-2 border-[#D4AF37] pb-2 text-[#D4AF37] font-bold uppercase tracking-widest text-xs hover:text-black hover:border-black transition-all">
+                        <a
+                            href="#contacto"
+                            className="mt-12 border-b-2 border-[#D4AF37] pb-2 text-[#D4AF37] font-bold uppercase tracking-widest text-xs hover:text-black hover:border-black transition-all inline-block"
+                        >
                             Conoce más sobre nosotros
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

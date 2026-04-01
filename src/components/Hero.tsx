@@ -23,7 +23,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-lg text-gray-500 mb-8 max-w-lg leading-relaxed font-light">
-            Creamos espacios de descanso y comodidad para quienes forman parte de tu familia. Descubre nuestras camas, sofás, escaleras y accesorios diseñados para el bienestar y estilo de engreído.
+            Creamos espacios de descanso y comodidad para quienes forman parte de tu familia. Descubre nuestras camas, sofás, escaleras y accesorios diseñados para el bienestar y estilo de tu engreído.
             Porque ellos también merecen lo mejor.
           </p>
 
