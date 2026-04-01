@@ -27,7 +27,7 @@ export const SocialSection = () => {
     <section id="redes" className="py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16" data-aos="fade-up">
-          <span className="text-[#D4AF37] font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">Comunidad Jasper</span>
+          <span className="text-[#D4AF37] font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">Comunidad Jasperpetshop</span>
           <h2 className="text-5xl font-serif font-bold mb-6">Síguenos en Redes</h2>
           <p className="text-gray-500 max-w-xl mx-auto">
             Únete a nuestra comunidad en Instagram, Facebook y TikTok para ver a nuestros clientes felices y enterarte de las últimas novedades.

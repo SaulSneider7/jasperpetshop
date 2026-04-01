@@ -17,7 +17,7 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-lg text-gray-400 max-w-sm mb-10 leading-relaxed">
-              Redefiniendo el descanso animal con piezas de diseño atemporales y materiales de la más alta calidad.
+              Detalles únicos que marcan la diferencia en donde se refleja el cariño en cada acabado de nuestros productos.
             </p>
             <div className="flex gap-4">
               <a 
@@ -60,15 +60,13 @@ export const Footer = () => {
               <h4 className="font-bold uppercase tracking-widest text-[10px] text-[#D4AF37] mb-8">Compañía</h4>
               <ul className="space-y-4 text-sm font-medium text-gray-500">
                 <li><a href="#nosotros" className="hover:text-black transition-colors">Nosotros</a></li>
-                <li><a href="#" className="hover:text-black transition-colors">Sostenibilidad</a></li>
-                <li><a href="#" className="hover:text-black transition-colors">Prensa</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold uppercase tracking-widest text-[10px] text-[#D4AF37] mb-8">Soporte</h4>
               <ul className="space-y-4 text-sm font-medium text-gray-500">
-                <li><a href="https://wa.me/51903433063" className="hover:text-black transition-colors">Envíos</a></li>
-                <li><a href="https://wa.me/51903433063" className="hover:text-black transition-colors">Devoluciones</a></li>
+                <li><a href="#faq" className="hover:text-black transition-colors">Envíos</a></li>
+                <li><a href="#faq" className="hover:text-black transition-colors">Devoluciones</a></li>
                 <li><a href="https://wa.me/51903433063" className="hover:text-black transition-colors">Contacto WhatsApp</a></li>
               </ul>
             </div>
