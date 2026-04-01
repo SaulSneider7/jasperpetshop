@@ -118,7 +118,7 @@ export const FAQ: React.FC = () => {
             )
         },
         {
-            question: "Si al recibir mi producto, me doy cuenta que realice mal mi pedido ¿Qué solución me pueden entregar?",
+            question: "Si al recibir mi producto, me doy cuenta que realice mal mi pedido ¿Qué solución me pueden dar?",
             answer: (
                 <p>Dado que todos nuestros productos son fabricados única y exclusivamente a pedido, y al no existir motivos de devolución por terminaciones de producto o falla de material, se podrá realizar un descuento especial en el siguiente pedido. <strong>No se realizará devolución de dinero.</strong></p>
             )
