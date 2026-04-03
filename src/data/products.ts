@@ -81,7 +81,7 @@ export const products: Product[] = [
         price: "S/ 460",
         image: "/jasper_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
-        weight: "Hasta 100kg",
+        weight: "Hasta 90kg",
         description: [
           "Ideal para Labrador, Golden Retriever, Dalmata, Weimaraner, Seter, Husky y similares."
         ]
@@ -107,13 +107,13 @@ export const products: Product[] = [
       "Respaldar firme y cómodo, con detalle capitoneado acolchado.",
       "Brazos (laterales) del sofá son anchos y ligeramente curvos, diseñados para brindar comodidad al apoyar la cabeza o cola, reflejando elegancia.",
       "Patas de acero cromado brillante con antideslizante.",
-      "Cojines decorativos (incluyen dos unidades)",
+      "Cojines decorativos (incluye dos unidades)",
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
     ],
     productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
-    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
+    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre el costo del Embalaje por Temporada)",
     variants: [
       {
         size: "L",
@@ -140,7 +140,7 @@ export const products: Product[] = [
         price: "S/ 460",
         image: "/cala_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
-        weight: "Hasta 100kg",
+        weight: "Hasta 90kg",
         description: [
           "Ideal para Labrador, Golden Retriever, Dalmata, Weimaraner, Seter, Husky y similares."
         ]
@@ -171,7 +171,7 @@ export const products: Product[] = [
     ],
     productionTime: "Son 2-3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
-    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
+    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre el costo del Embalaje por Temporada)",
     variants: [
       {
         size: "L",
@@ -198,7 +198,7 @@ export const products: Product[] = [
         price: "S/ 460",
         image: "/nalha_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
-        weight: "Soporta 100kg",
+        weight: "Soporta 90kg",
         description: [
           "Ideal para Labrador, Golden Retriever, Dalmata, Weimaraner, Seter, Husky y similares."
         ]
@@ -225,11 +225,11 @@ export const products: Product[] = [
       "Patas de acero cromado brillante con antideslizante.",
       "Cojines laterales con pega pega (cinta adhesiva velcrom para que no se caigan, pero se pueden despegar para lavar).",
       "Al estar elevados del piso, aíslan del frío y del calor.",
-      "La altura es ideal para no dañar su columna y permitir unácil acceso.",
+      "La altura es ideal para no dañar su columna y permitir un facil acceso.",
     ],
     productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
-    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
+    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre el costo del Embalaje por Temporada)",
     variants: [
       {
         size: "L",
@@ -256,7 +256,7 @@ export const products: Product[] = [
         price: "S/ 460",
         image: "/valentina_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
-        weight: "Hasta 100kg",
+        weight: "Hasta 90kg",
         description: [
           "Ideal para Labrador, Golden Retriever, Dalmata, Weimaraner, Seter, Husky y similares."
         ]
@@ -287,7 +287,7 @@ export const products: Product[] = [
     ],
     productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
-    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
+    shippingInfo: "Y se envía por agencia a provincias del Perú. (Solo se cubre el costo del Embalaje por Temporada)",
     variants: [
       {
         size: "L",
@@ -314,7 +314,7 @@ export const products: Product[] = [
         price: "S/ 460",
         image: "/brandon_XXL.jpeg",
         dimensions: "1.10cm Diametro / 8cm patas cromadas",
-        weight: "Hasta 100kg",
+        weight: "Hasta 90kg",
         description: [
           "Ideal para Labrador, Golden Retriever, Dalmata, Weimaraner, Seter, Husky y similares."
         ]
@@ -461,6 +461,7 @@ export const products: Product[] = [
       "Cojines decorativos (incluye dos unidades)",
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+      "Tener en cuenta que la medida indicada es de todo el sofá. (Considerar que los laterales reducen aprox. 10cm por lado y respaldar aprox. 10cm)"
     ],
     productionTime: "Son 2-3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
@@ -637,7 +638,8 @@ export const products: Product[] = [
       "Patas de acero cromado brillante con antideslizante.",
       "Cojines decorativos (incluye dos unidades)",
       "Al estar elevados del piso, aíslan del frío y del calor.",
-      "La altura es ideal para no dañar su columna y permitir un fácil acceso."
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+      "Tener en cuenta que la medida indicada es de todo el sofá. (Considerar que los laterales reducen aprox. 10cm por lado y respaldar aprox. 10cm)"
     ],
     productionTime: "Son 2-3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando Cobertura)",
@@ -697,7 +699,7 @@ export const products: Product[] = [
     ],
     productionTime: "Son 2-3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
-    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
+    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del Embalaje por Temporada)",
     variants: [
       {
         size: "S",
@@ -718,7 +720,7 @@ export const products: Product[] = [
         price: "S/ 340",
         image: "/sofa_bonnie.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
-        weight: "Hasta 30kg"
+        weight: "Hasta 35kg"
       }
     ],
   },
@@ -744,7 +746,7 @@ export const products: Product[] = [
     ],
     productionTime: "Son 2-3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
-    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
+    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del Embalaje por Temporada)",
     variants: [
       {
         size: "S",
@@ -765,7 +767,7 @@ export const products: Product[] = [
         price: "S/ 340",
         image: "/sofa_duquesa.png",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
-        weight: "Hasta 30kg"
+        weight: "Hasta 35kg"
       }
     ],
   },
@@ -791,7 +793,7 @@ export const products: Product[] = [
     ],
     productionTime: "Son 2-3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
-    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre costo de Embalaje por Temporada)",
+    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del Embalaje por Temporada)",
     variants: [
       {
         size: "S",
@@ -812,7 +814,7 @@ export const products: Product[] = [
         price: "S/ 340",
         image: "/sofa_michito.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
-        weight: "Hasta 30kg"
+        weight: "Hasta 35kg"
       }
     ],
   },
@@ -1244,7 +1246,7 @@ export const products: Product[] = [
         price: "S/ 200",
         image: "/colchones_pocket_chico.jpeg",
         dimensions: `75cm ancho x 70cm largo`,
-        weight: ``,
+        weight: "Hasta 45kg",
         thickness: ``,
       },
       {
@@ -1252,12 +1254,14 @@ export const products: Product[] = [
         price: "S/ 280",
         image: "/colchones_pocket_mediano.jpeg",
         dimensions: "1.20cm ancho x 70cm largo",
+        weight: "Hasta 65kg",
       },
       {
         size: `GRANDE`,
         price: "S/ 360",
         image: "/colchones_pocket_grande.jpeg",
         dimensions: "1.20cm ancho x 1.30cm largo",
+        weight: "Hasta 85kg",
       }
     ],
   },
@@ -1446,7 +1450,6 @@ export const products: Product[] = [
     image: "/cortauñas_led.jpeg",
     description: [
       "Este cortauñas para mascotas es indispensable en tu hogar, esta equipado con luz LED en la parte superior, generando un corte de uña iluminada o linea de sangre visible, lo que permite recortar fácilmente evitando daños en los vasos sanguíneos, sin preocuparse de que su mascota se lastime si se mueve con facilidad.",
-      "El cortaúñas para perros/gatos está fabricado con ABS de alta calidad y cuchillas afiladas de acero inoxidable, lo que proporciona una experiencia de aseo precisa y rápida. Este cortador de uñas de aseo incorpora 3 baterías.",
       "<span class='font-bold'>Colores: </span>",
       "- Rosado",
       "- Blanco",
@@ -1456,6 +1459,7 @@ export const products: Product[] = [
       "Diseñado con un exclusivo protector anti-salpicaduras que recoge los recortes de uñas en un recipiente desmontable para proteger sus ojos y evitar que los residuos se dispersen.",
       "Cuenta con un bloqueo de seguridad que evita cortes accidentales, brindando mayor protección para usted y su mascota. Se puede bloquear cuando no esté en uso, su tamaño compacto y peso ligero lo hacen fácil de transportar.",
       "Mango ergonómico, El mango proporciona un agarre seguro y cómodo, brindándole un mejor control para un corte preciso durante las sesiones de aseo.",
+      "El cortaúñas para perros/gatos está fabricado con ABS de alta calidad y cuchillas afiladas de acero inoxidable, lo que proporciona una experiencia de aseo precisa y rápida. Este cortador de uñas de aseo incorpora 3 baterías.",
     ]
   },
   {

@@ -27,11 +27,11 @@ export const Catalog = () => {
             Nuestro <span className="text-[#B59410] italic">Catálogo</span>
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl font-light">
-            Explora nuestra colección completa de mobiliario premium diseñado exclusivamente para el bienestar de tu mascota.
+            Descubre nuestra colección de productos exclusivos, diseñados para brindar descanso, seguridad y armonía a tu mascota.
           </p>
-          <p className="mt-4 text-sm font-bold text-[#B59410] uppercase tracking-widest">
+          {/* <p className="mt-4 text-sm font-bold text-[#B59410] uppercase tracking-widest">
             Mostrando {filteredProducts.length} productos
-          </p>
+          </p> */}
         </div>
 
         {/* Payment Info Section */}

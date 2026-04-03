@@ -6,35 +6,35 @@ const customers = [
     id: 1,
     name: "Hablando Huebadas",
     image: "/hh.jpeg",
-    videoUrl: "https://www.instagram.com/reels/videos/1/",
+    videoUrl: "https://vt.tiktok.com/ZSHk5krkJ/",
     testimonial: "¡Amamos nuestra nueva cama! La calidad es increíble."
   },
   {
     id: 2,
     name: "Maribel Aguero",
     image: "/maribel_aguero.jpeg",
-    videoUrl: "https://www.instagram.com/reels/videos/2/",
+    videoUrl: "https://vt.tiktok.com/ZSHkm18tb/",
     testimonial: "El sofá más cómodo que Max ha tenido jamás."
   },
   {
     id: 3,
     name: "Marisol Aguirre",
     image: "/marisol_aguirre.jpeg",
-    videoUrl: "https://www.instagram.com/reels/videos/3/",
+    videoUrl: "https://vt.tiktok.com/ZSHk53sqG/",
     testimonial: "Jasper Pet Shop superó nuestras expectativas."
   },
   {
     id: 4,
     name: "Nelly Rosinelli",
     image: "/nelly_rosinelli.jpeg",
-    videoUrl: "https://www.instagram.com/reels/videos/4/",
+    videoUrl: "https://vt.tiktok.com/ZSHkUHfGw/",
     testimonial: "Atención personalizada y productos de lujo."
   },
   {
     id: 5,
     name: "Ursula Boza",
     image: "/ursula_boza.jpeg",
-    videoUrl: "https://www.instagram.com/reels/videos/5/",
+    videoUrl: "https://vt.tiktok.com/ZSHkmrHuy/",
     testimonial: "El envío a provincia fue súper rápido y seguro."
   }
 ];
