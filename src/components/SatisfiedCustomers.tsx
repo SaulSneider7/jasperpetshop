@@ -4,10 +4,10 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 const customers = [
   {
     id: 1,
-    name: "Hablando HUEVADAS",
+    name: "Hablando Huevadas",
     image: "/hh.jpeg",
     videoUrl: "https://vt.tiktok.com/ZSHk5krkJ/",
-    testimonial: "Si estás buscando una cama para tus perros, ya sabes en JASPERPETSHOP!"
+    testimonial: "Si estás buscando una cama para tus perras, ya sabes en JASPERPETSHOP! lo encontraras"
   },
   {
     id: 2,
