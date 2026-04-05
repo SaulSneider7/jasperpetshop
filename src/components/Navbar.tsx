@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaw, faBars, faXmark, faBagShopping } from '@fortawesome/free-solid-svg-icons';
+import { faPaw, faBars, faXmark, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link, useLocation } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 
@@ -71,7 +71,7 @@ export const Navbar = () => {
             onClick={() => setIsCartOpen(true)}
             className="relative p-2 text-[#1a1a1a] hover:text-[#D4AF37] transition-colors"
           >
-            <FontAwesomeIcon icon={faBagShopping} className="text-lg" />
+            <FontAwesomeIcon icon={faCartShopping} className="text-lg" />
             {cartCount > 0 && (
               <span className="absolute -top-1 -right-1 bg-[#D4AF37] text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">
                 {cartCount}
@@ -89,7 +89,7 @@ export const Navbar = () => {
             onClick={() => setIsCartOpen(true)}
             className="relative p-2 text-[#1a1a1a]"
           >
-            <FontAwesomeIcon icon={faBagShopping} className="text-xl" />
+            <FontAwesomeIcon icon={faCartShopping} className="text-xl" />
             {cartCount > 0 && (
               <span className="absolute -top-0 -right-0 bg-[#D4AF37] text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">
                 {cartCount}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark, faMinus, faPlus, faBagShopping, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { faXmark, faMinus, faPlus, faCartShopping, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { useCart } from '../context/CartContext';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -43,7 +43,7 @@ export const CartDrawer = () => {
             <div className="p-4 md:p-6 border-b border-gray-100 flex justify-between items-center bg-white sticky top-0 z-10">
               <div className="flex items-center gap-3">
                 <div className="bg-[#fcfaf7] p-2 rounded-xl">
-                  <FontAwesomeIcon icon={faBagShopping} className="text-[#D4AF37] text-lg" />
+                  <FontAwesomeIcon icon={faCartShopping} className="text-[#D4AF37] text-lg" />
                 </div>
                 <h2 className="text-lg md:text-xl font-serif font-bold">Tu Carrito ({cartCount})</h2>
               </div>
@@ -60,7 +60,7 @@ export const CartDrawer = () => {
               {cartItems.length === 0 ? (
                 <div className="h-full flex flex-col items-center justify-center text-center space-y-4">
                   <div className="w-20 h-20 bg-[#fcfaf7] rounded-full flex items-center justify-center">
-                    <FontAwesomeIcon icon={faBagShopping} className="text-gray-300 text-3xl" />
+                    <FontAwesomeIcon icon={faCartShopping} className="text-gray-300 text-3xl" />
                   </div>
                   <p className="text-gray-500 font-medium">Tu carrito está vacío</p>
                   <button 
