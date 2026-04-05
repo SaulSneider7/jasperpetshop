@@ -4,38 +4,38 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 const customers = [
   {
     id: 1,
-    name: "Hablando Huebadas",
+    name: "Hablando HUEVADAS",
     image: "/hh.jpeg",
     videoUrl: "https://vt.tiktok.com/ZSHk5krkJ/",
-    testimonial: "¡Amamos nuestra nueva cama! La calidad es increíble."
+    testimonial: "Si estás buscando una cama para tus perros, ya sabes en JASPERPETSHOP!"
   },
   {
     id: 2,
     name: "Maribel Aguero",
     image: "/maribel_aguero.jpeg",
     videoUrl: "https://vt.tiktok.com/ZSHkm18tb/",
-    testimonial: "El sofá más cómodo que Max ha tenido jamás."
+    testimonial: "La camita más cómoda para Calcio, gracias a JASPERPETSHOP"
   },
   {
     id: 3,
     name: "Marisol Aguirre",
     image: "/marisol_aguirre.jpeg",
     videoUrl: "https://vt.tiktok.com/ZSHk53sqG/",
-    testimonial: "Jasper Pet Shop superó nuestras expectativas."
+    testimonial: "Gracias a JASPERPETSHOP, mis engreídos la usan mucho, super cómoda y grande"
   },
   {
     id: 4,
-    name: "Nelly Rosinelli",
+    name: "Nelly Rossinelli",
     image: "/nelly_rosinelli.jpeg",
     videoUrl: "https://vt.tiktok.com/ZSHkUHfGw/",
-    testimonial: "Atención personalizada y productos de lujo."
+    testimonial: "Estamos super emocionados, por que a Negrita le llego este hermoso detalle, personalizado"
   },
   {
     id: 5,
     name: "Ursula Boza",
     image: "/ursula_boza.jpeg",
     videoUrl: "https://vt.tiktok.com/ZSHkmrHuy/",
-    testimonial: "El envío a provincia fue súper rápido y seguro."
+    testimonial: "Acá en casa todos estamos engreídos, a Chapo y Nubecita les llego su camita JASPERPETSHOP"
   }
 ];
 
@@ -45,7 +45,7 @@ export const SatisfiedCustomers = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-serif font-bold mb-6 tracking-tighter text-[#1a1a1a]">
-            Clientes <span className="text-[#B59410] italic">Satisfechos</span>
+            <span className="text-[#B59410] italic">Colaboraciones</span>
           </h2>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto font-light">
             Historias reales de mascotas felices disfrutando de la experiencia Jasper.
