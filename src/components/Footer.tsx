@@ -17,36 +17,36 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-lg text-gray-400 max-w-sm mb-10 leading-relaxed">
-              Detalles únicos que marcan la diferencia en donde se refleja el cariño en cada acabado de nuestros productos.
+              JASPERPETSHOP nació al crear una camita especial para JASPER. Al compartirla en redes, muchos se enamoraron y comenzaron a pedirlas en distintos colores y medidas. Lo que empezó con amor para uno, hoy es para todos.
             </p>
             <div className="flex gap-4">
-              <a 
-                href="https://www.instagram.com/jasperpetshop/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/jasperpetshop/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-2xl bg-[#fcfaf7] flex items-center justify-center text-gray-400 hover:bg-[#D4AF37] hover:text-white transition-all"
               >
                 <FontAwesomeIcon icon={faInstagram} className="text-xl" />
               </a>
-              <a 
-                href="https://www.facebook.com/profile.php?id=100076152527984" 
-                target="_blank" 
+              <a
+                href="https://www.facebook.com/profile.php?id=100076152527984"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-2xl bg-[#fcfaf7] flex items-center justify-center text-gray-400 hover:bg-[#D4AF37] hover:text-white transition-all"
               >
                 <FontAwesomeIcon icon={faFacebook} className="text-xl" />
               </a>
-              <a 
-                href="https://www.tiktok.com/@jasperpetshop" 
-                target="_blank" 
+              <a
+                href="https://www.tiktok.com/@jasperpetshop"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-2xl bg-[#fcfaf7] flex items-center justify-center text-gray-400 hover:bg-[#000000] hover:text-white transition-all"
               >
                 <FontAwesomeIcon icon={faTiktok} className="text-xl" />
               </a>
-              <a 
-                href="https://wa.me/51903433063" 
-                target="_blank" 
+              <a
+                href="https://wa.me/51903433063"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-2xl bg-[#fcfaf7] flex items-center justify-center text-gray-400 hover:bg-[#25D366] hover:text-white transition-all"
               >

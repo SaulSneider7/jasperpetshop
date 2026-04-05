@@ -8,6 +8,7 @@ import { Catalog } from './pages/Catalog';
 import { ProductDetail } from './pages/ProductDetail';
 import { CartProvider } from './context/CartContext';
 import { CartDrawer } from './components/CartDrawer';
+import { WhatsAppButton } from './components/WhatsAppButton';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -54,6 +55,7 @@ export default function App() {
             </Routes>
           </main>
           <Footer />
+          <WhatsAppButton />
         </div>
       </Router>
     </CartProvider>

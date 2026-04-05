@@ -11,7 +11,7 @@ export const Hero = () => {
         <div className="lg:col-span-7" data-aos="fade-right">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#B59410]/20 shadow-sm mb-8">
             <FontAwesomeIcon icon={faStar} className="text-[#B59410] text-[10px]" />
-            <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#B59410]">Excelencia en Descanso Animal</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#B59410]">Excelencia en el  Descanso de tu Mascota</span>
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[1.1] mb-6 tracking-tighter">
