@@ -16,7 +16,7 @@ export const Footer = () => {
                 JASPER<span className="text-[#D4AF37]">PETSHOP</span>
               </span>
             </div>
-            <p className="text-lg text-gray-400 max-w-sm mb-10 leading-relaxed">
+            <p className="text-lg text-gray-400 max-w-sm mb-10 leading-relaxed text-justify">
               JASPERPETSHOP nació al crear una camita especial para JASPER. Al compartirla en redes, muchos se enamoraron y comenzaron a pedirlas en distintos colores y medidas. Lo que empezó con amor para uno, hoy es para todos.
             </p>
             <div className="flex gap-4">

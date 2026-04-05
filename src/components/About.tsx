@@ -17,7 +17,7 @@ export const About = () => {
                                 />
                                 <div className="bg-[#D4AF37] p-8 rounded-[40px] text-white">
                                     <p className="text-4xl font-serif font-bold mb-2">100%</p>
-                                    <p className="text-xs uppercase tracking-widest font-bold opacity-80">Calidad Artesanal</p>
+                                    <p className="text-xs uppercase tracking-widest font-bold opacity-80">Calidad</p>
                                 </div>
                             </div>
                             <div className="space-y-6">
