@@ -1267,7 +1267,7 @@ export const products: Product[] = [
   },
   {
     id: 22,
-    name: "Colchoneta para mascota",
+    name: "Colchoneta Clasica",
     price: "S/ 150",
     category: "Colchonetas",
     image: "/colchoneta_L.jpeg",
@@ -1313,6 +1313,50 @@ export const products: Product[] = [
   },
   {
     id: 23,
+    name: "Colchoneta Capitone",
+    price: "S/ 170",
+    category: "Colchonetas",
+    image: "/capitone_chico.jpeg",
+    description: [
+      "FABRICAMOS MEDIDAS ESPECIALES"
+    ],
+    important: [
+      "Elegir el color de tela y especificar en el detalle de la compra.",
+    ],
+    characteristics: [
+      "Colchoneta con relleno de fibra hipoalergénica (Napa).",
+      "Protector tela iker terciopelo.",
+      "Una almohada hipoalergénica",
+      "Se puede lavar a mano o lavadora, sin necesidad de descoser. (No tiene cierre)",
+    ],
+    productionTime: "Son 1-2 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando la cobertura)",
+    shippingInfo: "Se envía a las provincias del Perú por agencia. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      {
+        size: `CHICO`,
+        price: "S/ 170",
+        image: "/capitone_chico.jpeg",
+        dimensions: `75cm ancho x 70cm largo`,
+        weight: ``,
+        thickness: ``,
+      },
+      {
+        size: `MEDIANO`,
+        price: "S/ 250",
+        image: "/capitone_mediano.jpeg",
+        dimensions: "1.20cm ancho x 70cm largo",
+      },
+      {
+        size: `GRANDE`,
+        price: "S/ 320",
+        image: "/capitone_grande.jpeg",
+        dimensions: "1.20cm ancho x 1.30cm largo",
+      }
+    ],
+  },
+  {
+    id: 24,
     name: "Escalera 3 pasos",
     price: "S/ 170",
     category: "Escaleras",
@@ -1351,7 +1395,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 24,
+    id: 25,
     name: "Escalera 4 pasos",
     price: "S/ 230",
     category: "Escaleras",
@@ -1390,7 +1434,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 25,
+    id: 26,
     name: "Bebedero Portatil",
     price: "S/ 20",
     category: "Accesorios",
@@ -1411,7 +1455,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 26,
+    id: 27,
     name: "Cepillo Vaporizador",
     price: "S/ 16",
     category: "Accesorios",
@@ -1443,7 +1487,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 27,
+    id: 28,
     name: "Cortauñas LED para gatos y perros",
     price: "S/ 28",
     category: "Accesorios",
@@ -1463,7 +1507,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 28,
+    id: 29,
     name: "Protectores",
     price: "S/ 60",
     category: "Accesorios",
@@ -1550,7 +1594,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 29,
+    id: 30,
     name: "Sábanas",
     price: "S/ 40",
     category: "Accesorios",
@@ -1636,7 +1680,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: 30,
+    id: 31,
     name: "Bolsa Biodegradables para Perros",
     price: "S/ 18",
     category: "Juguetes",
@@ -1661,7 +1705,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 31,
+    id: 32,
     name: "Kit Dental para Mascotas",
     price: "S/ 20",
     category: "Juguetes",
@@ -1685,7 +1729,7 @@ export const products: Product[] = [
     ],
   },
   {
-    id: 32,
+    id: 33,
     name: "Soga con pelota para perros",
     price: "S/ 16",
     category: "Juguetes",
