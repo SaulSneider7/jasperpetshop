@@ -36,6 +36,13 @@ const customers = [
     image: "/ursula_boza.jpeg",
     videoUrl: "https://vt.tiktok.com/ZSHkmrHuy/",
     testimonial: "Acá en casa todos estamos engreídos, a Chapo y Nubecita les llego su camita JASPERPETSHOP"
+  },
+  {
+    id: 6,
+    name: "Ximena Diezcanseco",
+    image: "/Ximena_Diezcanseco.jpeg",
+    videoUrl: "https://www.tiktok.com/@jasperpetshop",
+    testimonial: "Arthur tiene una cama de humano pequeña,tiene un colchón y tarima idéntica a la mía, es una cama en miniatura, lo encuentras en JASPERPETSHOP"
   }
 ];
 
