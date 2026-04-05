@@ -60,6 +60,9 @@ export const Footer = () => {
               <h4 className="font-bold uppercase tracking-widest text-[10px] text-[#D4AF37] mb-8">Compañía</h4>
               <ul className="space-y-4 text-sm font-medium text-gray-500">
                 <li><a href="#nosotros" className="hover:text-black transition-colors">Nosotros</a></li>
+                <li><a href="#redes" className="hover:text-black transition-colors">Comunidad</a></li>
+                <li><a href="#colaboraciones" className="hover:text-black transition-colors">Colaboraciones</a></li>
+                <li><a href="#nosotros" className="hover:text-black transition-colors"></a></li>
               </ul>
             </div>
             <div>

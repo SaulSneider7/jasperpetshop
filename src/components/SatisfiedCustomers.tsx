@@ -48,13 +48,13 @@ const customers = [
 
 export const SatisfiedCustomers = () => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section id='colaboraciones' className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-serif font-bold mb-6 tracking-tighter text-[#1a1a1a]">
             <span className="text-[#B59410] italic">Colaboraciones</span>
           </h2>
-          <p className="text-xl text-gray-500 max-w-2xl mx-auto font-light">
+          <p className="text-2xl text-gray-500 max-w-2xl mx-auto font-light">
             Historias reales de mascotas felices disfrutando de la experiencia Jasper.
           </p>
         </div>
@@ -102,7 +102,7 @@ export const SatisfiedCustomers = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="text-2xl mt-16 text-center">
           <p className="text-gray-500 mb-6">¿Quieres aparecer aquí? Etiquétanos en tus historias</p>
           <a 
             href="https://instagram.com/jasperpetshop" 
