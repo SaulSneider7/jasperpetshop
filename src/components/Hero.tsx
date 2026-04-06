@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faStar } from '@fortawesome/free-solid-svg-icons';
 
@@ -6,13 +7,13 @@ export const Hero = () => {
     // Cambiamos min-h-[70vh] por min-h-screen o h-screen
     // Eliminamos pt-32 para que el centrado sea perfecto, o usamos flex-col si hay un navbar fijo
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
-      
+
       {/* Background Accents - Ajustado para cubrir el 100% de la altura */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[#B59410]/5 -skew-x-12 translate-x-1/4"></div>
 
       {/* Eliminamos el pt-32 y ajustamos el grid para que ocupe el ancho completo */}
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center relative z-10 w-full">
-        
+
         <div className="lg:col-span-7" data-aos="fade-right">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#B59410]/20 shadow-sm mb-8">
             <FontAwesomeIcon icon={faStar} className="text-[#B59410] text-[10px]" />
@@ -32,11 +33,13 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-8 items-center">
-            <button className="bg-[#1a1a1a] text-white px-10 py-5 rounded-xl flex items-center gap-3 hover:bg-[#B59410] transition-all group shadow-xl shadow-black/10">
-              <span className="font-bold uppercase tracking-widest text-xs">Explorar Catálogo</span>
-              <FontAwesomeIcon icon={faChevronRight} className="group-hover:translate-x-1 transition-transform text-xs" />
-            </button>
-            
+            <Link to="/catalogo">
+              <button className="bg-[#1a1a1a] text-white px-10 py-5 rounded-xl flex items-center gap-3 hover:bg-[#B59410] transition-all group shadow-xl shadow-black/10">
+                <span className="font-bold uppercase tracking-widest text-xs">Explorar Catálogo</span>
+                <FontAwesomeIcon icon={faChevronRight} className="group-hover:translate-x-1 transition-transform text-xs" />
+              </button>
+            </Link>
+
             <div className="flex -space-x-2 items-center border-l border-gray-200 pl-8">
               {[1, 2, 3].map((i) => (
                 <img
