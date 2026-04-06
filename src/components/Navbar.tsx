@@ -42,13 +42,16 @@ export const Navbar = () => {
         : 'bg-white md:bg-transparent py-4 md:py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2 group cursor-pointer">
+        {/* LOGO SECCIÓN MODIFICADA */}
+        <Link to="/" className="flex items-center gap-3 group cursor-pointer">
           <div className="bg-[#D4AF37] p-1.5 rounded-lg group-hover:rotate-12 transition-transform">
             <FontAwesomeIcon icon={faPaw} className="text-white text-xl" />
           </div>
-          <span className="text-xl md:text-2xl font-serif font-bold tracking-tight text-[#1a1a1a] whitespace-nowrap">
-            JASPER<span className="text-[#D4AF37]">PETSHOP</span>
-          </span>
+          <img 
+            src="/jasper-logo.png" 
+            alt="Jasper Petshop Logo" 
+            className="h-8 md:h-10 w-auto object-contain" // Ajusta h-8 o h-10 según necesites
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-10 text-[11px] uppercase tracking-[0.2em] font-bold">
