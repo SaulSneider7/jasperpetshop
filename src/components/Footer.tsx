@@ -90,7 +90,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col md:row justify-between items-center pt-12 border-t border-gray-100 gap-6">
-          <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400">&copy; 2026 JASPERPET. Todos los derechos reservados.</p>
+          <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400">&copy; 2026 JASPERPETSHOP. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

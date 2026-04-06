@@ -59,16 +59,15 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Imagen ajustada para que luzca mejor en pantalla completa */}
-        <div className="lg:col-span-5 relative hidden lg:block" data-aos="fade-left" data-aos-delay="200">
-          <div className="relative z-10 rounded-[50px] overflow-hidden shadow-[0_40px_80px_-15px_rgba(0,0,0,0.3)] border-[12px] border-white">
+        <div className="lg:col-span-5 relative mt-12 lg:mt-0" data-aos="fade-up" data-aos-delay="200">
+          <div className="relative z-10 rounded-[40px] lg:rounded-[50px] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] lg:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.3)] border-[8px] lg:border-[12px] border-white">
             <img
               src="./logo_jasperpetshop.jpeg"
               alt="Luxury Pet Bed"
               className="w-full h-auto object-cover scale-105 hover:scale-100 transition-transform duration-700"
             />
           </div>
-          {/* Elemento decorativo extra para llenar el espacio vertical */}
+          {/* Elemento decorativo extra */}
           <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#B59410] rounded-full -z-10 blur-2xl opacity-20"></div>
         </div>
       </div>
