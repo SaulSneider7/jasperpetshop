@@ -9,6 +9,7 @@ import { ProductDetail } from './pages/ProductDetail';
 import { CartProvider } from './context/CartContext';
 import { CartDrawer } from './components/CartDrawer';
 import { WhatsAppButton } from './components/WhatsAppButton';
+import { PromoBanner } from './components/PromoBanner';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -45,9 +46,10 @@ export default function App() {
       <Router>
         <ScrollToTop />
         <div className="overflow-hidden min-h-screen">
+          <PromoBanner />
           <Navbar />
           <CartDrawer />
-          <main>
+          <main style={{ paddingTop: 'var(--banner-height, 0px)' }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/catalogo" element={<Catalog />} />

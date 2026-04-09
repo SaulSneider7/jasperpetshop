@@ -36,32 +36,33 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white py-3 shadow-md' 
-        : 'bg-white md:bg-transparent py-4 md:py-6'
-    }`}>
+    <nav
+      style={{ top: 'var(--banner-height, 0px)' }}
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-white py-3 shadow-md'
+          : 'bg-white md:bg-transparent py-4 md:py-6'
+        }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* LOGO SECCIÓN MODIFICADA */}
         <Link to="/" className="flex items-center gap-3 group cursor-pointer">
           <div className="bg-[#D4AF37] p-1.5 rounded-lg group-hover:rotate-12 transition-transform">
             <FontAwesomeIcon icon={faPaw} className="text-white text-xl" />
           </div>
-          <img 
-            src="/jasper-logo.png" 
-            alt="Jasper Petshop Logo" 
+          <img
+            src="/jasper-logo.png"
+            alt="Jasper Petshop Logo"
             className="h-8 md:h-10 w-auto object-contain" // Ajusta h-8 o h-10 según necesites
           />
         </Link>
 
         <div className="hidden md:flex items-center gap-10 text-[11px] uppercase tracking-[0.2em] font-bold">
           {navItems.map((item) => {
-            const isActive = location.pathname + location.hash === item.path || 
-                           (item.path === '/' && location.pathname === '/' && !location.hash);
+            const isActive = location.pathname + location.hash === item.path ||
+              (item.path === '/' && location.pathname === '/' && !location.hash);
             return (
-              <Link 
-                key={item.name} 
-                to={item.path} 
+              <Link
+                key={item.name}
+                to={item.path}
                 className={`transition-colors relative group ${isActive ? 'text-[#D4AF37]' : 'text-[#1a1a1a] hover:text-[#D4AF37]'}`}
               >
                 {item.name}
@@ -69,8 +70,8 @@ export const Navbar = () => {
               </Link>
             );
           })}
-          
-          <button 
+
+          <button
             onClick={() => setIsCartOpen(true)}
             className="relative p-2 text-[#1a1a1a] hover:text-[#D4AF37] transition-colors"
           >
@@ -88,7 +89,7 @@ export const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4 md:hidden">
-          <button 
+          <button
             onClick={() => setIsCartOpen(true)}
             className="relative p-2 text-[#1a1a1a]"
           >
@@ -99,8 +100,8 @@ export const Navbar = () => {
               </span>
             )}
           </button>
-          <button 
-            className="w-10 h-10 flex items-center justify-center bg-[#1a1a1a] text-white rounded-xl active:scale-90 transition-transform" 
+          <button
+            className="w-10 h-10 flex items-center justify-center bg-[#1a1a1a] text-white rounded-xl active:scale-90 transition-transform"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} className="text-lg" />
@@ -124,12 +125,12 @@ export const Navbar = () => {
               <FontAwesomeIcon icon={faXmark} className="text-2xl" />
             </button>
           </div>
-          
+
           <div className="flex flex-col p-8 gap-8 text-left font-bold uppercase tracking-[0.2em] text-sm">
             {navItems.map((item, i) => (
-              <Link 
-                key={item.name} 
-                to={item.path} 
+              <Link
+                key={item.name}
+                to={item.path}
                 onClick={() => setIsMenuOpen(false)}
                 className="hover:text-[#D4AF37] transition-colors"
                 style={{ transitionDelay: `${i * 50}ms` }}
@@ -137,9 +138,9 @@ export const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Link 
-              to="/catalogo" 
-              onClick={() => setIsMenuOpen(false)} 
+            <Link
+              to="/catalogo"
+              onClick={() => setIsMenuOpen(false)}
               className="bg-[#1a1a1a] text-white py-5 rounded-2xl text-center mt-4 shadow-xl shadow-black/10"
             >
               Ir a la Tienda

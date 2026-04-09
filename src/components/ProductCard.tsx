@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faEye, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping, faPlus, faEye, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import type { Product, ProductVariant } from '../data/products';
 import { useCart } from '../context/CartContext';
-import { calculateDiscountedPrice } from '../utils/priceUtils';
+import { calculateDiscountedPrice, getCyberWauDiscount, isCyberWauActive } from '../utils/priceUtils';
 import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
@@ -52,8 +52,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     if (variant.image) setCurrentImage(variant.image);
   };
 
-  const discountedPrice = calculateDiscountedPrice(basePrice, discount);
-  const hasDiscount = !!discount && discount > 0;
+  const discountedPrice = calculateDiscountedPrice(basePrice, discount, product.category);
+  const cyberWauDiscount = getCyberWauDiscount(product.category);
+  const totalDiscount = (discount || 0) + cyberWauDiscount;
+  const hasDiscount = totalDiscount > 0;
   const hasMultiplePrices = product.variants && product.variants.length > 1;
 
   // Mouse drag to scroll logic
@@ -92,10 +94,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </Link>
         
         {hasDiscount && (
-          <div className="absolute top-3 left-3 md:top-6 md:left-6 z-10">
+          <div className="absolute top-3 left-3 md:top-6 md:left-6 z-10 flex flex-col gap-2">
             <div className="bg-[#B59410] text-white text-[8px] md:text-[10px] font-bold uppercase tracking-widest px-2 py-1 md:px-3 md:py-1.5 rounded-full shadow-lg flex items-center gap-1">
-              <span>-{discount}%</span>
+              <span>-{totalDiscount}%</span>
             </div>
+            {cyberWauDiscount > 0 && (
+              <div className="bg-[#1a1a1a] text-white text-[6px] md:text-[8px] font-bold uppercase tracking-widest px-2 py-1 rounded-full shadow-lg border border-[#B59410]/30">
+                CYBER WAU
+              </div>
+            )}
           </div>
         )}
 

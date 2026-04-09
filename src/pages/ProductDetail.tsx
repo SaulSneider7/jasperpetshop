@@ -16,6 +16,7 @@ import {
   faRulerCombined,
   faCartShopping
 } from '@fortawesome/free-solid-svg-icons';
+import { calculateDiscountedPrice, getCyberWauDiscount } from '../utils/priceUtils';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const ProductDetail = () => {
@@ -51,9 +52,17 @@ export const ProductDetail = () => {
   const discount = selectedVariant?.discountPercentage || product.discountPercentage;
   const currentThickness = selectedVariant?.thickness;
 
-  const handleAddToCart = () => {
-    const basePrice = selectedVariant?.oldPrice || (discount ? product.price : undefined);
-    addToCart(product, selectedVariant?.size, currentPrice, basePrice, discount);
+  const cyberWauDiscount = getCyberWauDiscount(product.category);
+  const baseDiscount = selectedVariant?.discountPercentage || product.discountPercentage || 0;
+  const totalDiscount = baseDiscount + cyberWauDiscount;
+  const hasDiscount = totalDiscount > 0;
+
+  const discountedPrice = calculateDiscountedPrice(currentPrice, baseDiscount, product.category);
+
+
+    const handleAddToCart = () => {
+    const basePriceForCart = selectedVariant?.oldPrice || (hasDiscount ? currentPrice : undefined);
+    addToCart(product, selectedVariant?.size, discountedPrice, basePriceForCart, totalDiscount);
   };
 
   return (
@@ -98,26 +107,21 @@ export const ProductDetail = () => {
           {/* Product Info */}
           <div className="flex flex-col" data-aos="fade-left">
             <div className="mb-8">
-              <span className="text-[#B59410] font-bold uppercase tracking-[0.3em]  mb-4 block">{product.category}</span>
+              <span className="text-[#B59410] font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">{product.category}</span>
               <h1 className="text-5xl md:text-6xl font-serif font-bold text-[#1a1a1a] leading-tight mb-4">
                 {product.name}
               </h1>
               <div className="flex items-center gap-4 mb-6">
-                <p className="text-3xl font-bold text-[#1a1a1a]">{currentPrice}</p>
-                {discount && (
+                <p className="text-3xl font-bold text-[#1a1a1a]">{discountedPrice}</p>
+                {hasDiscount && (
                   <p className="text-lg text-gray-300 line-through font-medium">
-                    {selectedVariant?.oldPrice || product.price}
+                    {selectedVariant?.oldPrice || currentPrice}
                   </p>
                 )}
               </div>
-              <div className="space-y-4 text-lg text-gray-500 leading-relaxed font-light">
-                {currentDescription.map((paragraph: string, i: number) => (
-                  <p
-                    key={i}
-                    dangerouslySetInnerHTML={{ __html: paragraph }}
-                  />
-                ))}
-              </div>
+              <p className="text-lg text-gray-500 leading-relaxed font-light">
+                {currentDescription}
+              </p>
             </div>
 
             {/* Variants / Sizes */}
