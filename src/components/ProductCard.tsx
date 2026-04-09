@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping, faPlus, faEye, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faEye, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import type { Product, ProductVariant } from '../data/products';
 import { useCart } from '../context/CartContext';
-import { calculateDiscountedPrice, getCyberWauDiscount, isCyberWauActive } from '../utils/priceUtils';
+import { calculateDiscountedPrice, getCyberWauDiscount } from '../utils/priceUtils';
 import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
