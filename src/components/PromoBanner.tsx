@@ -99,8 +99,8 @@ export const PromoBanner = () => {
 
           <div className="flex items-center gap-4 md:gap-8">
             <div className="hidden lg:flex flex-col items-end mr-2">
-              <span className="text-[9px] uppercase tracking-widest font-bold text-[#B59410]">Finaliza en:</span>
-              <span className="text-[10px] text-white/40 font-medium italic">¡No te lo pierdas!</span>
+              <span className="uppercase tracking-widest font-bold text-[#B59410]">Finaliza en:</span>
+              <span className="text-white/40 font-medium italic">¡No te lo pierdas!</span>
             </div>
             
             <div className="flex items-center gap-3 md:gap-4 bg-black/40 backdrop-blur-md px-4 md:px-6 py-2 md:py-3 rounded-2xl border border-white/10 shadow-inner">

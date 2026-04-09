@@ -108,7 +108,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
         <div className="absolute top-3 right-3 md:top-6 md:right-6">
           <button 
-            onClick={() => addToCart(product, selectedSize, discountedPrice, basePrice, discount)}
+            onClick={() => addToCart(product, selectedSize, discountedPrice, basePrice, discount, currentImage)}
             className="w-8 h-8 md:w-12 md:h-12 rounded-full bg-white/40 backdrop-blur-md flex items-center justify-center text-[#1a1a1a] hover:bg-[#B59410] hover:text-white transition-all border border-white/50 shadow-sm"
           >
             <FontAwesomeIcon icon={faPlus} className="text-xs md:text-base" />

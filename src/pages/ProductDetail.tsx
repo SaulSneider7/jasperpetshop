@@ -62,7 +62,7 @@ export const ProductDetail = () => {
 
     const handleAddToCart = () => {
     const basePriceForCart = selectedVariant?.oldPrice || (hasDiscount ? currentPrice : undefined);
-    addToCart(product, selectedVariant?.size, discountedPrice, basePriceForCart, totalDiscount);
+    addToCart(product, selectedVariant?.size, discountedPrice, basePriceForCart, totalDiscount, currentImage);
   };
 
   return (

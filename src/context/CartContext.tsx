@@ -9,7 +9,7 @@ interface CartItem extends Product {
 
 interface CartContextType {
   cartItems: CartItem[];
-  addToCart: (product: Product, size?: string, price?: string, oldPrice?: string, discountPercentage?: number) => void;
+  addToCart: (product: Product, size?: string, price?: string, oldPrice?: string, discountPercentage?: number, image?: string) => void;
   removeFromCart: (productId: number, size?: string) => void;
   updateQuantity: (productId: number, quantity: number, size?: string) => void;
   clearCart: () => void;
@@ -42,7 +42,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.setItem('jasper_cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
-  const addToCart = (product: Product, size?: string, price?: string, oldPrice?: string, discountPercentage?: number) => {
+  const addToCart = (product: Product, size?: string, price?: string, oldPrice?: string, discountPercentage?: number, image?: string) => {
     setCartItems(prev => {
       const existing = prev.find(item => item.id === product.id && item.selectedSize === size);
       if (existing) {
@@ -55,6 +55,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         price: price || product.price, 
         oldPrice: oldPrice || product.oldPrice,
         discountPercentage: discountPercentage !== undefined ? discountPercentage : product.discountPercentage,
+        image: image || product.image,
         selectedSize: size, 
         quantity: 1 
       }];

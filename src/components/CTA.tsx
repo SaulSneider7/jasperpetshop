@@ -17,7 +17,7 @@ export const CTA = () => {
                             Lo mejor para tu mascota, en un solo lugar. <br /> Diseñado para su bienestar diario, donde el descanso cobra valor.
                         </h2>
                         <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto font-light">
-                            Únete a nuestra comunidad de amantes de las mascotas y recibe un 5% de descuento en tu primera compra.
+                            &Uacute;nete a nuestra comunidad de amantes de las mascotas y recibe un 5% de descuento en tu primera compra. (No aplica con otras promociones).
                         </p>
                         <div className="flex flex-wrap justify-center gap-6">
                             <a
