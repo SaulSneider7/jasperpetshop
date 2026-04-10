@@ -47,12 +47,19 @@ export const PromoBanner = () => {
   };
 
   useEffect(() => {
-    if (isPromoActive && timeLeft) {
-      document.documentElement.style.setProperty('--banner-height', PROMO_CONFIG.bannerHeight);
-    } else {
-      document.documentElement.style.setProperty('--banner-height', '0px');
-    }
+    const updateHeight = () => {
+      if (isPromoActive && timeLeft) {
+        const height = window.innerWidth < 768 ? '90px' : '70px';
+        document.documentElement.style.setProperty('--banner-height', height);
+      } else {
+        document.documentElement.style.setProperty('--banner-height', '0px');
+      }
+    };
+
+    updateHeight();
+    window.addEventListener('resize', updateHeight);
     return () => {
+      window.removeEventListener('resize', updateHeight);
       document.documentElement.style.setProperty('--banner-height', '0px');
     };
   }, [isPromoActive, timeLeft]);
@@ -65,8 +72,7 @@ export const PromoBanner = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         exit={{ y: -100 }}
-        className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] text-white flex items-center shadow-[0_10px_30px_rgba(0,0,0,0.3)] border-b border-[#B59410]/20"
-        style={{ height: PROMO_CONFIG.bannerHeight }}
+        className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] text-white flex items-center shadow-[0_10px_30px_rgba(0,0,0,0.3)] border-b border-[#B59410]/20 h-[90px] md:h-[70px]"
       >
         {/* Decorative background element */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
@@ -74,22 +80,22 @@ export const PromoBanner = () => {
           <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#B59410] rounded-full blur-3xl animate-pulse" />
         </div>
 
-        <div className="w-full max-w-7xl mx-auto px-6 flex items-center justify-between gap-4 relative z-10">
-          <div className="flex items-center gap-4 md:gap-6">
-            <div className="bg-gradient-to-br from-[#B59410] to-[#8a710c] p-2 md:p-2.5 rounded-2xl shadow-[0_0_20px_rgba(181,148,16,0.4)] animate-bounce-slow">
-              <Sparkles size={20} className="text-white" />
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-center md:justify-between gap-2 md:gap-4 relative z-10">
+          <div className="flex items-center gap-3 md:gap-6">
+            <div className="bg-gradient-to-br from-[#B59410] to-[#8a710c] p-1.5 md:p-2.5 rounded-xl md:rounded-2xl shadow-[0_0_20px_rgba(181,148,16,0.4)] animate-bounce-slow">
+              <Sparkles size={16} className="text-white md:w-5 md:h-5" />
             </div>
             <div className="flex flex-col">
-              <div className="flex items-center gap-3">
-                <span className="text-[#B59410] font-black tracking-tighter text-xl md:text-3xl italic leading-none">
+              <div className="flex items-center gap-2 md:gap-3">
+                <span className="text-[#B59410] font-black tracking-tighter text-lg md:text-3xl italic leading-none">
                   {PROMO_CONFIG.name}
                 </span>
-                <div className="h-6 w-[1px] bg-white/20 hidden md:block" />
-                <span className="bg-white/10 text-[#B59410] px-2 py-0.5 rounded text-[10px] font-bold tracking-widest uppercase hidden md:block">
+                <div className="h-4 md:h-6 w-[1px] bg-white/20" />
+                <span className="bg-white/10 text-[#B59410] px-1.5 py-0.5 rounded text-[8px] md:text-[10px] font-bold tracking-widest uppercase">
                   Oferta Limitada
                 </span>
               </div>
-              <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-white/70 mt-1">
+              <p className="text-[9px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.2em] font-bold text-white/70 mt-0.5 md:mt-1">
                 {isPromoActive 
                   ? <><span className="text-white">{PROMO_CONFIG.discountPercentage}% OFF</span> en {PROMO_CONFIG.applicableCategories.join(' y ')}</>
                   : `Próximamente ${PROMO_CONFIG.discountPercentage}% OFF`}
@@ -103,27 +109,27 @@ export const PromoBanner = () => {
               <span className="text-white/40 font-medium italic">¡No te lo pierdas!</span>
             </div>
             
-            <div className="flex items-center gap-3 md:gap-4 bg-black/40 backdrop-blur-md px-4 md:px-6 py-2 md:py-3 rounded-2xl border border-white/10 shadow-inner">
-              <Timer size={18} className="text-[#B59410] animate-pulse" />
-              <div className="flex gap-3 md:gap-5 text-sm md:text-xl font-mono font-black tracking-tighter">
+            <div className="flex items-center gap-3 md:gap-4 bg-black/40 backdrop-blur-md px-3 md:px-6 py-1.5 md:py-3 rounded-xl md:rounded-2xl border border-white/10 shadow-inner">
+              <Timer size={14} className="text-[#B59410] animate-pulse md:w-4 md:h-4" />
+              <div className="flex gap-2 md:gap-5 text-xs md:text-xl font-mono font-black tracking-tighter">
                 <div className="flex flex-col items-center min-w-[2ch]">
                   <span className="text-white">{String(timeLeft.days).padStart(2, '0')}</span>
-                  <span className="text-[8px] uppercase tracking-tighter font-bold text-white/30 -mt-1">Días</span>
+                  <span className="text-[10px] md:text-[8px] uppercase tracking-tighter font-bold text-white/30 -mt-0.5 md:-mt-1">Días</span>
                 </div>
                 <span className="text-[#B59410] opacity-50">:</span>
                 <div className="flex flex-col items-center min-w-[2ch]">
                   <span className="text-white">{String(timeLeft.hours).padStart(2, '0')}</span>
-                  <span className="text-[8px] uppercase tracking-tighter font-bold text-white/30 -mt-1">Hrs</span>
+                  <span className="text-[10px] md:text-[8px] uppercase tracking-tighter font-bold text-white/30 -mt-0.5 md:-mt-1">Hrs</span>
                 </div>
                 <span className="text-[#B59410] opacity-50">:</span>
                 <div className="flex flex-col items-center min-w-[2ch]">
                   <span className="text-white">{String(timeLeft.minutes).padStart(2, '0')}</span>
-                  <span className="text-[8px] uppercase tracking-tighter font-bold text-white/30 -mt-1">Min</span>
+                  <span className="text-[10px] md:text-[8px] uppercase tracking-tighter font-bold text-white/30 -mt-0.5 md:-mt-1">Min</span>
                 </div>
                 <span className="text-[#B59410] opacity-50">:</span>
                 <div className="flex flex-col items-center min-w-[2ch]">
                   <span className="text-[#B59410]">{String(timeLeft.seconds).padStart(2, '0')}</span>
-                  <span className="text-[8px] uppercase tracking-tighter font-bold text-white/30 -mt-1">Seg</span>
+                  <span className="text-[10px] md:text-[8px] uppercase tracking-tighter font-bold text-white/30 -mt-0.5 md:-mt-1">Seg</span>
                 </div>
               </div>
             </div>
