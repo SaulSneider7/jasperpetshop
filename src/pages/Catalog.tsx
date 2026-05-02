@@ -89,6 +89,55 @@ export const Catalog = () => {
           </div>
         </div>
 
+        {/* Colors Section */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-[#1a1a1a]">
+              Colores <span className="text-[#B59410] italic">Disponibles</span>
+            </h2>
+
+            <p className="text-gray-600 max-w-3xl mx-auto font-light text-lg leading-relaxed">
+              Contamos con una amplia variedad de colores para todos nuestros productos.
+              Puedes elegir entre tonos clásicos como <span className="font-medium text-[#1a1a1a]">negro, gris, beige o marrón</span>,
+              colores más llamativos como <span className="font-medium text-[#1a1a1a]">rojo, azul, rosado o mostaza</span>,
+              y muchas opciones adicionales.
+              <br /><br />
+              <span className="text-[#B59410] font-semibold">
+                Si tienes un color específico en mente, también podemos adaptarlo para ti.
+              </span>
+            </p>
+          </div>
+
+          {/* Colores visuales */}
+          <div className="flex flex-wrap justify-center gap-6 mb-10">
+            {[
+              { name: 'Negro', color: '#000000' },
+              { name: 'Gris', color: '#6B7280' },
+              { name: 'Beige', color: '#D6CFC7' },
+              { name: 'Marrón', color: '#8B5E3C' },
+              { name: 'Rojo', color: '#EF4444' },
+              { name: 'Azul', color: '#3B82F6' },
+              { name: 'Rosado', color: '#EC4899' },
+              { name: 'Mostaza', color: '#c5a722' }
+            ].map((item, index) => (
+              <div key={index} className="flex flex-col items-center gap-2">
+                <div
+                  className="w-16 h-16 rounded-full shadow-md border border-gray-200"
+                  style={{ backgroundColor: item.color }}
+                />
+                <span className="text-sm text-gray-600">{item.name}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Cierre fuerte */}
+          <div className="text-center">
+            <p className="text-gray-500 font-light">
+              Diseñamos cada producto para que combine perfectamente con tu espacio y el estilo de tu mascota.
+            </p>
+          </div>
+        </div>
+
         {/* Categories Filter */}
         <div className="flex flex-wrap gap-4 mb-12">
           {categories.map((category) => (

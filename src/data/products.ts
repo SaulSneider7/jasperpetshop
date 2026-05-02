@@ -401,6 +401,7 @@ export const products: Product[] = [
       "Cojines decorativos (incluye dos unidades)",
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+      "Tener en cuenta que la medida indicada es de todo el sofá. (Considerar que los laterales reducen aprox. 12cm por lado y respaldar aprox. 12cm)"
     ],
     productionTime: "Son 2-4 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
@@ -575,7 +576,7 @@ export const products: Product[] = [
       "Funda desmontable del asiento, incluye cierre para poder lavar el forro a mano o lavadora.",
       "Respaldar firme y cómodo, con detalle capitoneado acolchado.",
       "Brazos (laterales) del sofá son anchos con detalle capitoneado y ligeramente curvos.",
-      "Tener en cuenta que la medida indicada es de todo el sofá. (Considerar que los laterales reducen aprox. 10cm por lado y respaldar aprox. 15cm)",
+      "Tener en cuenta que la medida indicada es de todo el sofá. (Considerar que los laterales reducen aprox. 12cm por lado y respaldar aprox. 12cm)",
       "Patas de acero cromado brillante con antideslizante.",
       "Cojines decorativos (incluye dos unidades)",
       "Al estar elevados del piso, aíslan del frío y del calor.",
