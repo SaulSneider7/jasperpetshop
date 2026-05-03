@@ -110,6 +110,7 @@ export const products: Product[] = [
       "Cojines decorativos (incluye dos unidades)",
       "Al estar elevados del piso, aíslan del frío y del calor.",
       "La altura es ideal para no dañar su columna y permitir un fácil acceso.",
+      "Tener en cuenta que la medida indicada es de todo el sofá. (Considerar que los laterales reducen aprox. 10cm por lado y respaldar aprox. 10cm)."
     ],
     productionTime: "Son 3 días hábiles.",
     deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao.",
