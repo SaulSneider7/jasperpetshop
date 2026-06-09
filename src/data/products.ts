@@ -33,7 +33,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Sofa Jasper",
-    price: "S/ 340",
+    price: "S/ 350",
     category: "Sofás",
     image: "./jasper_L.jpeg",
     description: [
@@ -58,7 +58,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 350",
         image: "/jasper_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -68,7 +68,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 400",
         image: "/jasper_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -91,7 +91,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Sofa Cala",
-    price: "S/ 340",
+    price: "S/ 350",
     category: "Sofás",
     image: "/cala_L.jpeg",
     description: [
@@ -118,7 +118,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 350",
         image: "/cala_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -128,7 +128,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 400",
         image: "/cala_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -151,7 +151,7 @@ export const products: Product[] = [
   {
     id: 3,
     name: "Sofa Nalha",
-    price: "S/ 340",
+    price: "S/ 350",
     category: "Sofás",
     image: "/nalha_L.jpeg",
     description: [
@@ -176,7 +176,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 350",
         image: "/nalha_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Soporta 40kg",
@@ -186,7 +186,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 400",
         image: "/nalha_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Soporta 70kg",
@@ -209,7 +209,7 @@ export const products: Product[] = [
   {
     id: 4,
     name: "Sofa Valentina",
-    price: "S/ 340",
+    price: "S/ 350",
     category: "Sofás",
     image: "/valentina_L.jpeg",
     description: [
@@ -234,7 +234,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 350",
         image: "/valentina_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -244,7 +244,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 400",
         image: "/valentina_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -267,7 +267,7 @@ export const products: Product[] = [
   {
     id: 5,
     name: "Sofa Brandon",
-    price: "S/ 340",
+    price: "S/ 350",
     category: "Sofás",
     image: "/brandon_L.jpeg",
     description: [
@@ -292,7 +292,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 350",
         image: "/brandon_L.jpeg",
         dimensions: "75cm Diametro / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -302,7 +302,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 400",
         image: "/brandon_XL.jpeg",
         dimensions: "95cm Diametro / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -325,7 +325,7 @@ export const products: Product[] = [
   {
     id: 6,
     name: "Sofa Mike",
-    price: "S/ 340",
+    price: "S/ 350",
     category: "Sofás",
     image: "/mike_L.jpeg",
     description: [
@@ -350,7 +350,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 350",
         image: "/mike_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -360,7 +360,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 400",
         image: "/mike_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -383,7 +383,7 @@ export const products: Product[] = [
   {
     id: 7,
     name: "Sofa Mildan Premiun",
-    price: "S/ 380",
+    price: "S/ 390",
     category: "Sofás",
     image: "/mildan_premium_L.jpeg",
     description: [
@@ -410,7 +410,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 380",
+        price: "S/ 390",
         image: "/mildan_premium_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -420,7 +420,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 440",
         image: "/mildan_premium_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 60kg",
@@ -430,7 +430,7 @@ export const products: Product[] = [
       },
       {
         size: "XXL",
-        price: "S/ 460",
+        price: "S/ 520",
         image: "/mildan_premium_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
         weight: "Hasta 80kg",
@@ -443,7 +443,7 @@ export const products: Product[] = [
   {
     id: 8,
     name: "Sofa Ruffo",
-    price: "S/ 340",
+    price: "S/ 350",
     category: "Sofás",
     image: "/ruffo_L.jpeg",
     description: [
@@ -471,7 +471,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 350",
         image: "/ruffo_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -481,7 +481,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 400",
         image: "/ruffo_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -504,7 +504,7 @@ export const products: Product[] = [
   {
     id: 9,
     name: "Sofa Canela",
-    price: "S/ 340",
+    price: "S/ 350",
     category: "Sofás",
     image: "/canela_L.jpeg",
     description: [
@@ -529,7 +529,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 350",
         image: "/canela_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -539,7 +539,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 400",
         image: "/canela_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -622,7 +622,7 @@ export const products: Product[] = [
   {
     id: 11,
     name: "Sofa Arcoiris",
-    price: "S/ 340",
+    price: "S/ 350",
     category: "Sofás",
     image: "/arcoiris_L.jpeg",
     description: [
@@ -649,7 +649,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 350",
         image: "/arcoiris_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -659,7 +659,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 390",
+        price: "S/ 400",
         image: "/arcoiris_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 60kg",
@@ -682,7 +682,7 @@ export const products: Product[] = [
   {
     id: 12,
     name: "Sofa Bonnie",
-    price: "S/ 280",
+    price: "S/ 300",
     category: "Sofás",
     image: "/sofa_bonnie.jpeg",
     description: [
@@ -705,21 +705,21 @@ export const products: Product[] = [
     variants: [
       {
         size: "S",
-        price: "S/ 280",
+        price: "S/ 300",
         image: "/sofa_bonnie.jpeg",
         dimensions: "55cm ancho x 40cm largo / 8cm patas cromadas",
         weight: "Hasta 15kg"
       },
       {
         size: "M",
-        price: "S/ 320",
+        price: "S/ 340",
         image: "/sofa_bonnie.jpeg",
         dimensions: "65cm ancho x 50cm largo / 8cm patas cromadas",
         weight: "Hasta 25kg",
       },
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 370",
         image: "/sofa_bonnie.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 35kg"
@@ -729,7 +729,7 @@ export const products: Product[] = [
   {
     id: 13,
     name: "Sofa Duquesa",
-    price: "S/ 280",
+    price: "S/ 300",
     category: "Sofás",
     image: "/sofa_duquesa.png",
     description: [
@@ -752,21 +752,21 @@ export const products: Product[] = [
     variants: [
       {
         size: "S",
-        price: "S/ 280",
+        price: "S/ 300",
         image: "/sofa_duquesa.png",
         dimensions: "55cm ancho x 40cm largo / 8cm patas cromadas",
         weight: "Hasta 15kg"
       },
       {
         size: "M",
-        price: "S/ 320",
+        price: "S/ 340",
         image: "/sofa_duquesa.png",
         dimensions: "65cm ancho x 50cm largo / 8cm patas cromadas",
         weight: "Hasta 25kg",
       },
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 370",
         image: "/sofa_duquesa.png",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 35kg"
@@ -776,7 +776,7 @@ export const products: Product[] = [
   {
     id: 14,
     name: "Sofa Michito",
-    price: "S/ 280",
+    price: "S/ 300",
     category: "Sofás",
     image: "/sofa_michito.jpeg",
     description: [
@@ -799,21 +799,21 @@ export const products: Product[] = [
     variants: [
       {
         size: "S",
-        price: "S/ 280",
+        price: "S/ 300",
         image: "/sofa_michito.jpeg",
         dimensions: "55cm ancho x 40cm largo / 8cm patas cromadas",
         weight: "Hasta 15kg"
       },
       {
         size: "M",
-        price: "S/ 320",
+        price: "S/ 340",
         image: "/sofa_michito.jpeg",
         dimensions: "65cm ancho x 50cm largo / 8cm patas cromadas",
         weight: "Hasta 25kg",
       },
       {
         size: "L",
-        price: "S/ 340",
+        price: "S/ 370",
         image: "/sofa_michito.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 35kg"
@@ -823,7 +823,7 @@ export const products: Product[] = [
   {
     id: 15,
     name: "Cama Buffyto",
-    price: "S/ 380",
+    price: "S/ 260",
     category: "Camas",
     image: "/cama_buffyto_L.jpeg",
     description: [
@@ -847,7 +847,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 250",
+        price: "S/ 260",
         image: "/cama_buffyto_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -857,7 +857,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 290",
+        price: "S/ 320",
         image: "/cama_buffyto_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -867,7 +867,7 @@ export const products: Product[] = [
       },
       {
         size: "XXL",
-        price: "S/ 370",
+        price: "S/ 390",
         image: "/cama_buffyto_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -880,7 +880,7 @@ export const products: Product[] = [
   {
     id: 16,
     name: "Cama Capitone",
-    price: "S/ 380",
+    price: "S/ 390",
     category: "Camas",
     image: "/cama_capitone_L.jpeg",
     description: [
@@ -904,7 +904,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 380",
+        price: "S/ 390",
         image: "/cama_capitone_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -914,7 +914,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 430",
+        price: "S/ 450",
         image: "/cama_capitone_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 60kg",
@@ -924,7 +924,7 @@ export const products: Product[] = [
       },
       {
         size: "XXL",
-        price: "S/ 490",
+        price: "S/ 495",
         image: "/cama_capitone_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
         weight: "Hasta 80kg",
@@ -937,7 +937,7 @@ export const products: Product[] = [
   {
     id: 17,
     name: "Cama Nalhaguau",
-    price: "S/ 200",
+    price: "S/ 220",
     category: "Camas",
     image: "/cama_nalhaguau_L.jpeg",
     description: [
@@ -962,7 +962,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 200",
+        price: "S/ 220",
         image: "/cama_nalhaguau_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -972,7 +972,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 260",
+        price: "S/ 280",
         image: "/cama_nalhaguau_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -982,7 +982,7 @@ export const products: Product[] = [
       },
       {
         size: "XXL",
-        price: "S/ 320",
+        price: "S/ 340",
         image: "/cama_nalhaguau_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
@@ -995,7 +995,7 @@ export const products: Product[] = [
   {
     id: 18,
     name: "Cama Zaragoza",
-    price: "S/ 300",
+    price: "S/ 170",
     category: "Camas",
     image: "/cama_zaragoza_L.jpeg",
     description: [
@@ -1019,7 +1019,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 300",
+        price: "S/ 170",
         image: "/cama_zaragoza_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -1029,7 +1029,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 360",
+        price: "S/ 220",
         image: "/cama_zaragoza_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 60kg",
@@ -1039,7 +1039,7 @@ export const products: Product[] = [
       },
       {
         size: "XXL",
-        price: "S/ 460",
+        price: "S/ 280",
         image: "/cama_zaragoza_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
         weight: "Hasta 80kg",
@@ -1192,7 +1192,7 @@ export const products: Product[] = [
       },
       {
         size: `XXL - Grosor 4"`,
-        price: "S/ 170",
+        price: "S/ 180",
         image: "/colchon_10CM.jpeg",
         dimensions: "1.10cm ancho x 90cm largo",
         thickness: `4" (10cm)`,
@@ -1202,7 +1202,7 @@ export const products: Product[] = [
       },
       {
         size: `XXL - Grosor 6"`,
-        price: "S/ 200",
+        price: "S/ 220",
         image: "/colchon_15CM.jpeg",
         dimensions: "1.10cm ancho x 90cm largo",
         thickness: `6" (15cm)`,
@@ -1212,7 +1212,7 @@ export const products: Product[] = [
       },
       {
         size: `XXL - Grosor 8"`,
-        price: "S/ 220",
+        price: "S/ 240",
         image: "/colchon_20CM.jpeg",
         dimensions: "1.10cm ancho x 90cm largo",
         thickness: `8" (20cm)`,
@@ -1270,7 +1270,7 @@ export const products: Product[] = [
   {
     id: 22,
     name: "Colchoneta Clasica",
-    price: "S/ 150",
+    price: "S/ 160",
     category: "Colchonetas",
     image: "/colchoneta_L.jpeg",
     description: [
@@ -1293,7 +1293,7 @@ export const products: Product[] = [
     variants: [
       {
         size: `CHICO`,
-        price: "S/ 150",
+        price: "S/ 160",
         image: "/colchoneta_L.jpeg",
         dimensions: `75cm ancho x 70cm largo`,
         weight: ``,
@@ -1301,7 +1301,7 @@ export const products: Product[] = [
       },
       {
         size: `MEDIANO`,
-        price: "S/ 220",
+        price: "S/ 230",
         image: "/colchoneta_XL.jpeg",
         dimensions: "1.20cm ancho x 70cm largo",
       },
@@ -1316,7 +1316,7 @@ export const products: Product[] = [
   {
     id: 23,
     name: "Colchoneta Capitone",
-    price: "S/ 170",
+    price: "S/ 180",
     category: "Colchonetas",
     image: "/capitone_chico.jpeg",
     description: [
@@ -1337,7 +1337,7 @@ export const products: Product[] = [
     variants: [
       {
         size: `CHICO`,
-        price: "S/ 170",
+        price: "S/ 180",
         image: "/capitone_chico.jpeg",
         dimensions: `75cm ancho x 70cm largo`,
         weight: ``,
@@ -1345,7 +1345,7 @@ export const products: Product[] = [
       },
       {
         size: `MEDIANO`,
-        price: "S/ 250",
+        price: "S/ 260",
         image: "/capitone_mediano.jpeg",
         dimensions: "1.20cm ancho x 70cm largo",
       },
