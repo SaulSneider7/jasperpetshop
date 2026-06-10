@@ -1087,7 +1087,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 220",
+        price: "S/ 240",
         image: "/cama_jasperguau_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
