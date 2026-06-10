@@ -995,7 +995,7 @@ export const products: Product[] = [
   {
     id: 18,
     name: "Cama Zaragoza",
-    price: "S/ 170",
+    price: "S/ 320",
     category: "Camas",
     image: "/cama_zaragoza_L.jpeg",
     description: [
@@ -1019,7 +1019,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 170",
+        price: "S/ 320",
         image: "/cama_zaragoza_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 40kg",
@@ -1029,7 +1029,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 220",
+        price: "S/ 390",
         image: "/cama_zaragoza_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 60kg",
@@ -1039,7 +1039,7 @@ export const products: Product[] = [
       },
       {
         size: "XXL",
-        price: "S/ 280",
+        price: "S/ 460",
         image: "/cama_zaragoza_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
         weight: "Hasta 80kg",
@@ -1052,7 +1052,7 @@ export const products: Product[] = [
   {
     id: 19,
     name: "Cama Jasperguau",
-    price: "S/ 160",
+    price: "S/ 170",
     category: "Camas",
     image: "/cama_jasperguau_L.jpeg",
     description: [
@@ -1077,7 +1077,7 @@ export const products: Product[] = [
     variants: [
       {
         size: "L",
-        price: "S/ 160",
+        price: "S/ 170",
         image: "/cama_jasperguau_L.jpeg",
         dimensions: "75cm ancho x 60cm largo / 8cm patas cromadas",
         weight: "Hasta 30kg",
@@ -1087,7 +1087,7 @@ export const products: Product[] = [
       },
       {
         size: "XL",
-        price: "S/ 210",
+        price: "S/ 220",
         image: "/cama_jasperguau_XL.jpeg",
         dimensions: "95cm ancho x 80cm largo / 8cm patas cromadas",
         weight: "Hasta 50kg",
@@ -1097,7 +1097,7 @@ export const products: Product[] = [
       },
       {
         size: "XXL",
-        price: "S/ 270",
+        price: "S/ 280",
         image: "/cama_jasperguau_XXL.jpeg",
         dimensions: "1.10cm ancho x 90cm largo / 8cm patas cromadas",
         weight: "Hasta 70kg",
