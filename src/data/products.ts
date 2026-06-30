@@ -1752,4 +1752,60 @@ export const products: Product[] = [
       "Estimulas sus instintos naturales de cacería."
     ],
   },
+  {
+    id: 34,
+    name: "Sofa Camila",
+    price: "S/ 390",
+    category: "Sofás",
+    image: "/Camila_chico.jpeg",
+    description: [
+      
+    ],
+    characteristics: [
+      "Tapizado con tela iker hipoalergénica (varios colores disponibles)",
+      "Funda desmontable del asiento, incluye cierre para poder lavar el forro a mano o lavadora.",
+      "Respaldar firme y cómodo, modelo nube, mide 13 cm de grosor aprox.",
+      "Brazos (laterales) del sofá mide 10 cm cada uno.",
+      "Tener en cuenta que la medida indicada es de todo el sofá.",
+      "Patas de acero cromado brillante con antideslizante.",
+      "Cojines decorativos (incluye dos unidades).",
+      "Al estar elevados del piso, aíslan del frío y del calor.",
+      "La altura es ideal para no dañar su columna y permitir un fácil acceso."
+    ],
+    productionTime: "Son 3-5 días hábiles.",
+    deliveryInfo: "Una vez terminado, se distribuye con Delivery Gratis en Lima y Callao. (Revisando Cobertura)",
+    shippingInfo: "Se envía por agencia a provincias del Perú. (Solo se cubre el costo del embalaje por Temporada)",
+    variants: [
+      {
+        size: "CHICO",
+        price: "S/ 390",
+        image: "/Camila_chico.jpeg",
+        dimensions: "85cm ancho x 70cm largo / 8cm patas cromadas",
+        weight: "Hasta 40kg",
+        description: [
+          "Ideal para American bully, Beagles, Basset Hound"
+        ],
+      },
+      {
+        size: "MEDIANO",
+        price: "S/ 450",
+        image: "/Camila_mediano.jpeg",
+        dimensions: "1.00cm ancho x 70cm largo / 8cm patas cromadas",
+        weight: "Hasta 70kg",
+        description: [
+          "Ideal para Pitbull, Dalmata, Doberman, Bulldog Ingles"
+        ],
+      },
+      {
+        size: "GRANDE",
+        price: "S/ 520",
+        image: "/Camila_grande.jpeg",
+        dimensions: "1.20cm ancho x 70cm largo / 8cm patas cromadas",
+        weight: "Hasta 90kg",
+        description: [
+          "Ideal para Rottweiler, Labrador, Golden Retriever"
+        ],
+      }
+    ]
+  }
 ];
