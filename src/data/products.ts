@@ -1807,5 +1807,225 @@ export const products: Product[] = [
         ],
       }
     ]
-  }
+  },
+  {
+    id: 35,
+    name: "Ricocat Adulto 9 Kg",
+    price: "S/ 120",
+    category: "Comida Gatos",
+    image: "/RICOCAT_Adulto_9Kg.webp",
+    description: [
+      "Ricocat Adulto sabor Pollo, Sardina y Salmón 9 Kg. Recomendable para Gatos de 1+ años "
+    ],
+  },
+  {
+    id: 36,
+    name: "Ricocat Gatito 9 Kg",
+    price: "S/ 120",
+    category: "Comida Gatos",
+    image: "/RICOCAT_Gatito_Carne_Pescado_Leche_9Kg.webp",
+    description: [
+      "Ricocat Gatito sabor Carne, Pescado y Leche 9 Kg. Recomendable para Gatos de 1 a 12 meses"
+    ],
+  },
+  {
+    id: 37,
+    name: "Ricocat Carne, Pescado y Leche 15 Kg",
+    price: "S/ 160",
+    category: "Comida Gatos",
+    image: "/RICOCAT_Gatito_Multisabor_15Kg.webp",
+    description: [
+      "Ricocat Gatito sabor Carne, Pescado y Leche 15 Kg. Recomendable para Gatos de 1 a 12 meses"
+    ]
+  },
+  {
+    id: 38,
+    name: "Ricocat Esterilizado 9 Kg",
+    price: "S/ 120",
+    category: "Comida Gatos",
+    image: "/RICOCAT_Adulto_Pollo_Sardina_Salmon_9Kg.webp",
+    description: [
+      "Ricocat Adulto Esterilizado 9 Kg. Recomendable para Gatos de 1+ años"
+    ]
+  },
+  {
+    id: 39,
+    name: "Ricocan Cachorro 22 Kg",
+    price: "S/ 190",
+    category: "Comida Perros",
+    image: "/RICOCAN_Cachorro_22Kg.webp",
+    description: [
+      "Ricocan Cachorro  Sabor Carne y Leche 22Kg. Recomendable para Razas Pequeñas"
+    ]
+  },
+  {
+    id: 40,
+    name: "Ricocan Adultos 3 Kg",
+    price: "S/ 35",
+    category: "Comida Perros",
+    image: "/RICOCAN_Adultos_3Kg.webp",
+    description: [
+      "Ricocan Adultos Sabor Cordero y Cereales 3Kg. Recomendable para Razas Pequeñas"
+    ]
+  },
+  {
+    id: 41,
+    name: "Ricocan Adultos 15 Kg",
+    price: "S/ 130",
+    category: "Comida Perros",
+    image: "/RICOCAN_Adultos_15Kg.jpg",
+    description: [
+      "Ricocan Adultos Sabor Cordero y Cereales 15 Kg. Recomendable para Razas Medianas y Grandes"
+    ]
+  },
+  {
+    id: 42,
+    name: "Ricocan Adultos 22 Kg",
+    price: "S/ 180",
+    category: "Comida Perros",
+    image: "/RICOCAN_Adultos_22Kg.jpg",
+    description: [
+      "RICOCAN Adulto Sabor Cordero y Cereales 22Kg. Recomendable para Razas Medianas y Grandes"
+    ]
+  },
+  {
+    id: 43,
+    name: "Ricocan Multisabores 15 Kg",
+    price: "S/ 180",
+    category: "Comida Perros",
+    image: "/RICOCAN_Multisabores_15Kg.webp",
+    description: [
+      "Ricocan Adultos Sabor Carne, Pollo, Cereales y Vegetales 15 Kg. Recomendable para Todas las Razas"
+    ]
+  },
+  {
+    id: 44,
+    name: "Ricocan Multisabores 22 Kg",
+    price: "S/ 180",
+    category: "Comida Perros",
+    image: "/RICOCAN_Multisabores_22Kg.webp",
+    description: [
+      "Ricocan Adultos Sabor Carne, Pollo, Cereales y Vegetales 22 Kg. Recomendable para Todas las Razas"
+    ]
+  },
+  {
+    id: 45,
+    name: "Ricocan Babycan 330g",
+    price: "S/ 8",
+    category: "Pate y Alimentos Hidratados",
+    image: "/Ricocan_Babycan_330g.webp",
+    description: [
+      "Ricocan Paté Cachorro Sabor Carne Lata 330g. Recomendable para Cachorros."
+    ]
+  },
+  {
+    id: 46,
+    name: "Ricocan Pollo 330g",
+    price: "S/ 8",
+    category: "Pate y Alimentos Hidratados",
+    image: "/Ricocan_Pollo_330g.webp",
+    description: [
+      "Ricocan  Sabor Pollo Lata 330g. Recomendable para Perros Adultos."
+    ]
+  },
+  {
+    id: 47,
+    name: "Ricocan Carne 330g",
+    price: "S/ 8",
+    category: "Pate y Alimentos Hidratados",
+    image: "/Ricocan_Carne_330g.webp",
+    description: [
+      "Ricocan Sabor Carne Lata 330g. Recomendable para Perros Adultos."
+    ]
+  },
+  {
+    id: 48,
+    name: "Ricocan Cordero 330g",
+    price: "S/ 8",
+    category: "Pate y Alimentos Hidratados",
+    image: "/Ricocan_Cordero_330g.webp",
+    description: [
+      "Ricocan Sabor Cordero Lata 330g. Recomendable para Perros Adultos."
+    ]
+  },
+  {
+    id: 49,
+    name: "Ricocan Trocitos Pollo 100g",
+    price: "S/ 5",
+    category: "Pate y Alimentos Hidratados",
+    image: "/Ricocan_Trocitos_Pollo_100g.webp",
+    description: [
+      "Ricocan  Sabor Pollo Sobre 100g. Recomendable para Perros Adultos."
+    ]
+  },
+  {
+    id: 50,
+    name: "Ricocan Trocitos Carne 100g",
+    price: "S/ 5",
+    category: "Pate y Alimentos Hidratados",
+    image: "/Ricocan_Trocitos_Carne_100g.webp",
+    description: [
+      "Ricocan  Sabor Carne Sobre 100g. Recomendable para Perros Adultos."
+    ]
+  },
+  {
+    id: 51,
+    name: "DENTITOY 500g",
+    price: "S/ 27",
+    category: "Snack",
+    image: "/DENTITOY_500g.webp",
+    description: [
+      "Snack Sabor Ganado Vacuno Paquete 500g. Recomendable para todas las Razas."
+    ]
+  },
+  {
+    id: 52,
+    name: "DENTITOY 250g",
+    price: "S/ 16",
+    category: "Snack",
+    image: "/DENTITOY_250g.webp",
+    description: [
+      "Snack Sabor Ganado Vacuno Paquete 250g. Recomendable para todas las Razas."
+    ]
+  },
+  {
+    id: 53,
+    name: "Ricocrack Original 200g",
+    price: "S/ 12",
+    category: "Galletas",
+    image: "/Ricocrack_Original_200g.webp",
+    description: [
+      "Ricocrack  Sabor Leche Caja 200g. Recomendable para Cachorros."
+    ]
+  },
+  {
+    id: 54,
+    name: "Ricocrack Multisabores 200g",
+    price: "S/ 25",
+    category: "Galletas",
+    image: "/Ricocrack_Multisabores_200g.webp",
+    description: [
+      "Ricocrack  Sabor Leche, Espinaca, Zanahoria, Trigo, Arroz Caja 200g. Recomendable para Cachorros."
+    ]
+  },
+  {
+    id: 55,
+    name: "Ricocrack Multisabores 500g",
+    price: "S/ 18",
+    category: "Galletas",
+    image: "/Ricocrack_Multisabores_500g.webp",
+    description: [
+      "Ricocrack  Sabor Leche, Espinaca, Zanahoria, Trigo, Arroz Caja 500g. Recomendable para Adultos."
+    ]
+  },
+  {
+    id: 56,
+    name: "Ricocrack Cordero 500g",
+    price: "S/ 18",
+    category: "Galletas",
+    image: "/Ricocrack_Cordero_500g.webp",
+    description: [
+      "Ricocrack  Sabor Cordero Caja 500g. Recomendable para Adultos."
+    ]
+  },
 ];

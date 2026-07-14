@@ -60,7 +60,7 @@ export const ProductDetail = () => {
   const discountedPrice = calculateDiscountedPrice(currentPrice, baseDiscount, product.category);
 
 
-    const handleAddToCart = () => {
+  const handleAddToCart = () => {
     const basePriceForCart = selectedVariant?.oldPrice || (hasDiscount ? currentPrice : undefined);
     addToCart(product, selectedVariant?.size, discountedPrice, basePriceForCart, totalDiscount, currentImage);
   };
@@ -119,9 +119,14 @@ export const ProductDetail = () => {
                   </p>
                 )}
               </div>
-              <p className="text-lg text-gray-500 leading-relaxed font-light">
-                {currentDescription}
-              </p>
+              <div className="text-lg text-gray-500 leading-relaxed font-light space-y-2">
+                {currentDescription.map((desc, index) => (
+                  <p
+                    key={index}
+                    dangerouslySetInnerHTML={{ __html: desc }}
+                  />
+                ))}
+              </div>
             </div>
 
             {/* Variants / Sizes */}

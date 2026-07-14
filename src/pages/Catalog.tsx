@@ -9,7 +9,7 @@ import {
   faCreditCard
 } from '@fortawesome/free-solid-svg-icons';
 
-const categories = ['Todos', 'Camas', 'Sofás', 'Colchones', 'Colchonetas', 'Escaleras', 'Accesorios', 'Juguetes'];
+const categories = ['Todos', 'Camas', 'Sofás', 'Colchones', 'Colchonetas', 'Escaleras', 'Accesorios', 'Juguetes', 'Comida Gatos', 'Comida Perros', 'Pate y Alimentos Hidratados', 'Snack', 'Galletas'];
 
 export const Catalog = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
