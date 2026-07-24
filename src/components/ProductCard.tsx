@@ -100,7 +100,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             </div>
             {cyberWauDiscount > 0 && (
               <div className="bg-[#1a1a1a] text-white text-[6px] md:text-[8px] font-bold uppercase tracking-widest px-2 py-1 rounded-full shadow-lg border border-[#B59410]/30">
-                CYBER WAU
+                CYBER WOW
               </div>
             )}
           </div>
